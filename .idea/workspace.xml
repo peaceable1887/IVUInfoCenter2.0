@@ -11,22 +11,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/JavaScript/AkademieEvents/addAndRemoveInputField.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaScript/overlay.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaScript/startseite/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sql/Einstellungen/loadProfilData/loadProfilData.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sql/Supportanfragen/Meine Anfragen/myRequests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/akademie.Shortcodes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/AkademieEvents/akademieEvents.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/Hilfe und Infos/helpAndInfos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/Supportbereich/neueSupportanfrage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/Supportbereich/supportRequestTicket.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/overlay.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/slider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/startseite/startseite.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/einstellungen.Shortcodes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/global.Shortcodes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hilfeUndInfos.Shortcode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/AkademieEvents/addAndRemoveInputField.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/AkademieEvents/addAndRemoveInputField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/overlay.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/overlay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/startseite/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/startseite/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sql/Einstellungen/loadProfilData/loadProfilData.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/Einstellungen/loadProfilData/loadProfilData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sql/Supportanfragen/Meine Anfragen/myRequests.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/Supportanfragen/Meine Anfragen/myRequests.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/akademie.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/akademie.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/AkademieEvents/akademieEvents.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/AkademieEvents/akademieEvents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Hilfe und Infos/helpAndInfos.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Hilfe und Infos/helpAndInfos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Supportbereich/neueSupportanfrage.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Supportbereich/neueSupportanfrage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Supportbereich/supportRequestTicket.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Supportbereich/supportRequestTicket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/overlay.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/overlay.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/slider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/startseite/startseite.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/startseite/startseite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/einstellungen.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/einstellungen.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/global.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hilfeUndInfos.Shortcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/hilfeUndInfos.Shortcode.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +170,7 @@
       <workItem from="1637079048355" duration="1456000" />
       <workItem from="1637143881801" duration="19341000" />
       <workItem from="1637166493089" duration="908000" />
-      <workItem from="1637167528345" duration="91000" />
+      <workItem from="1637167528345" duration="409000" />
     </task>
     <servers />
   </component>
@@ -213,6 +213,14 @@
     <state x="515" y="144" key="FileChooserDialogImpl/0.0.1440.770/2880.0.1920.1040@0.0.1440.770" timestamp="1634209760590" />
     <state x="515" y="144" key="FileChooserDialogImpl/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637167599567" />
     <state x="915" y="262" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1631697790514" />
+    <state x="590" y="283" width="512" height="291" key="Github.ShareDialog" timestamp="1637167804956">
+      <screen x="0" y="0" width="1440" height="770" />
+    </state>
+    <state x="590" y="283" width="512" height="291" key="Github.ShareDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637167804956" />
+    <state x="380" y="83" key="Github.UntrackedFilesDialog" timestamp="1637167842220">
+      <screen x="0" y="0" width="1440" height="770" />
+    </state>
+    <state x="380" y="83" key="Github.UntrackedFilesDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637167842220" />
     <state x="368" y="213" key="NewPhpClassDialog" timestamp="1637077232199">
       <screen x="0" y="0" width="1440" height="770" />
     </state>

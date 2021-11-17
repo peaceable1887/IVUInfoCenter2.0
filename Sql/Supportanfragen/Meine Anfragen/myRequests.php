@@ -1,5 +1,14 @@
 <?php
-class myRequest
+class myRequests
 {
-    
+    function myOpen()
+    {
+        $sql = "";
+    }
+    function ourOpen()
+    {}
+    function myCompleted()
+    {}
+    function ourCompleted()
+    {}
 }
