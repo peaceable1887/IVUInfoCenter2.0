@@ -25,6 +25,7 @@ function login()
 
         if ($username == utf8_encode($arCur["User_Username"]) && $password == utf8_encode($arCur["User_Password"])) {
             $_SESSION['userid'] = $arCur['User_ID'];
+            echo $_SESSION['userid'];
             die('<meta http-equiv="refresh" content="1; URL=http://127.0.0.1/wordpress/">');
         } else {
             $errorMessage = "E-Mail oder Passwort war ungültig<br>";

@@ -11,7 +11,7 @@ add_shortcode("shortcode_sortDownloads", "sortDownloads");
 
 function sortDownloads()
 {
-    include("css/styleButtons.php");
+    include("css/btn.style.php");
     include ("css/style.php");
 
     echo "<span style='font-size: 20px; font-family: \"roboto condensed\";'>Sortiere nach:</span>

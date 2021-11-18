@@ -11,7 +11,7 @@ add_shortcode("shortcode_sortByDateOrSubject", "sortByDateOrSubject");
 
 function sortByDateOrSubject()
 {
-    include("css/styleButtons.php");
+    include("css/btn.style.php");
     include ("css/AkademieEvents/akademieEvents.php");
 
     echo "<div class='selectFields'>
