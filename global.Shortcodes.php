@@ -25,7 +25,14 @@ function siteDirection()
            "registrierung" => "http://127.0.0.1/wordpress/akademie-events-buchung-schritt-2/",
            "buchungErfolgreich" => "http://127.0.0.1/wordpress/akademie-events-buchung-schritt-3/",
         ),
-        "supportCenter" => "http://127.0.0.1/wordpress/support-center/",
+        "supportanfrage" => array
+        (
+            "supportCenter" => "http://127.0.0.1/wordpress/support-center/",
+            "overviewSupportcall" => "http://127.0.0.1/wordpress/uebersicht-supportanfragen/",
+            "newSupportcall" => "http://127.0.0.1/wordpress/neue-supportanfrage/",
+            "extendSupportData" => "http://127.0.0.1/wordpress/daten-zur-supportanfrage-ergaenzen/",
+            "supportcallNumber" => "http://127.0.0.1/wordpress/support-anfrage-nummer/",
+        ),
         "downloads" => "http://127.0.0.1/wordpress/downloads/",
         "hilfe" => "http://127.0.0.1/wordpress/hilfe/",
         "infos" => "http://127.0.0.1/wordpress/infos/",
@@ -45,15 +52,63 @@ function siteDirection()
         echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
             "<a href=\"http://127.0.0.1/wordpress/akademie-events/\">Akademie und Events</a>";
     }
+    else if($localPort.$_SERVER['REQUEST_URI'] === $links["akademie"]["akademieUebersicht"])
+    {
+        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events/\">Akademie und Events</a>"." > ".
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-uebersicht/\">Gesamte Kursübersicht</a>";
+    }
+    else if($localPort.$_SERVER['REQUEST_URI'] === $links["akademie"]["kursuebersicht"])
+    {
+        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events/\">Akademie und Events</a>"." > ".
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/\">Kursübersicht HR in Zeiten der Digitalisierung</a>";
+    }
+    else if($localPort.$_SERVER['REQUEST_URI'] === $links["akademie"]["registrierung"])
+    {
+        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events/\">Akademie und Events</a>"." > ".
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/\">Kursübersicht HR in Zeiten der Digitalisierung</a>"." > ".
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-2/\">Registrierung</a>";
+    }
+    else if($localPort.$_SERVER['REQUEST_URI'] === $links["akademie"]["buchungErfolgreich"])
+    {
+        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events/\">Akademie und Events</a>"." > ".
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/\">Kursübersicht HR in Zeiten der Digitalisierung</a>"." > ".
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-2/\">Registrierung</a>"." > ".
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-3/\">Buchung erfolgreich</a>";
+    }
     else if($localPort.$_SERVER['REQUEST_URI'] === $links["downloads"])
     {
         echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
             "<a href=\"http://127.0.0.1/wordpress/downloads/\">Download Center</a>";
     }
-    else if($localPort.$_SERVER['REQUEST_URI'] === $links["supportCenter"])
+    else if($localPort.$_SERVER['REQUEST_URI'] === $links["supportanfrage"]["supportCenter"])
     {
         echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
             "<a href=\"http://127.0.0.1/wordpress/support-anfragen/\">Support Center</a>";
+    }
+    else if($localPort.$_SERVER['REQUEST_URI'] === $links["supportanfrage"]["overviewSupportcall"])
+    {
+        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/support-anfragen/\">Support Center</a>". " > " .
+    "<a href=\"http://127.0.0.1/wordpress/uebersicht-supportanfragen/\">Übersicht Supportanfragen</a>";
+    }
+    else if($localPort.$_SERVER['REQUEST_URI'] === $links["supportanfrage"]["newSupportcall"])
+    {
+        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/neue-supportanfrage/\">Neue Supportanfrage</a>";
+    }
+    else if($localPort.$_SERVER['REQUEST_URI'] === $links["supportanfrage"]["extendSupportData"])
+    {
+        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/daten-zur-supportanfrage-ergaenzen/\">Daten zur Supportanfrage ergänzen</a>";
+    }
+    else if($localPort.$_SERVER['REQUEST_URI'] === $links["supportanfrage"]["supportcallNumber"])
+    {
+        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/support-anfrage-nummer/\">Supportanfrage Nummer</a>";
     }
     else if($localPort.$_SERVER['REQUEST_URI'] === $links["hilfe"])
     {
@@ -67,21 +122,6 @@ function siteDirection()
     }
 }
 
-function linkCollection()
-{
-    $links = array
-    (
-        "infoCenter" => "http://127.0.0.1/wordpress/",
-        "settings" => "http://127.0.0.1/wordpress/einstellungen/",
-        "supportCenter" => "http://127.0.0.1/wordpress/support-center/",
-        "downloads" => "http://127.0.0.1/wordpress/downloads/",
-        "hilfe" => "http://127.0.0.1/wordpress/hilfe/",
-        "infos" => "http://127.0.0.1/wordpress/infos/",
-    );
-
-    return $links;
-
-}
 add_shortcode("sc_userGreeting","userGreeting");
 
 function userGreeting()
@@ -91,6 +131,21 @@ function userGreeting()
 
     echo "<div class='welcomeUser' style='float: left'>".$welcome." ".$userFirstname."</div><br>";
 }
+add_shortcode("sc_logout", "logout");
+function logout()
+{
+    echo "<form method='post'><button name='logout'>Logout</button></form><br>";
+
+    if(isset($_POST["logout"]))
+    {
+        session_destroy();
+        echo "<html>
+                <head>
+                    <meta http-equiv=\"refresh\" content=\"1; URL=http://127.0.0.1/wordpress/login-test/\">
+                </head>
+              </html>";
+    }
+}
 
 add_shortcode("sc_headline", "headline");
 
@@ -99,7 +154,6 @@ function headline()
     include "css/style.php";
 
     $localPort = "http://127.0.0.1";
-
 
     if($localPort.$_SERVER['REQUEST_URI'] === "http://127.0.0.1/wordpress/")
     {

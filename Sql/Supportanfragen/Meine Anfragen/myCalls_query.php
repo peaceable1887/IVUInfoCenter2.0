@@ -1,13 +1,13 @@
 <?php
-class loadCallContent
+class myCalls_query
 {
-    function myOpen_query($userid)
+    function myOpen($userid)
     {
         $sql = "";
     }
-    function ourOpen_query()
+    function ourOpen()
     {}
-    function myCompleted_query($userid)
+    function myCompleted($userid)
     {
         $sql = "SELECT Call_Number, Call_Date_Received, ossy_call_status.Status_Name, ossy_call_field.Field_Name, Call_Subject, ossy_cus_user_det.User_Surname
                 FROM ossy_call
@@ -19,6 +19,6 @@ class loadCallContent
                 ORDER BY Call_Date_Received DESC;";
         return $sql;
     }
-    function ourCompleted_query()
+    function ourCompleted()
     {}
 }

@@ -10,15 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="weiterer Push des Codes">
-      <change afterPath="$PROJECT_DIR$/Sql/Supportanfragen/Meine Anfragen/loadCallContent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/table.style.php" afterDir="false" />
+    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="Meine Supportanfragene (MeineErledigten) jetzt fertig">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sql/Supportanfragen/Meine Anfragen/myRequests.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akademie.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/akademie.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/AkademieEvents/akademieEvents.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/AkademieEvents/akademieEvents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styleButtons.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/btn.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloadCenter.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/downloadCenter.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sql/Supportanfragen/Meine Anfragen/loadCallContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/Supportanfragen/Meine Anfragen/myCalls_query.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/global.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/global.Shortcodes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.Shortcodes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/supportbereich.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/supportbereich.Shortcodes.php" afterDir="false" />
@@ -166,7 +160,9 @@
       <workItem from="1637143881801" duration="19341000" />
       <workItem from="1637166493089" duration="908000" />
       <workItem from="1637167528345" duration="1009000" />
-      <workItem from="1637222984995" duration="9890000" />
+      <workItem from="1637222984995" duration="10064000" />
+      <workItem from="1637319559757" duration="4163000" />
+      <workItem from="1637577835408" duration="3401000" />
     </task>
     <task id="LOCAL-00001" summary="weiterer Push des Codes">
       <created>1637168082069</created>
@@ -175,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637168082069</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Meine Supportanfragene (MeineErledigten) jetzt fertig">
+      <created>1637239317998</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1637239317998</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +198,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="weiterer Push des Codes" />
-    <option name="LAST_COMMIT_MESSAGE" value="weiterer Push des Codes" />
+    <MESSAGE value="Meine Supportanfragene (MeineErledigten) jetzt fertig" />
+    <option name="LAST_COMMIT_MESSAGE" value="Meine Supportanfragene (MeineErledigten) jetzt fertig" />
   </component>
   <component name="WindowStateProjectService">
     <state x="526" y="101" key="#com.intellij.ide.util.MemberChooser" timestamp="1630660226549">
@@ -253,9 +257,10 @@
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1440.770/2880.0.1680.1010@0.0.1440.770" timestamp="1629719594577" />
-    <state x="313" y="118" key="Vcs.Push.Dialog.v2" timestamp="1637168134071">
-      <screen x="0" y="0" width="1440" height="770" />
+    <state x="3297" y="159" key="Vcs.Push.Dialog.v2" timestamp="1637239326418">
+      <screen x="2880" y="0" width="1920" height="1040" />
     </state>
+    <state x="3297" y="159" key="Vcs.Push.Dialog.v2/0.0.1440.770/2880.0.1920.1040@2880.0.1920.1040" timestamp="1637239326418" />
     <state x="313" y="118" key="Vcs.Push.Dialog.v2/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637168134071" />
     <state x="93" y="93" width="1253" height="583" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1630325454328">
       <screen x="0" y="0" width="1440" height="770" />

@@ -230,12 +230,12 @@ function tableDownloadCenter()
 {
     include "Database/ivu-dbCon.php";
     include "css/table.style.php";
-    include "Sql/Supportanfragen/Meine Anfragen/loadCallContent.php";
+    include "Sql/Supportanfragen/Meine Anfragen/myCalls_query.php";
 
     $dbCon = new infoCenterDbCon();
-    $sqlStatement = new loadCallContent();
+    $sqlStatement = new myCalls_query();
 
-    $sql = $sqlStatement->myCompleted_query($_SESSION['userid']);
+    $sql = $sqlStatement->myCompleted($_SESSION['userid']);
     $sqlRes = mysqli_query($dbCon, $sql);
 
     $recordCount = mysqli_num_rows($sqlRes);

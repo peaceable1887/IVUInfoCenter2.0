@@ -70,25 +70,6 @@ function loginSuccess()
     $_SESSION["User_Surname"] = utf8_encode($arCur["User_Surname"]);
 }
 
-
-add_shortcode("sc_logout", "logout");
-function logout()
-{
-    echo "<form method='post'><button name='logout'>Logout</button></form><br>";
-
-    if(isset($_POST["logout"]))
-    {
-        session_destroy();
-        echo "<html>
-                <head>
-                    <meta http-equiv=\"refresh\" content=\"1; URL=http://127.0.0.1/wordpress/login-test/\">
-                </head>
-              </html>";
-
-    }
-
-
-}
 // noch auslagern....
 function encrypt($key, $string)
 {
