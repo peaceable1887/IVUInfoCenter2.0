@@ -9,8 +9,8 @@ add_shortcode("sc_login", "login");
 
 function login()
 {
-    include ("Database/ivu-dbCon.php");
-    include ("Sql/Users/Login/loadUser.php");
+    include_once ("Database/ivu-dbCon.php");
+    include_once ("Sql/Users/Login/loadUser.php");
 
     session_start();
     $dbCon = new infoCenterDbCon();
@@ -50,9 +50,9 @@ add_shortcode("sc_loginSuccess", "loginSuccess");
 
 function loginSuccess()
 {
-    include ("Database/ivu-dbCon.php");
-    include ("Sql/Users/Login/loadUser.php");
-    include ("Sql/Einstellungen/loadProfilData/loadProfilData.php");
+    include_once ("Database/ivu-dbCon.php");
+    include_once ("Sql/Users/Login/loadUser.php");
+    include_once ("Sql/Einstellungen/loadProfilData/loadProfilData.php");
 
     session_start();
     if(!isset($_SESSION['userid'])) {

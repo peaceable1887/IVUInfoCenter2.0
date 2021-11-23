@@ -151,7 +151,7 @@ add_shortcode("sc_headline", "headline");
 
 function headline()
 {
-    include "css/style.php";
+    include_once "css/style.php";
 
     $localPort = "http://127.0.0.1";
 
@@ -219,7 +219,7 @@ add_shortcode("sc_filterOptions","filterOptions");
 
 function filterOptions()
 {
-    include "css/btn.style.php";
+    include_once "css/btn.style.php";
 
     echo "<div class='filterOptions'>
               <div class='dropdown'>

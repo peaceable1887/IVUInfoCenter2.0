@@ -11,8 +11,8 @@ add_shortcode("shortcode_sortByDateOrSubject", "sortByDateOrSubject");
 
 function sortByDateOrSubject()
 {
-    include("css/btn.style.php");
-    include ("css/AkademieEvents/akademieEvents.php");
+    include_once("css/btn.style.php");
+    include_once("css/AkademieEvents/akademieEvents.php");
 
     echo "<div class='selectFields'>
             <div class=\"dropdown\">
@@ -36,9 +36,9 @@ add_shortcode("sc_loadUpcommingEvents", "loadUpcommingEvents");
 
 function loadUpcommingEvents()
 {
-    include ("Database/ivu-dbCon.php");
-    include ("css/AkademieEvents/akademieEvents.php");
-    include ("Sql/AkademieEvents/allEvents/sqlQueryAllEvents.php");
+    include_once("Database/ivu-dbCon.php");
+    include_once("css/AkademieEvents/akademieEvents.php");
+    include_once("Sql/AkademieEvents/allEvents/sqlQueryAllEvents.php");
 
     $dbCon = new infoCenterDbCon();
     $sqlStatement = new sqlQueryAllEvents();
@@ -103,7 +103,7 @@ add_shortcode("sc_pageNumber", "pageNumber");
 
 function pageNumber()
 {
-    include "css/AkademieEvents/akademieEvents.php";
+    include_once"css/AkademieEvents/akademieEvents.php";
 
     //noch unfertig!
     echo "<div class='paginationContainer'>
@@ -118,10 +118,12 @@ add_shortcode("shortcode_buchung_seminarBlock", "buchung_seminarBlock");
 
 function buchung_seminarBlock()
 {
-    include ("css/style.php");
-    include("main/AkademieEvents/tile/tile_picture.php");
-    include("Sql/AkademieEvents/tile/loadTileContent.php");
-    include ("Database/ivu-dbCon.php");
+    include_once("css/style.php");
+    include_once("main/AkademieEvents/tile/tile_picture.php");
+    include_once("Sql/AkademieEvents/tile/loadTileContent.php");
+    include_once("Sql/AkademieEvents/allEvents/sqlQueryAllEvents.php");
+    include_once("Database/ivu-dbCon.php");
+    include_once"model/AkademieEvents/semTile.php";
 
     //Anzahl der Termine
     $recordCount = $_SESSION["recordList"];
@@ -151,26 +153,26 @@ function buchung_seminarBlock()
             }
 
             $seminarName = utf8_encode($arCur["Seminar_Name"]);
+
             $startDate = utf8_encode($arCur["Event_StartDate"]);
             $startDateConvert = strtotime($startDate);
             $newStartDate = date("d.",$startDateConvert);
+
             $endDate = utf8_encode($arCur["Event_EndDate"]);
             $endDateConvert = strtotime($endDate);
             $newEndDate = date("d.m.Y",$endDateConvert);
 
-            $fieldTest = new tile_picture();
-            $fieldTest->tile_picture_comp($arCur["Field_Name"]);
-            $fieldPicture = $fieldTest->tile_picture_comp($arCur["Field_Name"]); //kann eig. raus...
+            $fieldName = utf8_encode($arCur["Field_Name"]);
+            $typeName = utf8_encode($arCur["Type_Name"]);
 
-            echo "<div id='seminarBlock'><p class='seminarBlockText'><div class='seminarBlockTextVar'>"
-                . " - " . $arCur["Field_Name"]. " - " . "</div>";
-            echo "<div class='seminarBlockTextVar'><h4>" .  $seminarName . "</h4></div>";
-            echo "<p class='seminarBlockText'>";
-            echo "<div class='seminarBlockTextVar' style='float: left;'>" . $newStartDate . "-".$newEndDate." </div>";
+            $_SESSION["linkVarCount"] = $i;
 
-            echo "</p><br><p class='seminarBlockText'>";
-            echo "<div class='seminarBlockTextVar' style='float: left; line-height: 0.01;'>" . utf8_encode($arCur["Type_Name"]) . "</div>";
-            echo "</p></div>";
+            $semTile = new semTile($fieldName, $seminarName, $newStartDate,
+                $newEndDate,utf8_encode($arCur["Event_Location"]), $typeName , $_SESSION["linkVarCount"]);
+
+
+
+            echo $semTile->__toString();
 
         }
 
@@ -183,7 +185,7 @@ add_shortcode("shortcode_buchung_beschreibung", "buchung_beschreibung");
 
 function buchung_beschreibung()
 {
-    include ("Sql/AkademieEvents/contentDescription/loadDescription.php");
+    include_once("Sql/AkademieEvents/contentDescription/loadDescription.php");
 
     //Anzahl der Termine
     $recordCount = $_SESSION["recordList"];
@@ -215,7 +217,7 @@ add_shortcode("shortcode_buchung_inhalt", "buchung_inhalt");
 
 function buchung_inhalt()
 {
-    include ("Sql/AkademieEvents/contentMatter/loadMatter.php");
+    include_once("Sql/AkademieEvents/contentMatter/loadMatter.php");
 
     //Anzahl der Termine
     $recordCount = $_SESSION["recordList"];
@@ -256,7 +258,7 @@ add_shortcode("shortcode_buchung_zielgruppe", "buchung_zielgruppe");
 
 function buchung_zielgruppe()
 {
-    include ("Sql/AkademieEvents/contentTargetGroup/loadTargetGroup.php");
+    include_once("Sql/AkademieEvents/contentTargetGroup/loadTargetGroup.php");
 
     //Anzahl der Termine
     $recordCount = $_SESSION["recordList"];
@@ -288,7 +290,7 @@ add_shortcode("shortcode_buchung_voraussetzungen", "buchung_voraussetzungen");
 
 function buchung_voraussetzungen()
 {
-    include ("Sql/AkademieEvents/contentRequirement/loadRequirement.php");
+    include_once("Sql/AkademieEvents/contentRequirement/loadRequirement.php");
 
     //Anzahl der Termine
     $recordCount = $_SESSION["recordList"];
@@ -320,7 +322,7 @@ add_shortcode("shortcode_buchung_button_zurBuchung", "buchung_button_zurBuchung"
 
 function buchung_button_zurBuchung()
 {
-    include ("css/buchung.php");
+    include_once("css/buchung.php");
 
     //Anzahl der Termine
     $recordCount = $_SESSION["recordList"];
@@ -340,7 +342,7 @@ add_shortcode("shortcode_information_teilnehmendePerson", "information_teilnehme
 
 function information_teilnehmendePerson()
 {
-    include ("css/buchung.php");
+    include_once("css/buchung.php");
     ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Funktion muss noch ausgelagert werden. -->
@@ -421,7 +423,6 @@ Bei weniger als 5 Teilnehmern behält sich die IVU das Recht vor, eine Schulung 
 Bei Rückfragen kontaktieren Sie uns bitte unter seminar@ivugmbh.de.</span>";
 
 }
-
 
 ?>
 

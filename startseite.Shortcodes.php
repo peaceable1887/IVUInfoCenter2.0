@@ -10,7 +10,7 @@ add_shortcode("sc_btnSupportRequest","btnSupportRequest");
 
 function btnSupportRequest()
 {
-    include ("css/buchung.php");
+    include_once ("css/buchung.php");
 
     $localPort = "http://127.0.0.1";
 //button noch in variable speichern und auslagern
@@ -132,29 +132,51 @@ add_shortcode("sc_sliderCurrentSeminare", "sc_sliderCurrentSeminare");
 
 function sc_sliderCurrentSeminare()
 {
-    include "css/slider.php";
-    include "css/buchung.php";
+    include_once "Database/ivu-dbCon.php";
+    include_once "css/slider.php";
+    include_once "css/buchung.php";
+    include_once "model/AkademieEvents/semTile.php";
+    include_once ("css/AkademieEvents/akademieEvents.php");
+    include_once("Sql/AkademieEvents/tile/loadTileContent.php");
 
-    echo " 
-<div class=\"slideshow-container\">
+    $dbCon = new infoCenterDbCon();
+    $sqlStatement = new loadTileContent();
+    $currentDate = date("Y-m-d");
 
- 
-  <div class=\"mySlides fade\">
-   
-    <!-- Inhalt fehlt noch -->
-  </div>
+    $sql = $sqlStatement->tile_content($currentDate);
+    $sqlRes = mysqli_query($dbCon, $sql);
 
-  <div class=\"mySlides fade\">
+    $recordCount = mysqli_num_rows($sqlRes);
 
-    <!-- Inhalt fehlt noch -->
-  </div>
+    echo "<div class=\"slideshow-container\">";
 
-  <div class=\"mySlides fade\">
+    for ($i = 0;$i <= $recordCount ;$i++)
+    {
+        echo "<div class=\"mySlides fade\">";
 
-    <!-- Inhalt fehlt noch -->
-  </div>
 
-  <a class=\"arrows prev\" onclick=\"plusSlides(-1)\"></a>
+        for ($x = 0;$x < 3 ;$x++)
+        {
+            $arCur = mysqli_fetch_array($sqlRes);
+
+            $seminarName = utf8_encode($arCur["Seminar_Name"]);
+            $startDate = utf8_encode($arCur["Event_StartDate"]);
+            $startDateConvert = strtotime($startDate);
+            $newStartDate = date("d.", $startDateConvert);
+            $endDate = utf8_encode($arCur["Event_EndDate"]);
+            $endDateConvert = strtotime($endDate);
+            $newEndDate = date("d.m.Y", $endDateConvert);
+            $fieldName = utf8_encode($arCur["Field_Name"]);
+            $typeName = utf8_encode($arCur["Type_Name"]);
+
+            $semTile = new semTile($fieldName, $seminarName, $newStartDate,
+                $newEndDate, utf8_encode($arCur["Event_Location"]), $typeName, $x);//Funktioniert noch nicht ganz, werden immer die ersten 3 incrementiert
+
+            echo $semTile->__toString();
+        }
+        echo"</div>";
+    }
+ echo" <a class=\"arrows prev\" onclick=\"plusSlides(-1)\"></a>
   <a class=\"arrows next\" onclick=\"plusSlides(1)\"></a>
   <button class='buttonConfirm' style='width: 350px;margin: 0;
   position: absolute;
@@ -206,7 +228,7 @@ add_shortcode("sc_startseiteButtons", "startseiteButtons");
 
 function startseiteButtons()
 {
-    include "css/startseite/startseite.php";
+    include_once "css/startseite/startseite.php";
 
     echo "<p><button class='btnStartseite'>Click Me1</button></p>";
 }

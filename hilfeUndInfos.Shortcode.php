@@ -10,7 +10,7 @@ add_shortcode("sc_helpAndInfos", "helpAndInfos");
 
 function helpAndInfos()
 {
-    include "css/Hilfe und Infos/helpAndInfos.php";
+    include_once "css/Hilfe und Infos/helpAndInfos.php";
 
     echo "<div class='mainContainer'>
             <div class='infoText'><p>Die telefonische Hotline ist unter folgenden Nummern erreichbar (Wochentage + Uhrzeit)<p></div>

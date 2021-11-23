@@ -10,11 +10,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="Meine Supportanfragene (MeineErledigten) jetzt fertig">
+    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="Link-Menü eingebaut">
+      <change afterPath="$PROJECT_DIR$/model/AkademieEvents/semTile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sql/Supportanfragen/Meine Anfragen/loadCallContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/Supportanfragen/Meine Anfragen/myCalls_query.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/ivu-dbCon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Database/ivu-dbCon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/akademie.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/akademie.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloadCenter.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/downloadCenter.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/einstellungen.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/einstellungen.Shortcodes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/global.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/global.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hilfeUndInfos.Shortcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/hilfeUndInfos.Shortcode.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startseite.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/startseite.Shortcodes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/supportbereich.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/supportbereich.Shortcodes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,16 +68,16 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\includes\login.inc" />
+      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\images\header" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\TrashCode" />
       <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\includes" />
       <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\includes\login" />
       <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage" />
       <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\includes\login.inc" />
-      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\images\header" />
     </key>
   </component>
   <component name="TaskManager">
@@ -162,7 +168,8 @@
       <workItem from="1637167528345" duration="1009000" />
       <workItem from="1637222984995" duration="10064000" />
       <workItem from="1637319559757" duration="4163000" />
-      <workItem from="1637577835408" duration="3401000" />
+      <workItem from="1637577835408" duration="22646000" />
+      <workItem from="1637665669444" duration="1557000" />
     </task>
     <task id="LOCAL-00001" summary="weiterer Push des Codes">
       <created>1637168082069</created>
@@ -178,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637239317998</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Link-Menü eingebaut">
+      <created>1637584587468</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1637584587468</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,13 +213,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="weiterer Push des Codes" />
     <MESSAGE value="Meine Supportanfragene (MeineErledigten) jetzt fertig" />
-    <option name="LAST_COMMIT_MESSAGE" value="Meine Supportanfragene (MeineErledigten) jetzt fertig" />
+    <MESSAGE value="Link-Menü eingebaut" />
+    <option name="LAST_COMMIT_MESSAGE" value="Link-Menü eingebaut" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="526" y="101" key="#com.intellij.ide.util.MemberChooser" timestamp="1630660226549">
+    <state x="526" y="101" key="#com.intellij.ide.util.MemberChooser" timestamp="1637586155964">
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="526" y="101" key="#com.intellij.ide.util.MemberChooser/0.0.1440.770/2880.0.1680.1010@0.0.1440.770" timestamp="1630660226549" />
+    <state x="526" y="101" key="#com.intellij.ide.util.MemberChooser/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637586155964" />
     <state x="3284" y="162" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1634805181559">
       <screen x="2880" y="0" width="1920" height="1040" />
     </state>
@@ -233,18 +249,18 @@
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="380" y="83" key="Github.UntrackedFilesDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637167842220" />
-    <state x="368" y="213" key="NewPhpClassDialog" timestamp="1637077232199">
+    <state x="368" y="213" key="NewPhpClassDialog" timestamp="1637586021058">
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="368" y="213" key="NewPhpClassDialog/0.0.1440.770/2880.0.1680.1010@0.0.1440.770" timestamp="1633007937305" />
-    <state x="368" y="213" key="NewPhpClassDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637077232199" />
-    <state x="3635" y="424" key="NewPhpFileDialog" timestamp="1637238591606">
-      <screen x="2880" y="0" width="1920" height="1040" />
+    <state x="368" y="213" key="NewPhpClassDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637586021058" />
+    <state x="566" y="314" key="NewPhpFileDialog" timestamp="1637585612310">
+      <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="566" y="314" key="NewPhpFileDialog/0.0.1440.770/2880.0.1680.1010@0.0.1440.770" timestamp="1634135064335" />
     <state x="566" y="314" key="NewPhpFileDialog/0.0.1440.770/2880.0.1920.1040@0.0.1440.770" timestamp="1636020354157" />
     <state x="3635" y="424" key="NewPhpFileDialog/0.0.1440.770/2880.0.1920.1040@2880.0.1920.1040" timestamp="1637238591606" />
-    <state x="566" y="314" key="NewPhpFileDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637149974431" />
+    <state x="566" y="314" key="NewPhpFileDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637585612310" />
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1637079706040" />
     <state x="1007" y="571" key="NewPhpFileDialog/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1631696357227" />
     <state x="222" y="30" key="SettingsEditor" timestamp="1637167620167">
@@ -257,20 +273,20 @@
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1440.770/2880.0.1680.1010@0.0.1440.770" timestamp="1629719594577" />
-    <state x="3297" y="159" key="Vcs.Push.Dialog.v2" timestamp="1637239326418">
-      <screen x="2880" y="0" width="1920" height="1040" />
+    <state x="313" y="118" key="Vcs.Push.Dialog.v2" timestamp="1637584601670">
+      <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="3297" y="159" key="Vcs.Push.Dialog.v2/0.0.1440.770/2880.0.1920.1040@2880.0.1920.1040" timestamp="1637239326418" />
-    <state x="313" y="118" key="Vcs.Push.Dialog.v2/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637168134071" />
+    <state x="313" y="118" key="Vcs.Push.Dialog.v2/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637584601670" />
     <state x="93" y="93" width="1253" height="583" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1630325454328">
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="93" y="93" width="1253" height="583" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.770/2880.0.1680.1010@0.0.1440.770" timestamp="1630325454328" />
-    <state x="406" y="183" key="run.anything.popup" timestamp="1636560530642">
+    <state x="407" y="184" key="run.anything.popup" timestamp="1637590359168">
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="404" y="181" key="run.anything.popup/0.0.1440.770/2880.0.1680.1010@0.0.1440.770" timestamp="1632989097641" />
-    <state x="406" y="183" key="run.anything.popup/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1636560530642" />
+    <state x="407" y="184" key="run.anything.popup/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637590359168" />
     <state x="405" y="136" width="672" height="634" key="search.everywhere.popup" timestamp="1635437785198">
       <screen x="0" y="0" width="1440" height="770" />
     </state>

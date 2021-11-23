@@ -11,10 +11,10 @@ add_shortcode("sc_profilSettings", "profilSettings");
 
 function profilSettings()
 {
-    include "css/buchung.php";
-    include ("Database/ivu-dbCon.php");
-    include ("Sql/Users/Login/loadUser.php");
-    include ("Sql/Einstellungen/loadProfilData/loadProfilData.php");
+    include_once "css/buchung.php";
+    include_once ("Database/ivu-dbCon.php");
+    include_once ("Sql/Users/Login/loadUser.php");
+    include_once ("Sql/Einstellungen/loadProfilData/loadProfilData.php");
 
     $dbCon = new infoCenterDbCon();
     $userData = new loadProfilData();

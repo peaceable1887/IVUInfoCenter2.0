@@ -11,8 +11,8 @@ add_shortcode("sc_mySupportRequest", "mySupportRequest");
 
 function mySupportRequest()
 {
-    include ("Database/ivu-dbCon.php");
-    include ("css/style.php");
+    include_once ("Database/ivu-dbCon.php");
+    include_once ("css/style.php");
 
     echo "<table style='font-family: roboto condensed;font-size: 17px'>\n";
     echo "<tr>\n";
@@ -41,9 +41,9 @@ add_shortcode("sc_createSupportRequest", "createSupportRequest");
 
 function createSupportRequest()
 {
-    include ("css/buchung.php");
-    include ("css/style.php");
-    include ("css/Supportbereich/neueSupportanfrage.php");
+    include_once ("css/buchung.php");
+    include_once ("css/style.php");
+    include_once ("css/Supportbereich/neueSupportanfrage.php");
 
     echo "<div class='formContainer'>
             <table id='formular'>
@@ -101,9 +101,9 @@ add_shortcode("sc_expandSupportRequest", "expandSupportRequest" );
 
 function expandSupportRequest()
 {
-    include ("css/buchung.php");
-    include ("css/style.php");
-    include ("css/Supportbereich/neueSupportanfrage.php");
+    include_once ("css/buchung.php");
+    include_once ("css/style.php");
+    include_once ("css/Supportbereich/neueSupportanfrage.php");
 
     echo "<div class='formContainer'>
             <table id='formular'>
@@ -160,9 +160,9 @@ add_shortcode("sc_supportRequestTicket", "supportRequestTicket" );
 
 function supportRequestTicket()
 {
-    include ("css/buchung.php");
-    include ("css/style.php");
-    include ("css/Supportbereich/supportRequestTicket.php");
+    include_once ("css/buchung.php");
+    include_once ("css/style.php");
+    include_once ("css/Supportbereich/supportRequestTicket.php");
 
     echo "<div class='ticketContainer'>
            "; include('HTML/Supportbereich/overlays.php');
@@ -214,7 +214,7 @@ add_shortcode("sc_menuDownloadCenter","menuDownloadCenter");
 
 function menuDownloadCenter()
 {
-    include "css/btn.style.php";
+    include_once "css/btn.style.php";
 
     echo "<table class='menuDownloadCenter'>
             <th><button>Meine offenen</button></th>
@@ -228,9 +228,9 @@ add_shortcode("sc_tableDownloadCenter", "tableDownloadCenter");
 
 function tableDownloadCenter()
 {
-    include "Database/ivu-dbCon.php";
-    include "css/table.style.php";
-    include "Sql/Supportanfragen/Meine Anfragen/myCalls_query.php";
+    include_once "Database/ivu-dbCon.php";
+    include_once "css/table.style.php";
+    include_once "Sql/Supportanfragen/Meine Anfragen/myCalls_query.php";
 
     $dbCon = new infoCenterDbCon();
     $sqlStatement = new myCalls_query();

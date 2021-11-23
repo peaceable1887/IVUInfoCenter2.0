@@ -43,9 +43,9 @@ add_shortcode("shortcode_downloadOverview", "showDownloadOverview");
 
 function showDownloadOverview()
 {
-    include ("Database/ivu-dbCon.php");
-    include ("css/style.php");
-    include ("Sql/Downloads/downloadTable/loadTableContent.php");
+    include_once ("Database/ivu-dbCon.php");
+    include_once ("css/style.php");
+    include_once ("Sql/Downloads/downloadTable/loadTableContent.php");
 
     $dbConTest = new infoCenterDbCon();
     $sqlStatement = new loadTableContent();
