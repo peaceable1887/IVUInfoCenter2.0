@@ -47,11 +47,15 @@
         padding: 20px 0 20px 0;
         border-collapse: collapse;
     }
+    h5
+    {
+        margin-bottom: 20px;
+    }
     h5, th
     {
         padding-bottom: 10px;
     }
-    h5, tr
+    tr
     {
         border-bottom: 1px solid grey;
     }

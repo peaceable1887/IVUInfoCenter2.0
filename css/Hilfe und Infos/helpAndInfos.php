@@ -22,9 +22,12 @@
         width: 100%;
         height: 50px;
         padding: 6px 0 20px 50px;
+        margin: 0 0 50px 0;
         font-size: 24px;
         color: #b72a37;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+        box-shadow: 0px 8px 5px 0px rgba(157,157,156,0.75);
+        -webkit-box-shadow: 0px 8px 5px 0px rgba(157,157,156,0.75);
+        -moz-box-shadow: 0px 8px 5px 0px rgba(157,157,156,0.75);
     }
     .callNumberCollections
     {

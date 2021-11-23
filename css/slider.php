@@ -4,7 +4,7 @@
     /* Slideshow container */
     .slideshow-container {
         max-width: 100%;
-        height: 400px;
+        height: 430px;
         background-image: url("http://127.0.0.1/wordpress/wp-content/uploads/2021/07/Header_Welle_1900x600.png");
         position: relative;
         margin: 0;

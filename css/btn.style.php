@@ -1,4 +1,41 @@
 <style>
+    /*-------Buttons Menu-------*/
+    .btnMenuContainer
+    {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .btnMenuSubContainer
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .btnMenuSubContainer button
+    {
+        background-color: white;
+        border: 1px solid #9d9d9c;
+        margin: 15px 30px 0 30px;
+        height: 200px;
+        width: 350px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    .btnMenuSubContainer img
+    {
+        width: 100%;
+        height: fit-content;
+    }
+    .btnText
+    {
+        color: #706f6f;
+        width: 100%;
+        padding-top: 15px;
+        text-decoration: underline;
+    }
     /*-------Buttons and Input Design-------*/
 
     .filterOptions

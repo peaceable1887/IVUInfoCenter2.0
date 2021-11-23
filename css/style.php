@@ -54,7 +54,6 @@
         width: 400px;
         border: solid 2.5px #dadada;
         border-radius: 10px;
-        box-shadow: 10px 10px 5px #dadada;
         float: left;
         text-align: center;
         background: rgb(218,218,218);

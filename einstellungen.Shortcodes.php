@@ -12,6 +12,7 @@ add_shortcode("sc_profilSettings", "profilSettings");
 function profilSettings()
 {
     include_once "css/buchung.php";
+    include_once "css/einstellungen/einstellungen.php";
     include_once ("Database/ivu-dbCon.php");
     include_once ("Sql/Users/Login/loadUser.php");
     include_once ("Sql/Einstellungen/loadProfilData/loadProfilData.php");
@@ -31,7 +32,7 @@ function profilSettings()
 
 
     echo "<div class='formContainer'><details open>
-            <summary style='color: #b72a37;'>Änderung Ihres Profils</summary>
+            <summary>Änderung Ihres Profils</summary>
             <table id='formular'>
                  <tr>
                     <th>Anrede*<br><input class='formInput' name='vorname' value='". $_SESSION["User_Gender"]."'></th>
@@ -75,7 +76,7 @@ function profilSettings()
           </details></div>";
 
     echo "<div class='formContainer'><details>
-            <summary style='color: #b72a37;'>Abweichende Anschrift zur Unternehmensadresse</summary>
+            <summary>Abweichende Anschrift zur Unternehmensadresse</summary>
             <table id='formular'>
                  <tr>
                     <th>Straße und Hausnummer<br><input class='formInput' name='vorname' value=''></th>
@@ -95,7 +96,7 @@ function profilSettings()
           </details></div>";
 
     echo "<div class='formContainer'><details>
-            <summary style='color: #b72a37;'>Meine Interessen</summary>
+            <summary>Meine Interessen</summary>
             <table id='formular' >
                  <tr>
                     <th style='border: hidden'>Welche Art von Informationen dürfen wir Ihnen zusenden?</th>
@@ -151,7 +152,7 @@ function profilSettings()
           </details></div>";
 
     echo "<div class='formContainer'><details>
-            <summary style='color: #b72a37;'>Änderung Ihrer Zugangsdaten</summary>
+            <summary>Änderung Ihrer Zugangsdaten</summary>
             <table id='formular'>
                  <tr>
                     <th>Benutzername*<br><input class='formInput' name='vorname' value=''></th>

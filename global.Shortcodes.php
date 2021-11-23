@@ -11,6 +11,8 @@ add_shortcode("sc_siteDirection", "siteDirection");
 
 function siteDirection()
 {
+    include_once "css/global/siteDirection.php";
+
     $localPort = "http://127.0.0.1";
 
     $links = array
@@ -44,81 +46,84 @@ function siteDirection()
     }
     else if($localPort.$_SERVER['REQUEST_URI'] === $links["settings"])
     {
-        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
-            "<a href=\"http://127.0.0.1/wordpress/einstellungen/\">Einstellungen</a>";
+        echo "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/einstellungen/\">Einstellungen</a></div>";
     }
     else if($localPort.$_SERVER['REQUEST_URI'] === $links["akademie"]["akademieStartseite"])
     {
-        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
-            "<a href=\"http://127.0.0.1/wordpress/akademie-events/\">Akademie und Events</a>";
+        echo "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events/\">Akademie und Events</a></div>";
     }
     else if($localPort.$_SERVER['REQUEST_URI'] === $links["akademie"]["akademieUebersicht"])
     {
-        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+        echo "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
             "<a href=\"http://127.0.0.1/wordpress/akademie-events/\">Akademie und Events</a>"." > ".
-            "<a href=\"http://127.0.0.1/wordpress/akademie-events-uebersicht/\">Gesamte Kursübersicht</a>";
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-uebersicht/\">Gesamte Kursübersicht</a></div>";
     }
     else if($localPort.$_SERVER['REQUEST_URI'] === $links["akademie"]["kursuebersicht"])
     {
-        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+        echo "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
             "<a href=\"http://127.0.0.1/wordpress/akademie-events/\">Akademie und Events</a>"." > ".
-            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/\">Kursübersicht HR in Zeiten der Digitalisierung</a>";
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/\">Kursübersicht HR in Zeiten der Digitalisierung</a></div>";
     }
     else if($localPort.$_SERVER['REQUEST_URI'] === $links["akademie"]["registrierung"])
     {
-        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+        echo "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
             "<a href=\"http://127.0.0.1/wordpress/akademie-events/\">Akademie und Events</a>"." > ".
             "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/\">Kursübersicht HR in Zeiten der Digitalisierung</a>"." > ".
-            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-2/\">Registrierung</a>";
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-2/\">Registrierung</a></div>";
     }
     else if($localPort.$_SERVER['REQUEST_URI'] === $links["akademie"]["buchungErfolgreich"])
     {
-        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+        echo "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
             "<a href=\"http://127.0.0.1/wordpress/akademie-events/\">Akademie und Events</a>"." > ".
             "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/\">Kursübersicht HR in Zeiten der Digitalisierung</a>"." > ".
             "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-2/\">Registrierung</a>"." > ".
-            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-3/\">Buchung erfolgreich</a>";
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-3/\">Buchung erfolgreich</a></div>";
     }
     else if($localPort.$_SERVER['REQUEST_URI'] === $links["downloads"])
     {
-        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
-            "<a href=\"http://127.0.0.1/wordpress/downloads/\">Download Center</a>";
+        echo "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/downloads/\">Download Center</a></div>";
     }
     else if($localPort.$_SERVER['REQUEST_URI'] === $links["supportanfrage"]["supportCenter"])
     {
-        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
-            "<a href=\"http://127.0.0.1/wordpress/support-anfragen/\">Support Center</a>";
+        echo "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/support-anfragen/\">Support Center</a></div>";
     }
     else if($localPort.$_SERVER['REQUEST_URI'] === $links["supportanfrage"]["overviewSupportcall"])
     {
-        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+        echo "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
             "<a href=\"http://127.0.0.1/wordpress/support-anfragen/\">Support Center</a>". " > " .
-    "<a href=\"http://127.0.0.1/wordpress/uebersicht-supportanfragen/\">Übersicht Supportanfragen</a>";
+    "<a href=\"http://127.0.0.1/wordpress/uebersicht-supportanfragen/\">Übersicht Supportanfragen</a></div>";
     }
     else if($localPort.$_SERVER['REQUEST_URI'] === $links["supportanfrage"]["newSupportcall"])
     {
-        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
-            "<a href=\"http://127.0.0.1/wordpress/neue-supportanfrage/\">Neue Supportanfrage</a>";
+        echo "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/support-center/\">Support Center</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/neue-supportanfrage/\">Neue Supportanfrage</a></div>";
     }
     else if($localPort.$_SERVER['REQUEST_URI'] === $links["supportanfrage"]["extendSupportData"])
     {
-        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
-            "<a href=\"http://127.0.0.1/wordpress/daten-zur-supportanfrage-ergaenzen/\">Daten zur Supportanfrage ergänzen</a>";
+        echo "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/support-center/\">Support Center</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/daten-zur-supportanfrage-ergaenzen/\">Daten zur Supportanfrage ergänzen</a></div>";
     }
     else if($localPort.$_SERVER['REQUEST_URI'] === $links["supportanfrage"]["supportcallNumber"])
     {
-        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
-            "<a href=\"http://127.0.0.1/wordpress/support-anfrage-nummer/\">Supportanfrage Nummer</a>";
+        echo "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/support-center/\">Support Center</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/support-anfrage-nummer/\">Supportanfrage Nummer</a></div>";
     }
     else if($localPort.$_SERVER['REQUEST_URI'] === $links["hilfe"])
     {
-        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
-            "<a href=\"http://127.0.0.1/wordpress/hilfe/\">Hilfe</a>";
+        echo "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/hilfe/\">Hilfe</a></div>";
     }
     else if($localPort.$_SERVER['REQUEST_URI'] === $links["infos"])
     {
-        echo "<a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
-            "<a href=\"http://127.0.0.1/wordpress/infos/\">Infos</a>";
+        echo "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/infos/\">Infos</a></div>";
     }
 }
 
@@ -237,8 +242,6 @@ function filterOptions()
               </div>
           </div>";
 }
-
-
 
 
 

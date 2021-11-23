@@ -224,11 +224,53 @@ function sc_sliderCurrentSeminare()
 
 }
 
-add_shortcode("sc_startseiteButtons", "startseiteButtons");
+add_shortcode("sc_buttonsStartseiteMenu", "buttonsStartseiteMenu");
 
-function startseiteButtons()
+function buttonsStartseiteMenu()
 {
-    include_once "css/startseite/startseite.php";
+    include_once "css/btn.style.php";
 
-    echo "<p><button class='btnStartseite'>Click Me1</button></p>";
+    echo "<div class='btnMenuContainer'>
+            <div class='btnMenuSubContainer'>
+            <a href=\"http://127.0.0.1/wordpress/einstellungen/\">
+                <button>
+                <img src=\"http://127.0.0.1/wordpress/wp-content/uploads/2021/10/akademie-bild.png\"><br>
+                <span class='btnText'>Persönliche Daten</span>
+                </button>
+            </a>
+            <a href=\"http://127.0.0.1/wordpress/akademie-events/\">
+                <button>
+                <img src=\"http://127.0.0.1/wordpress/wp-content/uploads/2021/10/akademie-bild.png\"><br>
+                <span class='btnText'>Akademie</span>
+                </button>
+            </a>
+            <a href=\"http://127.0.0.1/wordpress/downloads\">
+                <button>
+                <img src=\"http://127.0.0.1/wordpress/wp-content/uploads/2021/10/akademie-bild.png\"><br>
+                <span class='btnText'>Downloads</span>
+                </button>
+            </a>
+            </div><br>
+            <div class='btnMenuSubContainer'>
+            <a href=\"http://127.0.0.1/wordpress/hilfe\">
+                <button>
+                <img src=\"http://127.0.0.1/wordpress/wp-content/uploads/2021/10/akademie-bild.png\"><br>
+                <span class='btnText'>Hilfe</span>
+                </button>
+            </a>
+            <a href=\"http://127.0.0.1/wordpress/support-center/\">
+                <button>
+                <img src=\"http://127.0.0.1/wordpress/wp-content/uploads/2021/10/akademie-bild.png\"><br>
+                <span class='btnText'>Supportanfragen</span>
+                </button>
+            </a>
+            <a href=\"http://127.0.0.1/wordpress/infos\">
+                <button>
+                <img src=\"http://127.0.0.1/wordpress/wp-content/uploads/2021/10/akademie-bild.png\"><br>
+                <span class='btnText'>Infos</span>
+                </button>
+            </a>
+            </div>
+          </div>";
+
 }

@@ -1,7 +1,7 @@
 <?php
 
-include "../../css/overlay.php";
-include ("../../css/Supportbereich/neueSupportanfrage.php");
+include_once "css/overlay.style.php";
+include_once ("css/Supportbereich/neueSupportanfrage.php");
 
 echo "<div id='overlay' >
     <div id=\"text\">
@@ -24,11 +24,14 @@ echo "<div id='overlayNote'>
 echo "<div id='overlayInterimReport' >
     <div id=\"text\">
     <p>Möchten Sie einen Zwischenbericht anfordern?<button class='overlayBtn' onclick='offInterimReport()'>X</button></p><br>
-    <div class='btnDiv'><button class='overlayBtn'>
-                <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>
-                Ja</a><button class='overlayBtn'>
-                <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>
-                Nein</a></button></button></div>
+    <div class='btnDiv'>
+    <button class='overlayBtn'>
+        <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>Ja</a> 
+        </button>
+        <button class='overlayBtn'>
+           <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>Nein</a>
+           </button>
+       </div>
     </div>
 </div>";
 echo "<div id='overlayFile' >
@@ -149,12 +152,9 @@ echo "<div id='overlayCompleteSupportRequest'>
         document.getElementById("overlayCompleteSupportRequest").style.display = "none";
     }
 </script>
-
-<?php
-?>
 <style>
-    #overlay, #overlayNote, #overlayInterimReport, #overlayFile, #overlayAddInfos,
-    #overlayCompleteSupportRequest{
+    #overlay, #overlayNote, #overlayInterimReport, #overlayFile, #overlayAddInfos,#overlayCompleteSupportRequest
+    {
         position: fixed;
         display: none;
         width: 100%;
@@ -239,4 +239,9 @@ echo "<div id='overlayCompleteSupportRequest'>
     {
         border: none;
     }
+    }
 </style>
+<?php
+
+?>
+
