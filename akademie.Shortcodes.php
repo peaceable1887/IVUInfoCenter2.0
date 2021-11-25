@@ -56,7 +56,7 @@ function pageNumber()
 {
     include_once"css/AkademieEvents/akademieEvents.php";
 
-    //noch unfertig!
+    //noch unfertig und auslagern....
     echo "<div class='paginationContainer'>
             <span style='font-size: 16px; font-family: \"roboto condensed\"; margin-right: 10px;'>Seite</span>
           <div class=\"pagination\">            

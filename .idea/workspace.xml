@@ -10,46 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="weitere Überarbeitungen">
-      <change afterPath="$PROJECT_DIR$/controller/Akademie/Akademie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/DownloadCenter/DownloadCenter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/Einstellungen/Einstellungen.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/Global/GlobalContent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/Login/Login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/Startseite/Startseite.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/Supportbereich/Supportbereich.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/info_sem_type.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/Akademie/BuchungText.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/Akademie/Filter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/Akademie/Menu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/Akademie/TeilnehmendePerson.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/DownloadCenter/DownloadFilter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/Einstellungen/ProfilEditieren.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/Global/GlobalFilter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/Global/LinkVerzeichnis.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/Hilfe und Infos/HilfeUndInfos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/Startseite/ButtonSupportanfrage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/Startseite/MenuStartseite.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/Supportbereich/ErgaenzeSupportanfrage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/Supportbereich/ErstelleSupportanfrage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/Supportbereich/MeineSupportanfragen.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/Supportbereich/TicketUebersicht.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="grosses Refactoring durchgeführt">
       <change beforePath="$PROJECT_DIR$/akademie.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/akademie.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/AkademieEvents/showAllEvents.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Hilfe und Infos/helpAndInfos.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Hilfe und Infos/helpAndInfos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/btn.style.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/btn.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloadCenter.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/downloadCenter.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/einstellungen.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/einstellungen.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/global.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hilfeUndInfos.Shortcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/hilfeUndInfos.Shortcode.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/AkademieEvents/info_sem.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/info_sem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/AkademieEvents/info_sem_event.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/info_sem_event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/AkademieEvents/info_sem_field.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/info_sem_field.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/AkademieEvents/semTile.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/semTile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startseite.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/startseite.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supportbereich.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/supportbereich.Shortcodes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +162,7 @@
       <workItem from="1637665669444" duration="18598000" />
       <workItem from="1637742149043" duration="2292000" />
       <workItem from="1637748154742" duration="441000" />
-      <workItem from="1637837011764" duration="15350000" />
+      <workItem from="1637837011764" duration="15573000" />
     </task>
     <task id="LOCAL-00001" summary="weiterer Push des Codes">
       <created>1637168082069</created>
@@ -237,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637679541202</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="grosses Refactoring durchgeführt">
+      <created>1637855794101</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1637855794101</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +230,8 @@
     <MESSAGE value="Link-Menü eingebaut" />
     <MESSAGE value="Slider überarbeitet." />
     <MESSAGE value="weitere Überarbeitungen" />
-    <option name="LAST_COMMIT_MESSAGE" value="weitere Überarbeitungen" />
+    <MESSAGE value="grosses Refactoring durchgeführt" />
+    <option name="LAST_COMMIT_MESSAGE" value="grosses Refactoring durchgeführt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="526" y="101" key="#com.intellij.ide.util.MemberChooser" timestamp="1637838343487">
@@ -321,11 +291,11 @@
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1440.770/2880.0.1680.1010@0.0.1440.770" timestamp="1629719594577" />
-    <state x="313" y="118" key="Vcs.Push.Dialog.v2" timestamp="1637679549622">
+    <state x="313" y="118" key="Vcs.Push.Dialog.v2" timestamp="1637855797786">
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="3297" y="159" key="Vcs.Push.Dialog.v2/0.0.1440.770/2880.0.1920.1040@2880.0.1920.1040" timestamp="1637239326418" />
-    <state x="313" y="118" key="Vcs.Push.Dialog.v2/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637679549622" />
+    <state x="313" y="118" key="Vcs.Push.Dialog.v2/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637855797786" />
     <state x="93" y="93" width="1253" height="583" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1630325454328">
       <screen x="0" y="0" width="1440" height="770" />
     </state>
