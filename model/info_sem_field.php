@@ -1,11 +1,11 @@
 <?php
 class info_sem_field
 {
-    public $Field_ID_alt;
-    public $Field_ID;
-    public $Field_Name;
-    public $Field_SemPath;
-    public $Field_Deleted;
+    private $Field_ID_alt;
+    private $Field_ID;
+    private $Field_Name;
+    private $Field_SemPath;
+    private $Field_Deleted;
 
     /**
      * @return mixed

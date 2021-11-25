@@ -1,22 +1,22 @@
 <?php
 class info_sem
 {
-    public $Seminar_ID;
-    public $Seminar_Number;
-    public $Seminar_Field;
-    public $Seminar_Name;
-    public $Seminar_Type;
-    public $Seminar_Description;
-    public $Seminar_Target;
-    public $Seminar_Content;
-    public $Seminar_Premises;
-    public $Seminar_Duration;
-    public $Seminar_Link;
-    public $Seminar_Partner;
-    public $Seminar_RefreshDate;
-    public $Seminar_RefreshSupportUser;
-    public $Seminar_Status;
-    public $Seminar_Deleted;
+    private $Seminar_ID;
+    private $Seminar_Number;
+    private $Seminar_Field;
+    private $Seminar_Name;
+    private $Seminar_Type;
+    private $Seminar_Description;
+    private $Seminar_Target;
+    private $Seminar_Content;
+    private $Seminar_Premises;
+    private $Seminar_Duration;
+    private $Seminar_Link;
+    private $Seminar_Partner;
+    private $Seminar_RefreshDate;
+    private $Seminar_RefreshSupportUser;
+    private $Seminar_Status;
+    private $Seminar_Deleted;
 
     /**
      * @return mixed

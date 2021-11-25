@@ -27,14 +27,15 @@
     .btnMenuSubContainer img
     {
         width: 100%;
-        height: fit-content;
+        height: 120px;
+        object-fit: none;
     }
     .btnText
     {
         color: #706f6f;
         width: 100%;
-        padding-top: 15px;
-        text-decoration: underline;
+        font-size: 22px;
+        line-height: 30px;
     }
     /*-------Buttons and Input Design-------*/
 

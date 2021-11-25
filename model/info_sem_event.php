@@ -1,13 +1,13 @@
 <?php
 class info_sem_event
 {
-    public $Event_ID;
-    public $Event_Seminar;
-    public $Event_StartDate;
-    public $Event_EndDate;
-    public $Event_Location;
-    public $Event_Note;
-    public $Event_SupportUser;
+    private $Event_ID;
+    private $Event_Seminar;
+    private $Event_StartDate;
+    private $Event_EndDate;
+    private $Event_Location;
+    private $Event_Note;
+    private $Event_SupportUser;
 
     /**
      * @return mixed

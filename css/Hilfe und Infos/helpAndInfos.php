@@ -47,6 +47,7 @@
         box-shadow: 10px 10px 5px #dadada;
         border: 0.2px solid #9d9d9c;
         border-radius: 4px;
+        line-height: 40px;
     }
     .callEndNumber b
     {

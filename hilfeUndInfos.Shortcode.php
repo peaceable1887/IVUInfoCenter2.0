@@ -11,29 +11,16 @@ add_shortcode("sc_helpAndInfos", "helpAndInfos");
 function helpAndInfos()
 {
     include_once "css/Hilfe und Infos/helpAndInfos.php";
+    include_once "view/Hilfe und Infos/HilfeUndInfos.php";
 
-    echo "<div class='mainContainer'>
-            <div class='infoText'><p>Die telefonische Hotline ist unter folgenden Nummern erreichbar (Wochentage + Uhrzeit)<p></div>
-            <div class='infoTextNumber'><p>&#10142; Hotline Rufnummer: 040 / 30 98 30 - Durchwahl<p></div>
-            <div class='callNumberCollections'>
-                <div class='callEndNumber'>Rechenzentrum: - 00</div>
-                <div class='callEndNumber'><b>ENER:GY / EDM</b><br>
-                                            ENER:GY: - 26<br>
-                                            EDM: - 29
-                                            </div>
-                <div class='callEndNumber'><b>Technischer Support</b><br>
-                                            ORACLE: - 41<br>
-                                            UNIX: - 42<br>
-                                            Windows: - 43
-                                            </div>
-                <div class='callEndNumber'><b>Kaufmännische Module</b><br>
-                                            CSA: - 25<br>
-                                            CSF: - 22<br>
-                                            CSE: - 27<br>
-                                            CSL: - 27<br>
-                                            CSP: - 27<br>
-                                            CSV: - 27
-                                            </div>
-            </div>
-          </div>";
+    $content = new HilfeUndInfos();
+
+    echo $content->showContent();
+}
+add_shortcode("sc_helpAndInfosHB", "helpAndInfosHB");
+
+function helpAndInfosHB()
+{
+    include_once "css/Hilfe und Infos/helpAndInfos.php";
+
 }
