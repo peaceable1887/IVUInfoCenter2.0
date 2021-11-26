@@ -14,13 +14,13 @@ class Akademie
         $recordCount = mysqli_num_rows($sqlRes);
         $_SESSION["recordList"] = $recordCount;
 
-        echo "<table style='font-family: roboto condensed;font-size: 17px'>\n";
+        echo "<table>\n";
         echo "<tr>\n";
-        echo "<th style='color: #b72a37; font-weight: bold;'>Datum</th>\n";
-        echo "<th style='color: #b72a37; font-weight: bold;'>Ort</th>\n";
-        echo "<th style='color: #b72a37; font-weight: bold;'>Fachbereich</th>\n";
-        echo "<th style='color: #b72a37; font-weight: bold;'>Name</th>\n";
-        echo "<th style='color: #b72a37; font-weight: bold;'>Details</th>\n";
+        echo "<th>Datum</th>\n";
+        echo "<th>Ort</th>\n";
+        echo "<th>Fachbereich</th>\n";
+        echo "<th>Name</th>\n";
+        echo "<th>Details</th>\n";
         echo "</td>\n";
 
         for ($i = 0;$i < $recordCount;$i++)
@@ -138,7 +138,7 @@ class Akademie
                 {
                     $arCur = mysqli_fetch_array($sqlRes);
                     $arr[$x] = utf8_encode($arCur["Seminar_Description"]);
-                    echo "<span style=' font-family: \"roboto condensed\"; font-size: 17px'>".$arr[$i]."</span>";
+                    echo "<span class='semBookingDescription'>".$arr[$i]."</span>";
                 }
 
                 mysqli_close($dbCon);
@@ -172,8 +172,8 @@ class Akademie
                     {
                         if(isset($arr[$i]))
                         {
-                            echo "<img style='margin: 0 5px 3px 10px' src='http://127.0.0.1/wordpress/wp-content/uploads/2021/08/list-icon.png' width='12'>
-                              <span style=' font-family: \"roboto condensed\"; font-size: 17px'>"
+                            echo "<img class='semBookingContentImg' width='12'>
+                              <span class='semBookingContent'>"
                                 .$teilung[$z]."</span><br>";
                         }
                     }
@@ -203,7 +203,7 @@ class Akademie
                 {
                     $arCur = mysqli_fetch_array($sqlRes);
                     $arr[$x] = utf8_encode($arCur["Seminar_Target"]);
-                    echo "<span style=' font-family: \"roboto condensed\"; font-size: 17px'>".$arr[$i]."</span>";
+                    echo "<span class='semBookingTargetGrp'>".$arr[$i]."</span>";
                 }
 
                 mysqli_close($dbCon);
@@ -233,7 +233,7 @@ class Akademie
                 {
                     $arCur = mysqli_fetch_array($sqlRes);
                     $arr[$x] = utf8_encode($arCur["Seminar_Premises"]);
-                    echo "<span style=' font-family: \"roboto condensed\"; font-size: 17px'>".$arr[$i]."</span>";
+                    echo "<span class='semBookingPreCond'>".$arr[$i]."</span>";
                 }
 
                 mysqli_close($dbCon);
@@ -250,7 +250,7 @@ class Akademie
             if(isset($_GET["linkDescription".$i]))
             {
                 echo "<a id='linkDescription' href='http://127.0.0.1/wordpress/akademie-events-buchung-schritt-2/?linkDescription".$i."'
-                ><button class='buttonConfirm' style='float: right' >
+                ><button class='buttonConfirmReg'>
                 REGISTRIEREN</button></a>";
 
             }

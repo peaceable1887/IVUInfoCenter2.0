@@ -6,7 +6,7 @@
         width: 100%;
         justify-content: center;
         flex-direction: column;
-        font-family: "roboto condensed";
+        font-family: var(--fontfamily-global);
     }
     .infoText
     {
@@ -14,7 +14,7 @@
         height: 50px;
         padding: 6px 0 20px 50px;
         font-size: 24px;
-        color: #b72a37;
+        color: var(--color-ivu-red);
         border-bottom: 0.2px solid #9d9d9c;
     }
     .infoTextNumber
@@ -24,7 +24,7 @@
         padding: 6px 0 20px 50px;
         margin: 0 0 50px 0;
         font-size: 24px;
-        color: #b72a37;
+        color: var(--color-ivu-red);
         box-shadow: 0px 8px 5px 0px rgba(157,157,156,0.75);
         -webkit-box-shadow: 0px 8px 5px 0px rgba(157,157,156,0.75);
         -moz-box-shadow: 0px 8px 5px 0px rgba(157,157,156,0.75);
@@ -35,7 +35,7 @@
         justify-content: space-around;
         width: 100%;
         padding: 20px 0 20px 0;
-        color: #b72a37;
+        color: var(--color-ivu-red);
         font-weight: bold;
     }
     .callEndNumber
@@ -43,7 +43,7 @@
         width: 15%;
         height: fit-content;
         padding: 10px 0 10px 25px;
-        color: #b72a37;
+        color: var(--color-ivu-red);
         box-shadow: 10px 10px 5px #dadada;
         border: 0.2px solid #9d9d9c;
         border-radius: 4px;

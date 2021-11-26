@@ -11,8 +11,10 @@ add_shortcode("sc_profilSettings", "profilSettings");
 
 function profilSettings()
 {
-    include_once "css/buchung.php";
-    include_once "css/einstellungen/einstellungen.php";
+    include_once "css/rootSTYLE.php";
+    include_once "css/btn.style.php";
+    include_once "css/formContainerSTYLE.php";
+    include_once "css/einstellungen/einstellungenSTYLE.php";
     include_once ("Database/ivu-dbCon.php");
     include_once ("Sql/Users/Login/loadUser.php");
     include_once ("Sql/Einstellungen/loadProfilData/loadProfilData.php");

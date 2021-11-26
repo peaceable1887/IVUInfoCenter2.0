@@ -5,7 +5,7 @@ class DownloadFilter
 {
     function showSortDownloads()
     {
-        $content = "<span style='font-size: 20px; font-family: \"roboto condensed\";'>Sortiere nach:</span>
+        $content = "<span>Sortiere nach:</span>
            <form class=\"dropdown\" method='post' >
          <div class=\"dropdown\">
           <button class=\"dropbtn\">Datum</button>

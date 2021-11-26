@@ -18,10 +18,10 @@
         height: auto;
         width: auto;
         color: white;
-        background-color: #b72a37;
+        background-color: var(--color-ivu-red);
         line-height: normal;
         font-size: 16px;
-        font-family: "roboto condensed";
+        font-family: var(--fontfamily-global);
         padding: 10px;
         float: right;
     }
@@ -50,7 +50,7 @@
     }
     #text p
     {
-        color: #b72a37;
+        color: var(--color-ivu-red);
     }
     textarea
     {
@@ -85,5 +85,5 @@
     {
         border: none;
     }
-    }
+
 </style>

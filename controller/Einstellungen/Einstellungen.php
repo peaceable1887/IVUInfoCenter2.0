@@ -20,7 +20,7 @@ class Einstellungen
         $_SESSION["User_Mobile"] = utf8_encode($arCur["User_Mobile"]);
 
         echo $container->editProfil($_SESSION["User_Gender"],$_SESSION["User_Firstname"],$_SESSION["User_Surname"],
-            $_SESSION["User_Email"],$_SESSION["User_Email"],$_SESSION["User_Email"]);
+            $_SESSION["User_Email"],$_SESSION["User_Phone"],$_SESSION["User_Mobile"]);
 
         echo $container->editAddress();
 

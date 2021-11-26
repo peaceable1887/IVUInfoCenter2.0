@@ -11,7 +11,8 @@ add_shortcode("sc_siteDirection", "siteDirection");
 
 function siteDirection()
 {
-    include_once "css/global/siteDirection.php";
+    include_once "css/rootSTYLE.php";
+    include_once "css/global/siteDirectionSTYLE.php";
     include_once "view/Global/LinkVerzeichnis.php";
     include_once "controller/Global/GlobalContent.php";
 
@@ -24,6 +25,7 @@ add_shortcode("sc_userGreeting","userGreeting");
 
 function userGreeting()
 {
+    include_once "css/rootSTYLE.php";
     include_once "controller/Global/GlobalContent.php";
 
     $greeting = new GlobalContent();
@@ -35,6 +37,7 @@ add_shortcode("sc_logout", "logout");
 
 function logout()
 {
+    include_once "css/rootSTYLE.php";
     include_once "controller/Global/GlobalContent.php";
 
     $logout = new GlobalContent();
@@ -46,6 +49,7 @@ add_shortcode("sc_headline", "headline");
 
 function headline()
 {
+    include_once "css/rootSTYLE.php";
     include_once "css/style.php";
     include_once "controller/Global/GlobalContent.php";
 
@@ -67,6 +71,7 @@ add_shortcode("sc_filterOptions","filterOptions");
 
 function filterOptions()
 {
+    include_once "css/rootSTYLE.php";
     include_once "css/btn.style.php";
     include_once "view/Global/GlobalFilter.php";
 

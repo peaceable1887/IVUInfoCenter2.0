@@ -100,14 +100,7 @@ class Startseite
         }
         echo" <a class=\"arrows prev\" onclick=\"plusSlides(-1)\"></a>
   <a class=\"arrows next\" onclick=\"plusSlides(1)\"></a>
-  <button class='buttonConfirm' style='width: 350px;margin: 0;
-  position: absolute;
-  top: 90%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  background: rgba(183,42,55,0);
-  border: solid 2px white;
-  border-radius: 7px;'>
+  <button class='buttonSlider'>
                 <a href='http://127.0.0.1/wordpress/akademie-events-uebersicht/'>
                 GESAMTE KURSÜBERSICHT</a></button>
 </div>

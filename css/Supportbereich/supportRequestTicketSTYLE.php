@@ -4,7 +4,7 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        font-family: "roboto condensed";
+        font-family: var(--fontfamily-global);
         margin-bottom: 200px;
     }
     .ticketMenu
@@ -22,7 +22,7 @@
     }
     .ticketMenu nav ul li button
     {
-        color: #b72a37;
+        color: var(--color-ivu-red);
         width: 100%;
         font-size: 14px;
         background-color: white;

@@ -10,8 +10,47 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="grosses Refactoring durchgeführt">
+    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="kurz aufgeräumt">
+      <change afterPath="$PROJECT_DIR$/Trash/header.style.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/AkademieEvents/akademieEventsSTYLE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/Supportbereich/overlays.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/Supportbereich/overlays.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/akademie.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/akademie.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Akademie/Akademie.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Akademie/Akademie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/DownloadCenter/DownloadCenter.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/DownloadCenter/DownloadCenter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Einstellungen/Einstellungen.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Einstellungen/Einstellungen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Startseite/Startseite.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Startseite/Startseite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/AkademieEvents/akademieEvents.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Hilfe und Infos/helpAndInfos.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Hilfe und Infos/helpAndInfosSTYLE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Supportbereich/neueSupportanfrage.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Supportbereich/neueSupportanfrageSTYLE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Supportbereich/supportRequestTicket.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Supportbereich/supportRequestTicketSTYLE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/btn.style.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/btn.style.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/buchung.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/formContainerSTYLE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/einstellungen/einstellungen.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/einstellungen/einstellungenSTYLE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/global.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/rootSTYLE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/global/siteDirection.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/global/siteDirectionSTYLE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/header.style.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/overlay.style.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/overlay.style.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/sliderSTYLE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/startseite/startseite.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/startseite/startseiteSTYLE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/table.style.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/tableSTYLE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloadCenter.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/downloadCenter.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/einstellungen.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/einstellungen.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/global.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hilfeUndInfos.Shortcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/hilfeUndInfos.Shortcode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/semTile.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/semTile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startseite.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/startseite.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supportbereich.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/supportbereich.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Akademie/BuchungText.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Akademie/BuchungText.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Akademie/Filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Akademie/Filter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Akademie/TeilnehmendePerson.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Akademie/TeilnehmendePerson.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/DownloadCenter/DownloadFilter.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/DownloadCenter/DownloadFilter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Einstellungen/ProfilEditieren.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Einstellungen/ProfilEditieren.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Startseite/ButtonSupportanfrage.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Startseite/ButtonSupportanfrage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Supportbereich/ErgaenzeSupportanfrage.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Supportbereich/ErgaenzeSupportanfrage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Supportbereich/ErstelleSupportanfrage.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Supportbereich/ErstelleSupportanfrage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,16 +97,16 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\model" />
-      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\TrashCode" />
-      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\includes" />
-      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\includes\login" />
-      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\includes\login.inc" />
       <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\images\header" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\css" />
+      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\Trash" />
+      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\model" />
+      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\TrashCode" />
+      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\includes" />
     </key>
   </component>
   <component name="TaskManager">
@@ -162,7 +201,9 @@
       <workItem from="1637665669444" duration="18598000" />
       <workItem from="1637742149043" duration="2292000" />
       <workItem from="1637748154742" duration="441000" />
-      <workItem from="1637837011764" duration="15573000" />
+      <workItem from="1637837011764" duration="16400000" />
+      <workItem from="1637923219732" duration="8298000" />
+      <workItem from="1637934850371" duration="7515000" />
     </task>
     <task id="LOCAL-00001" summary="weiterer Push des Codes">
       <created>1637168082069</created>
@@ -206,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637855794101</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="kurz aufgeräumt">
+      <created>1637856145652</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1637856145652</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +279,8 @@
     <MESSAGE value="Slider überarbeitet." />
     <MESSAGE value="weitere Überarbeitungen" />
     <MESSAGE value="grosses Refactoring durchgeführt" />
-    <option name="LAST_COMMIT_MESSAGE" value="grosses Refactoring durchgeführt" />
+    <MESSAGE value="kurz aufgeräumt" />
+    <option name="LAST_COMMIT_MESSAGE" value="kurz aufgeräumt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="526" y="101" key="#com.intellij.ide.util.MemberChooser" timestamp="1637838343487">
@@ -245,12 +294,12 @@
     <state x="303" y="120" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.770/2880.0.1680.1010@0.0.1440.770" timestamp="1629807300742" />
     <state x="3284" y="162" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.770/2880.0.1920.1040@2880.0.1920.1040" timestamp="1634805181559" />
     <state x="303" y="8" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637850133637" />
-    <state x="3406" y="642" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1637164924720">
-      <screen x="2880" y="469" width="1680" height="1010" />
+    <state x="451" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1637935827906">
+      <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="451" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.770/2880.0.1680.1010@0.0.1440.770" timestamp="1632920342430" />
     <state x="451" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.770/2880.0.1920.1040@0.0.1440.770" timestamp="1636028535256" />
-    <state x="451" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1636455638335" />
+    <state x="451" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637935827906" />
     <state x="3406" y="642" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.770/2880.469.1680.1010@2880.469.1680.1010" timestamp="1637164924720" />
     <state x="515" y="144" key="FileChooserDialogImpl" timestamp="1637167599567">
       <screen x="0" y="0" width="1440" height="770" />
@@ -291,11 +340,11 @@
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1440.770/2880.0.1680.1010@0.0.1440.770" timestamp="1629719594577" />
-    <state x="313" y="118" key="Vcs.Push.Dialog.v2" timestamp="1637855797786">
+    <state x="313" y="118" key="Vcs.Push.Dialog.v2" timestamp="1637856154458">
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="3297" y="159" key="Vcs.Push.Dialog.v2/0.0.1440.770/2880.0.1920.1040@2880.0.1920.1040" timestamp="1637239326418" />
-    <state x="313" y="118" key="Vcs.Push.Dialog.v2/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637855797786" />
+    <state x="313" y="118" key="Vcs.Push.Dialog.v2/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637856154458" />
     <state x="93" y="93" width="1253" height="583" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1630325454328">
       <screen x="0" y="0" width="1440" height="770" />
     </state>

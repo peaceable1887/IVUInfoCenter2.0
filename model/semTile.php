@@ -43,11 +43,11 @@ class semTile
                     <div class='seminarBlockTextVar'> - ".$this->fieldName." - </div>
                     <div class='seminarBlockTextVar'><h4>".$this->semName."</h4></div>
                         <p class='seminarBlockText'>
-                    <div class='seminarBlockTextVar' style='float: left;'>" . $this->startDate .
-                                            "-".$this->endDate." | ".$this->eventLocation. " </div>
+                    <div class='seminarBlockTextVar'><span class='semTileBottomContent'>" . $this->startDate .
+                                            "-".$this->endDate." | ".$this->eventLocation. " </span></div>
                         </p><br>
                     <p class='seminarBlockText'>
-                    <div class='seminarBlockTextVar' style='float: left; line-height: 0.01;'>" . $this->typeName . "</div>
+                    <div class='seminarBlockTextVar'><span class='semTileSemType'>" . $this->typeName . "</span></div>
                     </p></div></a>";
     }
 }

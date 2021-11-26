@@ -46,7 +46,7 @@ class ErstelleSupportanfrage
                     <th>Dateianhang* <br><input id=\"fileFile\" type=\"File\" name=\"file\"></th>
                 </tr>
               </table>
-              <form style='font-size: 17px; font-family: \"roboto condensed\";'>
+              <form>
                 <span><span style='font-weight: bold'>Hinweis:</span><br>Zur Erfassung Ihrer Supportanfrage füllen Sie 
                 bitte alle Felder vollständig aus und klicken dann auf „Daten speichern“.<br><p></p><br>
                 Bitte hängen Sie ein Bildschirmfoto oder eine weiterführende Datei an Ihre Anfrage an.</span><br><br>

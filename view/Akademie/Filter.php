@@ -6,7 +6,7 @@ class Filter
     {
         $filter = "<div class='selectFields'>
             <div class=\"dropdown\">
-             <span style='font-size: 16px; font-family: \"roboto condensed\";'>Sortieren nach:</span>
+             <span>Sortieren nach:</span>
             <button class=\"dropbtn\">Datum oder Fachbereich</button>
           <div class=\"dropdown-content\">
              <input class='dropdownBtn' type=\"submit\" name=\"sortASC\" value=\"Datum\">

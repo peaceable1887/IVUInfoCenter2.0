@@ -25,7 +25,7 @@
 
     #header-headline h1
     {
-        font-family: "roboto condensed";
+        font-family: var(--fontfamily-global);
         color: white;
         text-align: left;
         font-size: 50px;
@@ -35,20 +35,22 @@
     {
         margin: 5px 0 0 0;
         font-size: 25px;
-        font-family: "roboto condensed";
+        font-family: var(--fontfamily-global);
         color: white;
         text-align: left;
     }
     .welcomeUser
     {
-       font-family: "roboto condensed";
+       font-family: var(--fontfamily-global);
     }
+
+    /*Seminar Kachel*/
     #seminarBlock
     {
         line-height: 230%;
         padding: 5px 0 0 18px;
         margin: 15px 25px 15px 0;
-        font-family: "roboto condensed";
+        font-family: var(--fontfamily-global);
         font-size: 20px;
         height: 200px;
         width: 400px;
@@ -67,17 +69,23 @@
         display:inline;
         margin:0;
     }
-    .seminarBlockTextVar, .seminarKurs h4
-    {
-        margin: 0;
-    }
     .seminarBlockText
     {
         margin: 0;
-        color: #b72a37;
+        color: var(--color-ivu-red);
         display:inline;
     }
+    .semTileBottomContent
+    {
+        float: left;
+    }
+    .semTileSemType
+    {
+        float: left;
+        line-height: 0.01;
+    }
 
+    /*kann eventuell weg*/
     table th, table td {
         padding: 10px 0 10px 0;
         text-align: left;

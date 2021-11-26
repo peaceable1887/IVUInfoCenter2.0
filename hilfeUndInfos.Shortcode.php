@@ -10,7 +10,8 @@ add_shortcode("sc_helpAndInfos", "helpAndInfos");
 
 function helpAndInfos()
 {
-    include_once "css/Hilfe und Infos/helpAndInfos.php";
+    include_once "css/rootSTYLE.php";
+    include_once "css/Hilfe und Infos/helpAndInfosSTYLE.php";
     include_once "view/Hilfe und Infos/HilfeUndInfos.php";
 
     $content = new HilfeUndInfos();
@@ -21,6 +22,7 @@ add_shortcode("sc_helpAndInfosHB", "helpAndInfosHB");
 
 function helpAndInfosHB()
 {
-    include_once "css/Hilfe und Infos/helpAndInfos.php";
+    include_once "css/rootSTYLE.php";
+    include_once "css/Hilfe und Infos/helpAndInfosSTYLE.php";
 
 }

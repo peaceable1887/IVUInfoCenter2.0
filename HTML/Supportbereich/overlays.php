@@ -1,7 +1,7 @@
 <?php
 
 include_once "css/overlay.style.php";
-include_once ("css/Supportbereich/neueSupportanfrage.php");
+include_once("css/Supportbereich/neueSupportanfrageSTYLE.php");
 
 echo "<div id='overlay' >
     <div id=\"text\">

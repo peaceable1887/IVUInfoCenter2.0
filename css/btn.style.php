@@ -1,5 +1,5 @@
 <style>
-    /*-------Buttons Menu-------*/
+    /*-------Buttons Main Menu-------*/
     .btnMenuContainer
     {
         width: 100%;
@@ -37,7 +37,7 @@
         font-size: 22px;
         line-height: 30px;
     }
-    /*-------Buttons and Input Design-------*/
+    /*-------Buttons Filter Design-------*/
 
     .filterOptions
     {
@@ -48,7 +48,7 @@
         justify-content: space-around;
     }
     .dropdown {
-        font-family: "roboto condensed";
+        font-family: var(--fontfamily-global);
         position: relative;
         display: inline-block;
     }
@@ -77,12 +77,12 @@
     }
     label
     {
-        font-family: "roboto condensed";
+        font-family: var(--fontfamily-global);
 
     }
     .dropdown-content input
     {
-        font-family: "roboto condensed";
+        font-family: var(--fontfamily-global);
         background-color: white;
         color: #575756;
         padding: 12px 16px;
@@ -94,7 +94,7 @@
     .dropdown-content input:hover
     {
         background-color: #fff;
-        color: #b72a37
+        color: var(--color-ivu-red);
     }
 
     .dropdown:hover .dropdown-content
@@ -109,7 +109,7 @@
 
     #linkDescription:hover
     {
-        color: #b72a37;
+        color: var(--color-ivu-red);
     }
     .searchField
     {
@@ -128,25 +128,78 @@
         border-radius: 7px;
     }
 
-    /*-------Download Center-------*/
+    /*----------Default Buttons----------*/
+    /*Neue Supportanfrage*/
+    .buttonHeader
+    {
+        font-size: 22px;
+        font-family: var(--fontfamily-global);
+        background-color: var(--color-ivu-red);
+        margin-top: 50px;
+        width: 350px;
+    }
+    .buttonHeaderHide
+    {
+        margin-top: 100px;
+        width: 350px;
+        background: transparent;
+        border: none !important;
+        font-size:0;
+    }
+    /*Gesamte Kursübersicht*/
+    .buttonSlider
+    {
+        width: 350px;
+        margin: 0;
+        position: absolute;
+        top: 90%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background: rgba(183,42,55,0);
+        border: solid 2px white;
+        border-radius: 7px;'
+    }
+    .buttonSlider a
+    {
+        color: white;
+    }
+    .buttonSlider:hover
+    {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .btnDiv
+    {
+        text-align: end;
+    }
+    .buttonConfirm, .buttonConfirmReg
+    {
+        height: 60px;
+        width: 210px;
+        color: white;
+        background-color: var(--color-ivu-red);
+        line-height: normal;
+        font-size: 22px;
+        font-family: var(--fontfamily-global);
+        padding: 0 40px 0 40px;
+        margin: 0 32px 0 0;
+    }
+    .buttonConfirmReg
+    {
+        float: right;
+    }
+    .buttonConfirm a, .buttonConfirmReg a
+    {
+        color: white;
+    }
+    .buttonHeader:hover,.buttonConfirm:hover, .buttonConfirmReg:hover
+    {
+        background-color: #af3843;
+        transition: all .4s ease;
+        -webkit-transition: all .4s ease;
+    }
+    #linkDescription:hover
+    {
+        color: white;
+    }
 
-    .menuDownloadCenter
-    {
-
-    }
-    .menuDownloadCenter th
-    {
-        text-align: center;
-    }
-    .menuDownloadCenter button
-    {
-        color: #b72a37;
-        width: 70%;
-        font-size: 14px;
-        background-color: white;
-        border: 2px solid #dadada;
-        border-radius: 7px;
-        text-align: center;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    }
 </style>

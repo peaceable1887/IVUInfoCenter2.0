@@ -1,7 +1,7 @@
 <style>
     .formContainer summary
     {
-        color: #b72a37;
+        color: var(--color-ivu-red);
         font-weight: bold;
     }
 </style>

@@ -56,13 +56,13 @@ class DownloadCenter
         $countDownloads = mysqli_num_rows($sqlRes);
         $_SESSION["recordListDownload"] = $countDownloads;
 
-        echo "<table  style='font-family: roboto condensed;font-size: 17px'>
+        echo "<table>
                 <tr>
-                <th style='color: #b72a37; font-weight: bold;'>ID</th>
-                <th style='color: #b72a37; font-weight: bold;'>Datum</th>
-                <th style='color: #b72a37; font-weight: bold;'>Download</th>
-                <th style='color: #b72a37; font-weight: bold;'>Kategorie</th>
-                <th style='color: #b72a37; font-weight: bold;'>Subkategorie</th>
+                <th>ID</th>
+                <th>Datum</th>
+                <th>Download</th>
+                <th>Kategorie</th>
+                <th>Subkategorie</th>
                 </tr>";
 
         for ($i = 0;$i < $countDownloads;$i++)
@@ -74,33 +74,23 @@ class DownloadCenter
 
             echo "<tr>\n";
 
-            echo "<td style='padding: 10px 20px 10px 0;
-        text-align: left;
-        vertical-align: top;'>";
+            echo "<td>";
             echo utf8_encode($arCur["Download_Number"]);
             echo "</td>\n";
 
-            echo "<td style='padding: 10px 20px 10px 0;
-        text-align: left;
-        vertical-align: top;'>\n";
+            echo "<td>\n";
             echo  $newDownloadDate;
             echo "</td>\n";
 
-            echo "<td style='padding: 10px 20px 10px 0;
-        text-align: left;
-        vertical-align: top;'>\n";
+            echo "<td>\n";
             echo "<a id='linkDescription' href='http://127.0.0.1/wordpress/download-details/?downloadSite'".$i.">".utf8_encode($arCur["Download_Subject"])."</a>";
             echo "</td>\n";
 
-            echo "<td style='padding: 10px 20px 10px 0;
-        text-align: left;
-        vertical-align: top;'>\n";
+            echo "<td>\n";
             echo utf8_encode($arCur["Field_Name"]);
             echo "</td>\n";
 
-            echo "<td style='padding: 10px 20px 10px 0;
-        text-align: left;
-        vertical-align: top;'>\n";
+            echo "<td>\n";
             echo utf8_encode($arCur["Subfield_Name"]);
             echo "</td></a>\n";
 

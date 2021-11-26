@@ -44,7 +44,7 @@ class ErgaenzeSupportanfrage
                     <th>Welche Aktion löst die Fehlermeldung aus? <br><input class='inputField' name='vorname' value=''></th>
                 </tr>
               </table>
-              <form style='font-size: 17px; font-family: \"roboto condensed\";'>
+              <form>
                 <span><span style='font-weight: bold'>Hinweis:</span><br>Zur Bearbeitung Ihrer Anfrage benötigen 
                 wir sämtliche Pflichtfelder. Weitere Informationen unterstützen uns bei<br>
                 der Bearbeitung.<br><p></p><br>

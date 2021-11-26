@@ -9,6 +9,7 @@ add_shortcode("sc_login", "login");
 
 function login()
 {
+    include_once "css/rootSTYLE.php";
     include_once ("Database/ivu-dbCon.php");
     include_once ("Sql/Users/Login/loadUser.php");
     include_once "controller/Login/Login.php";
@@ -22,6 +23,7 @@ add_shortcode("sc_loginSuccess", "loginSuccess");
 
 function loginSuccess()
 {
+    include_once "css/rootSTYLE.php";
     include_once ("Database/ivu-dbCon.php");
     include_once ("Sql/Users/Login/loadUser.php");
     include_once ("Sql/Einstellungen/loadProfilData/loadProfilData.php");

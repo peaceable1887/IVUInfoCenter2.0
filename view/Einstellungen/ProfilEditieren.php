@@ -38,7 +38,7 @@ class ProfilEditieren
                     </th>
                 </tr>
               </table>
-              <form style='font-size: 17px; font-family: \"roboto condensed\";'>
+              <form>
                 <span><span style='font-weight: bold'>Hinweis:</span><br>Bitte füllen Sie möglichst alle Felder vollständig 
                 aus und klicken dann auf „Daten speichern“. Die mit * gekennzeichneten<br> 
                       Felder sind Pflichtfelder.</span><br><br>
@@ -65,7 +65,7 @@ class ProfilEditieren
                     <th>Ort<br><input class='formInput' name='nachname' value=''></th>
                 </tr>
               </table>
-              <form style='font-size: 17px; font-family: \"roboto condensed\";'>
+              <form>
                  <br><br>
                 <div class='btnDiv'><button class='buttonConfirm'>
                 <a id='linkDescription' href=''>

@@ -19,7 +19,7 @@ class TeilnehmendePerson
                 <div class='addAttendees'><a href=\"javascript:void(0);\" class=\"add_button\" title=\"Add field\">
                         <p><span class='plusChar'>&#43   </span>weitere Teilnehmer hinzufügen</p></a></div>
               <span class='bemerkung'>Bemerkung:</span><textarea rows='4' cols='50' placeholder='Freitextfeld für z.B. abweichende Mailadresse für Bestätigung...'></textarea>
-            <form style='font-size: 17px; font-family: \"roboto condensed\";'>
+            <form>
                 <input type='checkbox' id='checkbox01'>
                 <label for='checkbox01'> Ja, ich habe die Allgemeinen Richtlinien für Schulungen gelesen *</label><br>
                 <input type='checkbox' id='checkbox02'>
