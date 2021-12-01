@@ -7,12 +7,11 @@
     .slideshow-container
     {
         max-width: 100%;
-        height: 430px;
+        height: 330px;
         background-image: url("http://127.0.0.1/wordpress/wp-content/uploads/2021/07/Header_Welle_1900x600.png");
         position: relative;
         margin: 0;
         display: flex;
-        align-items: center;
         justify-content: center;
         box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
     }
@@ -27,8 +26,7 @@
         height: 48px;
         border-color: #000;
         position: absolute;
-        top: 50%;
-        margin-top: -31px;
+        top: 32%;
         color: white;
     }
     .prev
@@ -59,6 +57,7 @@
     }
     .fade
     {
+        margin: 20px 0 0 0;
         -webkit-animation-name: fade;
         -webkit-animation-duration: 1.5s;
         animation-name: fade;

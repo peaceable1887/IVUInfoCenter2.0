@@ -150,14 +150,15 @@
     .buttonSlider
     {
         width: 350px;
-        margin: 0;
+        margin: 10px 0 0 0;
         position: absolute;
-        top: 90%;
+        top: 85%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         background: rgba(183,42,55,0);
         border: solid 2px white;
-        border-radius: 7px;'
+        border-radius: 7px;
+
     }
     .buttonSlider a
     {
