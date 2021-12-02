@@ -17,7 +17,7 @@ class MenuStartseite
                 <span class='btnText'>Akademie</span>
                 </button>
             </a>
-            <a href=\"http://127.0.0.1/wordpress/downloads\">
+            <a href=\"http://127.0.0.1/wordpress/download-center/\">
                 <button>
                 <img src=\"http://127.0.0.1/wordpress/wp-content/uploads/2021/11/AdobeStock_214202679-scaled.jpeg\"><br>
                 <span class='btnText'>Downloads</span>

@@ -18,6 +18,7 @@ function helpAndInfos()
 
     echo $content->showContent();
 }
+
 add_shortcode("sc_helpAndInfosHB", "helpAndInfosHB");
 
 function helpAndInfosHB()
@@ -25,4 +26,7 @@ function helpAndInfosHB()
     include_once "css/rootSTYLE.php";
     include_once "css/Hilfe und Infos/helpAndInfosSTYLE.php";
 
+    $content = new HilfeUndInfos();
+
+    echo $content->handbookInfo();
 }

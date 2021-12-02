@@ -27,6 +27,7 @@ function sortByDateOrSubject()
 {
     include_once "css/rootSTYLE.php";
     include_once("css/btn.style.php");
+    include_once "css/global/filterSTYLE.php";
     include_once("css/AkademieEvents/akademieEventsSTYLE.php");
     include_once "view/Akademie/Filter.php";
 

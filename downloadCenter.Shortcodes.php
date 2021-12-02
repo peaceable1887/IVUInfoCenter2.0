@@ -7,6 +7,19 @@ Author: Felix Hansmann
 */
 session_start();
 
+add_shortcode("sc_menuDownloadCenter", "menuDownloadCenter");
+
+function menuDownloadCenter()
+{
+    include_once "css/rootSTYLE.php";
+    include_once("css/btn.style.php");
+    include_once "view/DownloadCenter/MenuDownloadCenter.php";
+
+    $menu = new MenuDownloadCenter();
+
+    echo $menu->showMenu();
+}
+
 add_shortcode("shortcode_sortDownloads", "sortDownloads");
 
 function sortDownloads()
@@ -14,14 +27,14 @@ function sortDownloads()
     include_once "css/rootSTYLE.php";
     include_once("css/btn.style.php");
     include_once ("css/style.php");
+    include_once "css/global/filterSTYLE.php";
     include_once "view/DownloadCenter/DownloadFilter.php";
 
     $downloadFilter = new DownloadFilter();
 
-    echo $downloadFilter->showSortDownloads();
+    echo $downloadFilter->testshowSortDownloads();
 
 }
-
 add_shortcode("shortcode_downloadOverview", "downloadOverview");
 
 function downloadOverview()

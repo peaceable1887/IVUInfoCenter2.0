@@ -7,6 +7,19 @@ Author: Felix Hansmann
 */
 session_start();
 
+add_shortcode("sc_menuSupportrequest", "menuSupportrequest");
+
+function menuSupportrequest()
+{
+    include_once "css/rootSTYLE.php";
+    include_once("css/btn.style.php");
+    include_once "view/Supportbereich/MenuSupportanfragen.php";
+
+    $menuSupportrequest = new MenuSupportanfragen();
+
+    echo $menuSupportrequest->showMenu();
+}
+
 add_shortcode("sc_createSupportRequest", "createSupportRequest");
 
 function createSupportRequest()
@@ -58,9 +71,9 @@ function supportRequestTicket()
 
 //Übersicht Supportanfragen
 
-add_shortcode("sc_menuDownloadCenter","menuDownloadCenter");
+add_shortcode("sc_menuSupportrequestOverview","menuSupportrequestOverview");
 
-function menuDownloadCenter()
+function menuSupportrequestOverview()
 {
     include_once "css/rootSTYLE.php";
     include_once "css/btn.style.php";

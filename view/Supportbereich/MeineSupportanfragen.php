@@ -5,7 +5,7 @@ class MeineSupportanfragen
 {
     function showBtnMenu()
     {
-        $menu = "<table class='menuDownloadCenter'>
+        $menu = "<table class='menuBtnMySupportrequest'>
             <th><button>Meine offenen</button></th>
             <th><button>Unsere offenen</button></th>
             <th><button>Meine erledigten</button></th>

@@ -16,15 +16,15 @@ class ProfilEditieren
                     <th>Nachname* <input class='formInput' name='nachname' value='".$Surname."'></th>
                 </tr>
                 <tr>
-                    <th>Unternehmen* <input class='formInput' name='vorname' value=''></th>
-                    <th>E-Mail* <input class='formInput' name='nachname' value='".$eMail."'></th>
+                    <th>Unternehmen* <br><input class='formInput' name='vorname' value=''></th>
+                    <th>E-Mail* <br><input class='formInput' name='nachname' value='".$eMail."'></th>
                 </tr>
                 <tr>
                     <th>Telefon*<br><input class='formInput' name='vorname' value='".$phone."'></th>
                     <th>Mobiltelefon* <input class='formInput' name='nachname' value='".$mobil."'></th>
                 </tr>
                 <tr>
-                    <th>Abteilung* <input class='formInput' name='vorname' value=''></th>
+                    <th>Abteilung* <br><input class='formInput' name='vorname' value=''></th>
                     <th>Funktion* <input class='formInput' name='nachname' value=''></th>
                 </tr>
                 <tr>
@@ -61,7 +61,7 @@ class ProfilEditieren
                     <th></th>
                 </tr>
                 <tr>
-                    <th>Postleitzahl<input class='formInput' name='vorname' value=''></th>
+                    <th>Postleitzahl<br><input class='formInput' name='vorname' value=''></th>
                     <th>Ort<br><input class='formInput' name='nachname' value=''></th>
                 </tr>
               </table>

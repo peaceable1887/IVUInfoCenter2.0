@@ -1,5 +1,5 @@
 <?php
-
+/*besserer Pfeil &#129094; (noch einfügen)*/
 
 class HilfeUndInfos
 {
@@ -31,5 +31,16 @@ class HilfeUndInfos
           </div>";
 
         return $content;
+    }
+
+    function handbookInfo()
+    {
+        $test = "<div class='handbookInfo'>                
+                      <img src='http://127.0.0.1/wordpress/wp-content/uploads/2021/07/iconmonstr-warning-2-240.png'>
+                      <p>Handbuch zum Einstellen von Supportanfragen<br>
+                      <img src='http://127.0.0.1/wordpress/wp-content/uploads/2021/08/terminblatt.png'></img></p>         
+                 </div>";
+
+        return $test;
     }
 }
