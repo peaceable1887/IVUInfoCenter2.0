@@ -1,12 +1,13 @@
 <style>
     .filterContainer
     {
-        width: 100%;
+        width: 97%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
         height: 50px;
+        margin: 0 22px 20px 22px;
         font-family: var(--fontfamily-global);
         border-top: 1px solid var(--color-ivu-red);
         border-bottom: 1px solid var(--color-ivu-red);

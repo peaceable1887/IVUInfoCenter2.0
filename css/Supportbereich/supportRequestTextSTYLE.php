@@ -1,8 +1,11 @@
 <style>
-    .formContainer summary
+    .infoText
     {
         font-family: var(--fontfamily-global);
+        font-size: 16px;
+    }
+    .highlightedText
+    {
         color: var(--color-ivu-red);
-        font-weight: bold;
     }
 </style>

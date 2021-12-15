@@ -19,6 +19,17 @@ function menuSupportrequest()
 
     echo $menuSupportrequest->showMenu();
 }
+add_shortcode("sc_supportRequestText", "supportRequestText");
+
+function supportRequestText()
+{
+    include_once "view/Supportbereich/supportRequestTextContent.php";
+    include_once "css/Supportbereich/supportRequestTextSTYLE.php";
+
+    $text = new supportRequestTextContent();
+
+    echo $text->infoText_newSupportRequest();
+}
 
 add_shortcode("sc_createSupportRequest", "createSupportRequest");
 

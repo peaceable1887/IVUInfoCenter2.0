@@ -43,6 +43,7 @@ function downloadOverview()
     include_once ("Database/ivu-dbCon.php");
     include_once "css/tableSTYLE.php";
     include_once ("css/style.php");
+    include_once "css/global/filterSTYLE.php";
     include_once ("Sql/Downloads/downloadTable/loadTableContent.php");
     include_once "controller/DownloadCenter/DownloadCenter.php";
 
@@ -63,8 +64,23 @@ function tableDownloadCenter()
     $DCContent = new Supportbereich();
 
     $DCContent ->showTableDownloadCenter();
-
 }
 
+add_shortcode("sc_downloadContent", "downloadContent");
+
+function downloadContent()
+{
+    include_once "css/rootSTYLE.php";
+    include_once "css/DownloadCenter/downloadContentSTYLE.php";
+    include_once "css/btn.style.php";
+    include_once "view/DownloadCenter/downloadContent.php";
+    include_once "Database/ivu-dbCon.php";
+    include_once "Sql/Downloads/downloadContent/downloadDetails.php";
+    include_once "controller/DownloadCenter/DownloadCenter.php";
+
+    $DLContent = new DownloadCenter();
+
+    $DLContent ->showDownloadContent();
+}
 
 

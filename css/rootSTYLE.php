@@ -16,5 +16,7 @@
 
         /* Globale Schriftarten */
         --fontfamily-global: "roboto condensed";
+
+        /*Globale Schriftgrößen*/
     }
 </style>

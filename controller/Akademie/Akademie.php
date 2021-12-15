@@ -2,10 +2,10 @@
 
 class Akademie
 {
-    function showLoadUpcommingEvents()
+    function showLoadUpcommingEvents($db, $sqlStm)
     {
-        $dbCon = new infoCenterDbCon();
-        $sqlStatement = new sqlQueryAllEvents();
+        $dbCon = $db;
+        $sqlStatement = $sqlStm;
         $currentDate = date("Y-m-d");
 
         $sql = $sqlStatement->sqlQuery_loadASC($currentDate);

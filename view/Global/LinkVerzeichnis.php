@@ -3,6 +3,7 @@
 //links noch dynamsch gestalten....
 class LinkVerzeichnis
 {
+
     function settings()
     {
         $link = "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
@@ -32,7 +33,8 @@ class LinkVerzeichnis
     {
         $link = "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
             "<a href=\"http://127.0.0.1/wordpress/akademie-events/\">Akademie und Events</a>"." > ".
-            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/\">Kursübersicht HR in Zeiten der Digitalisierung</a></div>";
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-uebersicht/\">Gesamte Kursübersicht</a>"." > ".
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/\">Kurs buchen</a></div>";
 
         return $link;
     }
@@ -40,8 +42,8 @@ class LinkVerzeichnis
     {
         $link = "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
             "<a href=\"http://127.0.0.1/wordpress/akademie-events/\">Akademie und Events</a>"." > ".
-            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/\">Kursübersicht HR in Zeiten der Digitalisierung</a>"." > ".
-            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-2/\">Registrierung</a></div>";
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-uebersicht/\">Gesamte Kursübersicht</a>"." > ".
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/\">Kurs buchen</a></div>";
 
         return $link;
     }
@@ -49,17 +51,34 @@ class LinkVerzeichnis
     {
         $link = "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
             "<a href=\"http://127.0.0.1/wordpress/akademie-events/\">Akademie und Events</a>"." > ".
-            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/\">Kursübersicht HR in Zeiten der Digitalisierung</a>"." > ".
-            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-2/\">Registrierung</a>"." > ".
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-uebersicht/\">Gesamte Kursübersicht</a>"." > ".
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/\">Kurs buchen</a>"." > ".
             "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-3/\">Buchung erfolgreich</a></div>";
 
         return $link;
     }
 
-    function downloads()
+    function downloadCenter()
     {
         $link = "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
-            "<a href=\"http://127.0.0.1/wordpress/downloads/\">Download Center</a></div>";
+            "<a href=\"http://127.0.0.1/wordpress/download-center/\">Download Center</a></div>";
+
+        return $link;
+    }
+    function allDownloads()
+    {
+        $link = "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/download-center/\">Download Center</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/downloads/\">Alle Downloads</a></div>";
+
+        return $link;
+    }
+    function detailDownloads()
+    {
+        $link = "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/download-center/\">Download Center</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/downloads/\">Alle Downloads</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/download-details/\">Download Details</a></div>";
 
         return $link;
     }
@@ -67,14 +86,14 @@ class LinkVerzeichnis
     function supportCenter()
     {
         $link = "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
-            "<a href=\"http://127.0.0.1/wordpress/support-anfragen/\">Support Center</a></div>";
+            "<a href=\"http://127.0.0.1/wordpress/support-center/\">Support Center</a></div>";
 
         return $link;
     }
     function overviewSupportcall()
     {
         $link = "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
-            "<a href=\"http://127.0.0.1/wordpress/support-anfragen/\">Support Center</a>". " > " .
+            "<a href=\"http://127.0.0.1/wordpress/support-center/\">Support Center</a>". " > " .
             "<a href=\"http://127.0.0.1/wordpress/uebersicht-supportanfragen/\">Übersicht Supportanfragen</a></div>";
 
         return $link;

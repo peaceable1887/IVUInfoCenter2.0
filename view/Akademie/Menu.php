@@ -6,7 +6,7 @@ class Menu
     {
         $menu = "<div class='btnMenuContainer'>
             <div class='btnMenuSubContainer'>
-            <a href=\"www.google.de\">
+            <a href=\"http://127.0.0.1/wordpress/meine-gebuchten-veranstaltungen/\">
                 <button>
                 <img src=\"http://127.0.0.1/wordpress/wp-content/uploads/2021/10/akademie-bild.png\"><br>
                 <span class='btnText'>Meine gebuchten Veranstaltungen</span>

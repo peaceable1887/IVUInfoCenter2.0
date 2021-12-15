@@ -49,7 +49,7 @@
     }
     h5
     {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     h5, th
     {

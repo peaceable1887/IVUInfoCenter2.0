@@ -1,4 +1,5 @@
 <style>
+    /**/
     .formContainer
     {
         background-color:#dadada;
@@ -8,6 +9,21 @@
         margin: 0 0 20px 0;
         border-radius: 10px;
     }
+    /*Bereich Einstellungen*/
+    .formContainerSettings
+    {
+        background-color:#dadada;
+        width: 97%;
+        height: auto;
+        padding: 15px;
+        margin: 0 22px 20px 22px;
+        border-radius: 10px;
+    }
+    summary
+    {
+        color: var(--color-ivu-red);
+        font-weight: bold;
+    }
     .formContainer textarea
     {
         border: none;
@@ -15,6 +31,17 @@
         width: 96.25%;
     }
     .formContainer #checkbox01, #checkbox02, #checkbox03
+    {
+        width: 20px;
+        -ms-transform: scale(2);
+        -moz-transform: scale(2);
+        -webkit-transform: scale(2);
+        -o-transform: scale(2);
+        transform: scale(2);
+        padding: 10px;
+        margin: 0 5px 0 0;
+    }
+    .formContainerSettings #checkbox01, #checkbox02, #checkbox03
     {
         width: 20px;
         -ms-transform: scale(2);

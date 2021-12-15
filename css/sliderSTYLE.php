@@ -34,7 +34,7 @@
         border-bottom: 6px solid;
         border-left: 6px solid;
         transform: rotate(45deg);
-        left: 10px;
+        left: 40px;
         margin-left: 10px;
     }
     .next
@@ -42,7 +42,7 @@
         border-bottom: 6px solid;
         border-left: 6px solid;
         transform: rotate(-135deg);
-        right: 10px;
+        right: 40px;
         margin-right: 10px;
     }
     .text

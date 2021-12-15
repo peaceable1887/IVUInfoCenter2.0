@@ -51,7 +51,7 @@ function loadUpcommingEvents()
 
     $UEContent = new Akademie();
 
-    $UEContent->showLoadUpcommingEvents();
+    $UEContent->showLoadUpcommingEvents(new infoCenterDbCon(),new sqlQueryAllEvents());
 }
 
 //in Arbeit....
@@ -187,6 +187,19 @@ function buchungsBestaetigung()
     echo $text->bookingConfirmed();
 }
 
+add_shortcode("sc_kommendeVeranstaltungen","kommendeVeranstaltungen");
+
+function kommendeVeranstaltungen()
+{
+    echo "kommendeVeranstaltungen";
+}
+
+add_shortcode("sc_vergangeneVeranstaltungen","vergangeneVeranstaltungen");
+
+function vergangeneVeranstaltungen()
+{
+    echo "vergangeneVeranstaltungen";
+}
 ?>
 
 

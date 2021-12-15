@@ -5,7 +5,7 @@
         width: 100%;
         height: auto;
         text-align: center;
-        margin-bottom: 100px;
+        margin: 50px 0 100px 0;
     }
     .btnMenuSubContainer
     {
@@ -203,4 +203,26 @@
         color: white;
     }
 
+    /*Downloadbereich*/
+    .buttonDownload
+    {
+        height: 35px;
+        width: 210px;
+        color: white;
+        background-color: var(--color-ivu-red);
+        line-height: normal;
+        font-size: 18px;
+        font-family: var(--fontfamily-global);
+        padding: 0;
+    }
+    .buttonDownload
+    {
+        color: white;
+    }
+    .buttonDownload:hover
+    {
+        background-color: #af3843;
+        transition: all .4s ease;
+        -webkit-transition: all .4s ease;
+    }
 </style>

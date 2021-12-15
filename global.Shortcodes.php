@@ -62,7 +62,14 @@ add_shortcode("sc_subHeadline", "subHeadline");
 
 function subHeadline()
 {
-    //hier kommt die SubHeadline hin
+    include_once "css/rootSTYLE.php";
+    include_once "css/style.php";
+    include_once "css/global/subHeadlineSTYLE.php";
+    include_once "controller/Global/GlobalContent.php";
+
+    $subHeadline = new GlobalContent();
+
+    $subHeadline->showSubheadline();
 }
 
 //Sortierfilter und Suchfeld
@@ -72,12 +79,14 @@ add_shortcode("sc_filterOptions","filterOptions");
 function filterOptions()
 {
     include_once "css/rootSTYLE.php";
-    include_once "css/btn.style.php";
+    include_once("css/btn.style.php");
+    include_once ("css/style.php");
+    include_once "css/global/filterSTYLE.php";
     include_once "view/Global/GlobalFilter.php";
 
     $filter = new GlobalFilter();
 
-    echo $filter->showFilter();
+    echo $filter->showSupportRequestFilter();
 }
 
 

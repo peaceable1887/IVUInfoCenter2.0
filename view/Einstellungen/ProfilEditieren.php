@@ -4,7 +4,7 @@ class ProfilEditieren
 {
     function editProfil($gender, $firstname, $Surname, $eMail, $phone, $mobil)
     {
-        $container = "<div class='formContainer'><details open>
+        $container = "<div class='formContainerSettings'><details open>
             <summary>Änderung Ihres Profils</summary>
             <table id='formular'>
                  <tr>
@@ -25,7 +25,7 @@ class ProfilEditieren
                 </tr>
                 <tr>
                     <th>Abteilung* <br><input class='formInput' name='vorname' value=''></th>
-                    <th>Funktion* <input class='formInput' name='nachname' value=''></th>
+                    <th>Funktion* <br><input class='formInput' name='nachname' value=''></th>
                 </tr>
                 <tr>
                     <th>Meine Supportanfragen vor meinen Kollegen verbergen</th>
@@ -53,7 +53,7 @@ class ProfilEditieren
 
     function editAddress()
     {
-        $container = "<div class='formContainer'><details>
+        $container = "<div class='formContainerSettings'><details>
             <summary>Abweichende Anschrift zur Unternehmensadresse</summary>
             <table id='formular'>
                  <tr>
@@ -78,7 +78,7 @@ class ProfilEditieren
 
     function selectInterests()
     {
-        $container = "<div class='formContainer'><details>
+        $container = "<div class='formContainerSettings'><details>
             <summary>Meine Interessen</summary>
             <table id='formular' >
                  <tr>
@@ -139,7 +139,7 @@ class ProfilEditieren
 
     function editAccessData()
     {
-        $container = "<div class='formContainer'><details>
+        $container = "<div class='formContainerSettings'><details>
             <summary>Änderung Ihrer Zugangsdaten</summary>
             <table id='formular'>
                  <tr>

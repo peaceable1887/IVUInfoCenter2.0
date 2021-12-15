@@ -15,7 +15,7 @@ class MenuSupportanfragen
             <a href=\"http://127.0.0.1/wordpress/uebersicht-supportanfragen/\">
                 <button>
                 <img src=\"http://127.0.0.1/wordpress/wp-content/uploads/2021/11/AdobeStock_263755089-scaled.jpeg\"><br>
-                <span class='btnText'>Neue Supportanfrage</span>
+                <span class='btnText'>Übersicht Supportanfrage</span>
                 </button>
             </a>
             </div>

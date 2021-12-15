@@ -5,7 +5,6 @@ class DownloadCenter
 {
     function showDownloadOverview()
     {
-
         $dbConTest = new infoCenterDbCon();
         $sqlStatement = new loadTableContent();
 
@@ -21,30 +20,10 @@ class DownloadCenter
             $sqlStatement->sqlQuery_loadDownloadsDESC();
             $sql = $sqlStatement->sqlQuery_loadDownloadsDESC();
         }
-        else if(isset($_POST['sortByLoga']))
+        else if(isset($_POST['sortCategory']))
         {
-            $sqlStatement->sqlQuery_sortByLoga();
-            $sql = $sqlStatement->sqlQuery_sortByLoga();
-        }
-        else if(isset($_POST['sortByEnergy']))
-        {
-            $sqlStatement->sqlQuery_sortByEnergy();
-            $sql = $sqlStatement->sqlQuery_sortByEnergy();
-        }
-        else if(isset($_POST['sortByCsTwo']))
-        {
-            $sqlStatement->sqlQuery_sortByCsTwo();
-            $sql = $sqlStatement->sqlQuery_sortByCsTwo();
-        }
-        else if(isset($_POST['sortByBelvis']))
-        {
-            $sqlStatement->sqlQuery_sortByBelvis();
-            $sql = $sqlStatement->sqlQuery_sortByBelvis();
-        }
-        else if(isset($_POST['sortByChargeable']))
-        {
-            $sqlStatement->sqlQuery_sortByChargeable();
-            $sql = $sqlStatement->sqlQuery_sortByChargeable();
+            $sqlStatement->sqlQuery_sortByCategory();
+            $sql = $sqlStatement->sqlQuery_sortByCategory();
         }
         else
         {
@@ -63,6 +42,7 @@ class DownloadCenter
                 <th>Download</th>
                 <th>Kategorie</th>
                 <th>Subkategorie</th>
+                <th>Details</th>
                 </tr>";
 
         for ($i = 0;$i < $countDownloads;$i++)
@@ -71,11 +51,12 @@ class DownloadCenter
             $downloadDate = utf8_encode($arCur["Download_Date"]);
             $downloadDateConvert = strtotime($downloadDate);
             $newDownloadDate = date("d.m.Y",$downloadDateConvert);
+            $_SESSION[$i."downlNumber"] = utf8_encode($arCur["Download_Number"]);
 
             echo "<tr>\n";
 
             echo "<td>";
-            echo utf8_encode($arCur["Download_Number"]);
+            echo $_SESSION[$i."downlNumber"];
             echo "</td>\n";
 
             echo "<td>\n";
@@ -83,7 +64,7 @@ class DownloadCenter
             echo "</td>\n";
 
             echo "<td>\n";
-            echo "<a id='linkDescription' href='http://127.0.0.1/wordpress/download-details/?downloadSite'".$i.">".utf8_encode($arCur["Download_Subject"])."</a>";
+            echo utf8_encode($arCur["Download_Subject"]);
             echo "</td>\n";
 
             echo "<td>\n";
@@ -94,9 +75,52 @@ class DownloadCenter
             echo utf8_encode($arCur["Subfield_Name"]);
             echo "</td></a>\n";
 
+            echo "<td>\n";
+            echo "<a id='linkDescription' href='http://127.0.0.1/wordpress/download-details/?downl_id_".$i."'>
+              <span class='btnMore'>Anzeigen</span></a>";
+            echo "</td>\n";
+
             echo "</tr>\n";
         }
 
         echo "</table>\n";
     }
+
+    function showDownloadContent()
+    {
+        //Anzahl der Termine
+        $recordCount = $_SESSION["recordListDownload"];
+
+        $dbCon = new infoCenterDbCon();
+        $sqlContent = new downloadDetails();
+
+        for($i = 0; $i < $recordCount; $i++)
+        {
+            if(isset($_GET["downl_id_".$i]))
+            {
+                $sqlRes = mysqli_query($dbCon, $sqlContent->sqlQuery_showDownloadDetails($_SESSION[$i."downlNumber"]));
+                $arCur = mysqli_fetch_array($sqlRes);
+
+                $downloadSubject = utf8_encode($arCur["Download_Subject"]);
+                $downloadDate = utf8_encode($arCur["Download_Date"]);
+                $downloadDateConvert = strtotime($downloadDate);
+                $newDownloadDate = date("d.m.Y",$downloadDateConvert);
+                $downloadNumber = utf8_encode($arCur["Download_Number"]);
+                $fieldName = utf8_encode($arCur["Field_Name"]);
+                $downloadDescription = utf8_encode($arCur["Download_Description"]);
+                //nochmal nachsehen ob richtige Spalte
+                $fileSize = utf8_encode($arCur["File_Size"]);
+
+                break;
+            }
+
+        }
+        mysqli_close($dbCon);
+
+        $content = new downloadContent();
+
+        echo $content->downloadContentDescription($downloadSubject,$newDownloadDate,
+            $downloadNumber,$fieldName,$downloadDescription, $fileSize);
+    }
+
 }

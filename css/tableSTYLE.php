@@ -1,5 +1,10 @@
 <style>
     /*-------Table Design-------*/
+    table
+    {
+        width: 97%;
+        margin: 0 22px 0 22px;
+    }
     table th, table td
     {
         font-family: var(--fontfamily-global);

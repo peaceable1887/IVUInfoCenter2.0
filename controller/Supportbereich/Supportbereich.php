@@ -57,7 +57,7 @@ class Supportbereich
 
             echo "<td>\n";
             echo "<a id='linkDescription' href='?linkDescription".$i."'>
-              <span class='btnMore'>Mehr erfahren</span></a>";
+              <span class='btnMore'>Anzeigen</span></a>";
             echo "</td>\n";
 
             echo "</tr>\n";
