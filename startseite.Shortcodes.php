@@ -28,7 +28,7 @@ function sc_sliderCurrentSeminare()
 {
     include_once "css/rootSTYLE.php";
     include_once "Database/ivu-dbCon.php";
-    include_once "css/sliderSTYLE.php";
+    include_once "css/Slider/sliderSTYLE.php";
     include_once "css/formContainerSTYLE.php";
     include_once "model/semTile.php";
     include_once("css/AkademieEvents/akademieEventsSTYLE.php");
@@ -52,4 +52,18 @@ function buttonsStartseiteMenu()
 
     echo $menuStartseite->showMenu();
 
+}
+
+add_shortcode("sc_sliderCurrentInfos", "sliderCurrentInfos");
+
+function sliderCurrentInfos()
+{
+    include_once "css/rootSTYLE.php";
+    include_once "Database/ivu-dbCon.php";
+    include_once "css/Slider/sliderCurrentInfosSTYLE.php";
+    include_once "model/infoTile.php";
+
+    $slider = new Startseite();
+
+    $slider->show_sc_sliderCurrentInfos();
 }

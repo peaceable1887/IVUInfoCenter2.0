@@ -89,5 +89,61 @@
     table th, table td {
         padding: 10px 0 10px 0;
         text-align: left;
-        vertical-align: top;
+        vertical-align: top;}
+
+    /*Aktuelle Infos Kachel*/
+
+    .infoTile
+    {
+        height: 300px;
+        width: 250px;
+        background-color: var(--color-default-white);
+        padding: 7px;
+        float: left;
+        margin: 15px 15px 15px 15px;
+        font-family: var(--fontfamily-global);
+    }
+    .infoImg
+    {
+        background-image: url("http://127.0.0.1/wordpress/wp-content/uploads/2021/11/dinner_MP.jpg");
+        background-size: 290px;
+        height: 45%;
+        width: 100%;
+    }
+    .infoText
+    {
+        background-color: var(--color-default-white);
+        height: 40%;
+        width: 100%;
+    }
+    .infoHeadline
+    {
+        float: left;
+        padding: 10px;
+        color: var(--color-ivu-red);
+    }
+    .subText
+    {
+        float: left;
+        color: var(--color-font);
+    }
+    .btnContainerInfo
+    {
+        text-align: center;
+    }
+    .infoReadMore
+    {
+        padding: 0;
+        margin-top: 5px;
+        width: 150px;
+        height: 30px;
+        background-color: var(--color-ivu-red);
+        font-weight: normal;
+    }
+    .infoReadMore:hover
+    {
+        background-color: #af3843;
+        transition: all .4s ease;
+        -webkit-transition: all .4s ease;
+    }
 </style>
