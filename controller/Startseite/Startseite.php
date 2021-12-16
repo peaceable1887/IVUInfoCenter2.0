@@ -195,25 +195,25 @@ class Startseite
             }
             echo"</div>";
         }
-        echo" <a class=\"arrowsInfos prevInfos\" onclick=\"plusSlides(-1)\"></a>
-  <a class=\"arrowsInfos nextInfos\" onclick=\"plusSlides(1)\"></a>
+        echo" <a class=\"arrowsInfos prevInfos\" onclick=\"plusSlidesInfos(-1)\"></a>
+  <a class=\"arrowsInfos nextInfos\" onclick=\"plusSlidesInfos(1)\"></a>
 </div></div>
 ";
         ?>
         <script>var slideIndex = 1;
-            showSlides(slideIndex);
+            showSlidesInfos(slideIndex);
 
             // Next/previous controls
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
+            function plusSlidesInfos(n) {
+                showSlidesInfos(slideIndex += n);
             }
 
             // Thumbnail image controls
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
+            function currentSlideInfos(n) {
+                showSlidesInfos(slideIndex = n);
             }
 
-            function showSlides(n) {
+            function showSlidesInfos(n) {
                 var i;
                 var slides = document.getElementsByClassName("mySlidesInfos");
                 var dots = document.getElementsByClassName("dot");
@@ -229,7 +229,7 @@ class Startseite
                 dots[slideIndex-1].className += " active";
             }
             // Slider: Bildwechsel in Sekundenintervallen
-            function simpleSlides ()
+            function simpleSlidesInfos()
             {
                 let i;
                 let slides = document.querySelectorAll(".mySlidesInfos");
@@ -243,7 +243,7 @@ class Startseite
                     count = 1;
                 }
                 slides[count-1].setAttribute("style","display:block");
-                setTimeout(simpleSlides, 6000);
+                setTimeout(simpleSlidesInfos, 6000);
             }
         </script><?php
 

@@ -3,7 +3,7 @@
     table
     {
         width: 97%;
-        margin: 0 22px 0 22px;
+        margin: 0 22px 50px 22px;
     }
     table th, table td
     {

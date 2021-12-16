@@ -5,15 +5,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="Edit: Downloadbereich, Supportanfragen und Akademiebereich">
-      <change afterPath="$PROJECT_DIR$/css/Slider/sliderCurrentInfosSTYLE.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/infoTile.php" afterDir="false" />
+    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="Startseite: Slider für die aktuellen Infos eingebaut">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/Startseite/Startseite.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Startseite/Startseite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Supportbereich/Supportbereich.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Supportbereich/Supportbereich.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Slider/sliderSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Slider/sliderSTYLE.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/btn.style.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/btn.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/sliderSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Slider/sliderSTYLE.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startseite.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/startseite.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/tableSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/tableSTYLE.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,6 +179,7 @@
       <workItem from="1639397909709" duration="23092000" />
       <workItem from="1639476858234" duration="21285000" />
       <workItem from="1639566199126" duration="11444000" />
+      <workItem from="1639642606732" duration="3533000" />
     </task>
     <task id="LOCAL-00001" summary="weiterer Push des Codes">
       <created>1637168082069</created>

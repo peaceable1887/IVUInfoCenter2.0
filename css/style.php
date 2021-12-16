@@ -49,7 +49,7 @@
     {
         line-height: 230%;
         padding: 5px 0 0 18px;
-        margin: 15px 25px 15px 0;
+        margin: 15px 15px 15px 15px;
         font-family: var(--fontfamily-global);
         font-size: 20px;
         height: 200px;

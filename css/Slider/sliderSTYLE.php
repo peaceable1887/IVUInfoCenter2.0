@@ -10,12 +10,11 @@
         height: 330px;
         background-image: url("http://127.0.0.1/wordpress/wp-content/uploads/2021/07/Header_Welle_1900x600.png");
         position: relative;
-        margin: 0;
+        margin: 0 0 50px 0;
         display: flex;
         justify-content: center;
         box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
     }
-
     .mySlides
     {
         display: none;

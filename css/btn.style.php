@@ -5,7 +5,7 @@
         width: 100%;
         height: auto;
         text-align: center;
-        margin: 50px 0 0 0;
+        margin: 0 0 50px 0;
     }
     .btnMenuSubContainer
     {
@@ -28,7 +28,7 @@
     {
         width: 100%;
         height: 120px;
-        object-fit: none;
+        object-fit: cover;
     }
     .btnText
     {

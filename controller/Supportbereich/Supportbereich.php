@@ -36,7 +36,11 @@ class Supportbereich
             echo "</td>\n";
 
             echo "<td>\n";
-            echo utf8_encode($arCur["Call_Date_Received"]);
+            //aus dem DateConverter noch eine Klasse bauen
+            $callDateReceived = utf8_encode($arCur["Call_Date_Received"]);
+            $callDateReceivedConv = strtotime($callDateReceived);
+            $newCallDateReceived = date("d.m.Y",$callDateReceivedConv);
+            echo $newCallDateReceived;
             echo "</td>\n";
 
             echo "<td>\n";
