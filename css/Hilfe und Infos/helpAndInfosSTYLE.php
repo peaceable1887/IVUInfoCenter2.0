@@ -8,6 +8,7 @@
         flex-direction: column;
         font-family: var(--fontfamily-global);
         background-color: var(--color-brightgrey);
+        margin: 20px 20px 0 20px;
     }
     .infoText
     {

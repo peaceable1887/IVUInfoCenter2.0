@@ -5,7 +5,7 @@ include_once("css/Supportbereich/neueSupportanfrageSTYLE.php");
 
 echo "<div id='overlay' >
     <div id=\"text\">
-    <p>Rückfrage an IVU:<button class='overlayBtn' onclick='offInquiry()'>X</button></p><br>
+    <p>Rückfrage an IVU:<button class='overlayCloseBtn' onclick='offInquiry()'>X</button></p><br>
     <textarea></textarea>
     <div class='btnDiv'><button class='overlayBtn'>
                 <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>
@@ -14,7 +14,7 @@ echo "<div id='overlay' >
 </div>";
 echo "<div id='overlayNote'>
     <div id=\"text\">
-    <p>Notiz an IVU:<button class='overlayBtn' onclick='offNote()'>X</button></p><br>
+    <p>Notiz an IVU:<button class='overlayCloseBtn' onclick='offNote()'>X</button></p><br>
     <textarea></textarea>
     <div class='btnDiv'><button class='overlayBtn'>
                 <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>
@@ -23,21 +23,18 @@ echo "<div id='overlayNote'>
 </div>";
 echo "<div id='overlayInterimReport' >
     <div id=\"text\">
-    <p>Möchten Sie einen Zwischenbericht anfordern?<button class='overlayBtn' onclick='offInterimReport()'>X</button></p><br>
+    <p>Möchten Sie einen Zwischenbericht anfordern?<button class='overlayCloseBtn' onclick='offInterimReport()'>X</button></p><br>
     <div class='btnDiv'>
     <button class='overlayBtn'>
         <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>Ja</a> 
         </button>
-        <button class='overlayBtn'>
-           <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>Nein</a>
-           </button>
        </div>
     </div>
 </div>";
 echo "<div id='overlayFile' >
     <div id=\"text\">
-    <p>Weitere Datei an die Supportanfrage anhängen<button class='overlayBtn' onclick='offFile()'>X</button></p><br>
-    <span>Dareianhang*</span><br>
+    <p>Weitere Datei an die Supportanfrage anhängen<button class='overlayCloseBtn' onclick='offFile()'>X</button></p><br>
+    <span>Dateianhang*</span><br>
     <input id=\"fileFile\" type=\"File\" name=\"file\">
     <div class='btnDiv'><button class='overlayBtn'>
                 <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>
@@ -46,7 +43,7 @@ echo "<div id='overlayFile' >
 </div>";
 echo "<div id='overlayAddInfos' >
     <div id=\"text\">
-    <p>Information hinzufügen<button class='overlayBtn' onclick='offAddInfos()'>X</button></p><br>
+    <p>Information hinzufügen<button class='overlayCloseBtn' onclick='offAddInfos()'>X</button></p><br>
      <table class='tableTicketOverlay'>
                  <tr>
                     <th>Software-Version*<br><input class='inputField' name='vorname' value=''></th>
@@ -95,7 +92,7 @@ echo "<div id='overlayAddInfos' >
 </div>";
 echo "<div id='overlayCompleteSupportRequest'>
     <div id=\"text\">
-    <p>Erläuterung:*<button class='overlayBtn' onclick='offCompleteSupportRequest()'>X</button></p><br>
+    <p>Erläuterung:*<button class='overlayCloseBtn' onclick='offCompleteSupportRequest()'>X</button></p><br>
     <textarea></textarea>
     <div class='btnDiv'><button class='overlayBtn'>
                 <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>
@@ -179,11 +176,20 @@ echo "<div id='overlayCompleteSupportRequest'>
         padding: 10px;
         float: right;
     }
+    .overlayCloseBtn
+    {
+        color: white;
+        background-color: #b72a37;
+        line-height: normal;
+        float: right;
+        padding: 5px;
+        font-size: 12px;
+    }
     .overlayBtn a
     {
         color: white;
     }
-    .overlayBtn:hover
+    .overlayBtn:hover, .overlayCloseBtn:hover
     {
         background-color: #af3843;
         transition: all .4s ease;
@@ -198,7 +204,6 @@ echo "<div id='overlayCompleteSupportRequest'>
         top: 50%;
         left: 50%;
         border: 1px solid grey;
-        border-radius: 10px;
         transform: translate(-50%,-50%);
         -ms-transform: translate(-50%,-50%);
     }

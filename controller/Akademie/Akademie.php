@@ -140,7 +140,6 @@ class Akademie
                     $arr[$x] = utf8_encode($arCur["Seminar_Description"]);
                     echo "<span class='semBookingDescription'>".$arr[$i]."</span>";
                 }
-
                 mysqli_close($dbCon);
             }
         }
@@ -252,7 +251,6 @@ class Akademie
                 echo "<a id='linkDescription' href='http://127.0.0.1/wordpress/akademie-events-buchung-schritt-2/?linkDescription".$i."'
                 ><button class='buttonConfirmReg'>
                 REGISTRIEREN</button></a>";
-
             }
         }
     }

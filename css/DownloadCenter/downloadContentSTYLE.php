@@ -6,6 +6,7 @@
         border: 2px solid var(--color-ivu-grey2);
         border-radius: 10px;
         padding: 10px 0 10px 20px;
+        margin: 20px 20px 0 20px;
     }
     .descriptionText
     {
@@ -23,14 +24,13 @@
     }
     .detailsContainer
     {
-        margin-top: 30px;
-        margin-bottom: 80px;
         background-color: var(--color-brightgrey);
         border: 2px solid var(--color-ivu-grey2);
         font-family: var(--fontfamily-global);
         font-size: 18px;
         border-radius: 10px;
         padding: 20px 0 2px 20px;
+        margin: 30px 20px 80px 20px;
 
     }
     .detailsContainer table

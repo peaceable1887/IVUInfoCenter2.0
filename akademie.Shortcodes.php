@@ -13,6 +13,7 @@ function buttonsMenu()
 {
     include_once "css/rootSTYLE.php";
     include_once "css/btn.style.php";
+    include_once "css/menuSTYLE.php";
     include_once "view/Akademie/Menu.php";
 
     $menu = new Menu();
@@ -69,6 +70,35 @@ function pageNumber()
             <a href=\"#\" class=\"active\">1</a>
            
           </div></div>";
+}
+
+add_shortcode("sc_showSeminarDetails", "showSeminarDetails");
+
+function showSeminarDetails()
+{
+
+  /*  include_once "css/rootSTYLE.php";
+    include_once("css/style.php");
+    include_once "css/btn.style.php";
+    include_once "css/AkademieEvents/akademieEventsSTYLE.php";
+    include_once("Sql/AkademieEvents/tile/loadTileContent.php");
+    include_once("Sql/AkademieEvents/allEvents/sqlQueryAllEvents.php");
+    include_once("Sql/AkademieEvents/contentDescription/loadDescription.php");
+    include_once("Sql/AkademieEvents/contentMatter/loadMatter.php");
+    include_once("Sql/AkademieEvents/contentTargetGroup/loadTargetGroup.php");
+    include_once("Sql/AkademieEvents/contentRequirement/loadRequirement.php");
+    include_once("Database/ivu-dbCon.php");
+    include_once "model/semTile.php";
+    include_once "view/Akademie/SeminarDetails.php";
+    include_once "controller/Akademie/Akademie.php";
+
+    $seminarDetails = new SeminarDetails();
+    $semContent = new Akademie();
+
+    echo "hallo welt1";
+    echo $seminarDetails->showSeminarDetails($semContent->showBuchung_seminarBlock(),
+        $semContent->showBuchung_beschreibung(), $semContent->showBuchung_inhalt(), $semContent->showBuchung_zielgruppe(),
+        $semContent->showBuchung_voraussetzungen(), $semContent->showBuchung_button_zurBuchung());*/
 }
 
 add_shortcode("shortcode_buchung_seminarBlock", "buchung_seminarBlock");

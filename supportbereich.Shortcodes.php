@@ -13,6 +13,7 @@ function menuSupportrequest()
 {
     include_once "css/rootSTYLE.php";
     include_once("css/btn.style.php");
+    include_once "css/menuSTYLE.php";
     include_once "view/Supportbereich/MenuSupportanfragen.php";
 
     $menuSupportrequest = new MenuSupportanfragen();
@@ -69,10 +70,10 @@ add_shortcode("sc_supportRequestTicket", "supportRequestTicket" );
 function supportRequestTicket()
 {
     include_once "css/rootSTYLE.php";
-    include_once("css/formContainerSTYLE.php");
-    include_once ("css/style.php");
+    include_once "css/formContainerSTYLE.php";
+    include_once "css/style.php";
     include_once "css/btn.style.php";
-    include_once("css/Supportbereich/supportRequestTicketSTYLE.php");
+    include_once "css/Supportbereich/supportRequestTicketSTYLE.php";
     include_once "view/Supportbereich/TicketUebersicht.php";
 
     $ticketOverview = new TicketUebersicht();
@@ -93,7 +94,6 @@ function menuSupportrequestOverview()
     $menu = new MeineSupportanfragen();
 
     echo $menu->showBtnMenu();
-
 }
 
 

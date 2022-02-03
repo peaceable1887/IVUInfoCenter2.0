@@ -1,6 +1,55 @@
 <style>
     /*----------Buchung(Schritt 1) Design----------*/
-
+    .detailsContainer
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #46afdf;
+    }
+    .tileContent
+    {
+        display: flex;
+        justify-content: start;
+        background-color: #af3843;
+    }
+    .detailsContent
+    {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        background-color: #214562;
+    }
+    .descriptionContent
+    {
+        width: 100%;
+        background-color: yellow;
+    }
+    .contentContent
+    {
+        width: 100%;
+        background-color: #214562;
+    }
+    .targetGrpContent
+    {
+        width: 100%;
+        background-color: #46afdf;
+    }
+    .preconditionContent
+    {
+        width: 100%;
+        background-color: #706f6f;
+    }
+    .priceContent
+    {
+        width: 100%;
+        background-color: plum;
+    }
+    .btnContent
+    {
+        width: 100%;
+        background-color: #9d9d9c;
+    }
     /*Beschreibung*/
     .semBookingDescription
     {

@@ -4,16 +4,31 @@
     {
         box-sizing:border-box;
     }
+    .sliderContainer
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0 0 0;
+        background-image: url("http://127.0.0.1/wordpress/wp-content/uploads/2021/07/Header_Welle_1900x600.png");
+        box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+    }
     .slideshow-container
     {
         max-width: 100%;
         height: 330px;
-        background-image: url("http://127.0.0.1/wordpress/wp-content/uploads/2021/07/Header_Welle_1900x600.png");
         position: relative;
-        margin: 0 0 50px 0;
+        margin: 0 0 10px 0;
         display: flex;
         justify-content: center;
-        box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+    }
+    .sliderSemHeadline
+    {
+        color: var(--color-default-white);
+        font-family: var(--fontfamily-global);
+        font-size: 28px;
+        text-align: center;
     }
     .mySlides
     {
@@ -25,7 +40,7 @@
         height: 48px;
         border-color: #000;
         position: absolute;
-        top: 32%;
+        top: 26%;
         color: white;
     }
     .prev
@@ -34,7 +49,6 @@
         border-left: 6px solid;
         transform: rotate(45deg);
         left: 40px;
-        margin-left: 10px;
     }
     .next
     {
@@ -42,7 +56,6 @@
         border-left: 6px solid;
         transform: rotate(-135deg);
         right: 40px;
-        margin-right: 10px;
     }
     .text
     {
@@ -56,7 +69,7 @@
     }
     .fade
     {
-        margin: 20px 0 0 0;
+        margin: 0 0 0 0;
         -webkit-animation-name: fade;
         -webkit-animation-duration: 1.5s;
         animation-name: fade;

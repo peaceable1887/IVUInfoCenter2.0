@@ -10,10 +10,7 @@ add_shortcode("sc_btnSupportRequest","btnSupportRequest");
 
 function btnSupportRequest()
 {
-    include_once "css/rootSTYLE.php";
     include_once "controller/Startseite/Startseite.php";
-    include_once("css/formContainerSTYLE.php");
-    include_once "css/btn.style.php";
     include_once "view/Startseite/ButtonSupportanfrage.php";
 
     $addFunctions = new Startseite();
@@ -22,21 +19,30 @@ function btnSupportRequest()
 
 }
 
-add_shortcode("sc_sliderCurrentSeminare", "sc_sliderCurrentSeminare");
+add_shortcode("sc_sliderCurrentSeminare", "sliderCurrentSeminare");
 
-function sc_sliderCurrentSeminare()
+function sliderCurrentSeminare()
 {
     include_once "css/rootSTYLE.php";
+    include_once "css/style.php";
     include_once "Database/ivu-dbCon.php";
     include_once "css/Slider/sliderSTYLE.php";
     include_once "css/formContainerSTYLE.php";
     include_once "model/semTile.php";
+    include_once "controller/Startseite/Startseite.php";
     include_once("css/AkademieEvents/akademieEventsSTYLE.php");
     include_once("Sql/AkademieEvents/tile/loadTileContent.php");
 
     $slider = new Startseite();
 
     $slider->show_sc_sliderCurrentSeminare();
+
+}
+
+add_shortcode("sc_sliderTest", "sliderTest");
+
+function sliderTest()
+{
 
 }
 
@@ -47,6 +53,7 @@ function buttonsStartseiteMenu()
     include_once "css/rootSTYLE.php";
     include_once "view/Startseite/MenuStartseite.php";
     include_once "css/btn.style.php";
+    include_once "css/menuSTYLE.php";
 
     $menuStartseite = new MenuStartseite();
 
@@ -62,6 +69,7 @@ function sliderCurrentInfos()
     include_once "Database/ivu-dbCon.php";
     include_once "css/Slider/sliderCurrentInfosSTYLE.php";
     include_once "model/infoTile.php";
+    include_once "controller/Startseite/Startseite.php";
 
     $slider = new Startseite();
 

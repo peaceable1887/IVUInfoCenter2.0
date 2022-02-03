@@ -3,10 +3,10 @@
     .formContainer
     {
         background-color:#dadada;
-        width: 100%;
+        width: 97%;
         height: auto;
         padding: 15px;
-        margin: 0 0 20px 0;
+        margin: 0 20px 20px 20px ;
         border-radius: 10px;
     }
     /*Bereich Einstellungen*/

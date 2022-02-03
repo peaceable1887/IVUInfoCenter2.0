@@ -21,7 +21,7 @@ function siteDirection()
     $SDContent->showSiteDirection();
 }
 //noch überarbeiten...
-add_shortcode("sc_userGreeting","userGreeting");
+/*add_shortcode("sc_userGreeting","userGreeting");
 
 function userGreeting()
 {
@@ -32,6 +32,19 @@ function userGreeting()
 
     $greeting->showUserGreeting();
 }
+
+add_shortcode("sc_editData", "editData");
+
+function editData()
+{
+    include_once "css/rootSTYLE.php";
+    include_once "controller/Global/GlobalContent.php";
+
+    $editData = new GlobalContent();
+
+    $editData->showUserData();
+}
+
 //noch überarbeiten....
 add_shortcode("sc_logout", "logout");
 
@@ -44,19 +57,48 @@ function logout()
 
     $logout->showLogout();
 }
+*/
+add_shortcode("sc_headerTopProfilData", "headerTopProfilData");
 
-add_shortcode("sc_headline", "headline");
+function headerTopProfilData()
+{
+    include_once "css/rootSTYLE.php";
+    include_once "css/global/headerTopSTYLE.php";
+    include_once "view/Global/headerTop.php";
+    include_once "controller/Global/GlobalContent.php";
+
+    $profilData = new headerTop();
+    $globalContent = new GlobalContent();
+
+    echo $profilData->ProfilData($globalContent->showUserGreeting(),$globalContent->showUserData(),$globalContent->showLogout());
+
+}
+
+add_shortcode("sc_headerPicture", "headerPicture");
+
+function headerPicture()
+{
+    include_once "css/global/headerPictureBgSTYLE.php";
+    include_once "css/btn.style.php";
+    include_once "view/global/headerPartTwo.php";
+    include_once "controller/Global/GlobalContent.php";
+
+    $headline = new GlobalContent();
+
+    $headerPartTwo = new headerPartTwo();
+    echo $headerPartTwo->showHeader($headline->showHeadline());
+}
+
+/*add_shortcode("sc_headline", "headline");
 
 function headline()
 {
-    include_once "css/rootSTYLE.php";
-    include_once "css/style.php";
     include_once "controller/Global/GlobalContent.php";
 
     $headline = new GlobalContent();
 
     $headline->showHeadline();
-}
+}*/
 
 add_shortcode("sc_subHeadline", "subHeadline");
 

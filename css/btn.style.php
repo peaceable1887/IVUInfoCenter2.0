@@ -130,14 +130,7 @@
 
     /*----------Default Buttons----------*/
     /*Neue Supportanfrage*/
-    .buttonHeader
-    {
-        font-size: 22px;
-        font-family: var(--fontfamily-global);
-        background-color: var(--color-ivu-red);
-        margin-top: 50px;
-        width: 350px;
-    }
+
     .buttonHeaderHide
     {
         margin-top: 100px;
@@ -150,19 +143,19 @@
     .buttonSlider
     {
         width: 350px;
-        margin: 10px 0 0 0;
+        margin: 0 0 0 0;
         position: absolute;
         top: 85%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         background: rgba(183,42,55,0);
-        border: solid 2px white;
+        border: solid 2px var(--color-default-white);
         border-radius: 7px;
 
     }
     .buttonSlider a
     {
-        color: white;
+        color: var(--color-default-white);
     }
     .buttonSlider:hover
     {
@@ -192,7 +185,7 @@
     {
         color: white;
     }
-    .buttonHeader:hover,.buttonConfirm:hover, .buttonConfirmReg:hover
+    .buttonConfirm:hover, .buttonConfirmReg:hover
     {
         background-color: #af3843;
         transition: all .4s ease;

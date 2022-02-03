@@ -1,6 +1,5 @@
 <?php
 
-
 class Login
 {
     function showLogin()
@@ -16,7 +15,7 @@ class Login
             $sqlRes = mysqli_query($dbCon, $sqlUser->userVerification($username, $password));
             $arCur = mysqli_fetch_array($sqlRes);
 
-            if ($username == utf8_encode($arCur["User_Username"]) && $password == utf8_encode($arCur["User_Password"])) {
+            if($username == utf8_encode($arCur["User_Username"]) && $password == utf8_encode($arCur["User_Password"])) {
                 $_SESSION['userid'] = $arCur['User_ID'];
                 die('<meta http-equiv="refresh" content="1; URL=http://127.0.0.1/wordpress/">');
             } else {
@@ -45,7 +44,7 @@ class Login
             die('Bitte zuerst <a href="http://127.0.0.1/wordpress/login-test">einloggen</a>');
         }
 
-        //Abfrage der Nutzer ID vom Login
+        //Abfrage der Nutzer-ID vom Login
         $dbCon = new infoCenterDbCon();
         $userFullname = new loadUser();
         $userid = $_SESSION['userid'];

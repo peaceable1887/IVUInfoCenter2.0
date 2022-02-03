@@ -1,6 +1,5 @@
 <?php
 
-
 class Startseite
 {
     function showBtnSupportRequest()
@@ -60,7 +59,6 @@ class Startseite
 
     function show_sc_sliderCurrentSeminare()
     {
-
         $dbCon = new infoCenterDbCon();
         $sqlStatement = new loadTileContent();
         $currentDate = date("Y-m-d");
@@ -70,12 +68,12 @@ class Startseite
 
         $recordCount = mysqli_num_rows($sqlRes);
 
-        echo "<div class=\"slideshow-container\">";
+        echo "<div class='sliderContainer'><span class='sliderSemHeadline'>ANSTEHENDE SEMINARE</span>
+                <div class=\"slideshow-container\">";
 
         for ($i = 0;$i <= $recordCount ;$i++)
         {
             echo "<div class=\"mySlides fade\">";
-
 
             for ($x = 0;$x < 3 ;$x++)
             {
@@ -103,7 +101,7 @@ class Startseite
   <button class='buttonSlider'>
                 <a href='http://127.0.0.1/wordpress/akademie-events-uebersicht/'>
                 GESAMTE KURSÜBERSICHT</a></button>
-</div>
+</div></div>
 ";
         ?>
         <script>var slideIndex = 1;
@@ -156,7 +154,7 @@ class Startseite
     }
     /*Akutelle Informationen*/
 
-    function show_sc_sliderCurrentInfos()
+   function show_sc_sliderCurrentInfos()
     {
         $dbCon = new infoCenterDbCon();
         $sqlStatement = new loadTileContent();
@@ -176,20 +174,7 @@ class Startseite
 
             for ($x = 0;$x < 3 ;$x++)
             {
-                $arCur = mysqli_fetch_array($sqlRes);
-
-                $seminarName = utf8_encode($arCur["Seminar_Name"]);
-                $startDate = utf8_encode($arCur["Event_StartDate"]);
-                $startDateConvert = strtotime($startDate);
-                $newStartDate = date("d.", $startDateConvert);
-                $endDate = utf8_encode($arCur["Event_EndDate"]);
-                $endDateConvert = strtotime($endDate);
-                $newEndDate = date("d.m.Y", $endDateConvert);
-                $fieldName = utf8_encode($arCur["Field_Name"]);
-                $typeName = utf8_encode($arCur["Type_Name"]);
-
-                $semTile = new infoTile($fieldName, $seminarName, $newStartDate,
-                    $newEndDate, utf8_encode($arCur["Event_Location"]), $typeName, $x);//Funktioniert noch nicht ganz, werden immer die ersten 3 incrementiert
+                $semTile = new infoTile();//Funktioniert noch nicht ganz, werden immer die ersten 3 incrementiert
 
                 echo $semTile->__toString();
             }

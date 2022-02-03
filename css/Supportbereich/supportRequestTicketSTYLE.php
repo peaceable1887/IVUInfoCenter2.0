@@ -1,73 +1,105 @@
 <style>
-    .ticketContainer
+    /*Neues Design*/
+    /* CSS styles */
+    .content
+    {
+        width: 100%;
+        height: 100%;
+        padding: 0 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        font-family: var(--fontfamily-global);
+    }
+    .content h5
+    {
+        margin: 10px 0 0 5px;
+    }
+    .mainContent
     {
         display: flex;
-        width: 100%;
-        justify-content: center;
-        font-family: var(--fontfamily-global);
-        margin-bottom: 200px;
+        padding: 0.5% 20px 20px 0;
     }
-    .ticketMenu
+    .menuContent
     {
+        order: 1;
         width: 25%;
     }
-    .ticketMenu nav ul li
+    .menuContent ul
+    {
+        padding: 0;
+    }
+    .menuContent li
     {
         list-style: none;
-        background-color: white;
-        border: 2px solid #dadada;
-        border-radius: 7px;
-        margin: 20px 0 20px 0;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
-    .ticketMenu nav ul li button
+    .menuContent button
     {
+        height: 60px;
+        width: 230px;
         color: var(--color-ivu-red);
-        width: 100%;
-        font-size: 14px;
-        background-color: white;
-        border-radius: 7px;
+        background-color: var(--color-default-white);
+        line-height: normal;
+        font-size: 18px;
+        font-family: var(--fontfamily-global);
+        padding: 0 40px 0 40px;
+        margin: 0 0 0 0;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    .ticketContent
+    {
+        padding: 1% 0 0 0;
+        order: 3;
+        width: -webkit-fill-available;
+    }
+    .ticketContent th
+    {
+        font-weight: normal;
         text-align: left;
+        padding: 5px 50px 5px 0px;
+        font-size: 18px;
+        color: var(--color-ivu-red);
     }
-    .ticketInfos
+    .ticketContent table
     {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        padding: 20px 60px 0 60px;
-        color: #b72a37;
-    }
-    .ticketMetaData
-    {
-        background-color: blue;
-    }
-    table
-    {
-        font-size: 16px;
-        padding: 20px 0 20px 0;
         border-collapse: collapse;
     }
-    h5
+    .ticketContent tr
     {
-        margin-bottom: 10px;
+        border-bottom: 1px solid var(--color-ivu-grey2);
     }
-    h5, th
+    .ticketContent h5
     {
-        padding-bottom: 10px;
-    }
-    tr
-    {
-        border-bottom: 1px solid grey;
+        margin: 0 0 20px 0;
+        padding: 0;
     }
     .ticketChat
     {
-        background-color:#dadada;
+        font-weight: bold;
         width: 100%;
         height: auto;
-        padding: 15px;
         margin-bottom: 20px;
-        border-radius: 10px;
     }
-
+    .ticketChat p
+    {
+        color: var(--color-ivu-red);
+        font-size: 18px;
+    }
+    .secContent
+    {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .finallyRequest button
+    {
+        height: 60px;
+        width: 210px;
+        color: white;
+        background-color: var(--color-ivu-red);
+        line-height: normal;
+        font-size: 22px;
+        font-family: var(--fontfamily-global);
+        padding: 0 40px 0 40px;
+        margin: 0 32px 0 0;
+    }
 
 </style>

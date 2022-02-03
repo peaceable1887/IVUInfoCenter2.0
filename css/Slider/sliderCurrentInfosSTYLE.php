@@ -5,7 +5,7 @@
        height: 450px;
        background-color: var(--color-brightgrey);
        text-align: -webkit-center;
-       margin: 20px 0 0 0;
+       margin: 20px 0 50px 0;
        padding-top: 15px;
    }
 

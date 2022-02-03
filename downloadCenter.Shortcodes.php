@@ -13,6 +13,7 @@ function menuDownloadCenter()
 {
     include_once "css/rootSTYLE.php";
     include_once("css/btn.style.php");
+    include_once "css/menuSTYLE.php";
     include_once "view/DownloadCenter/MenuDownloadCenter.php";
 
     $menu = new MenuDownloadCenter();

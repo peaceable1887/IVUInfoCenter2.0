@@ -119,22 +119,28 @@ class GlobalContent
         $userFirstname = $_SESSION["User_Firstname"];
         $welcome = "Hallo";
 
-        echo "<div class='welcomeUser' style='float: left'>".$welcome." ".$userFirstname."</div>";
+        return $welcome." ".$userFirstname;
+    }
+    function showUserData()
+    {
+        return "<a href='http://127.0.0.1/wordpress/einstellungen/'>Meine Daten</a>";
     }
 
     function showLogout()
     {
-        echo "<form  method='post'><button style='background-color: rgb(0 0 0 / 0%);padding: 0;margin-left: 50px;text-decoration: underline;' name='logout'>Abmelden</button></form><br>";
+        $logout = "<form method='post'><button name='logout'>Abmelden</button></form>";
 
         if(isset($_POST["logout"]))
         {
             session_destroy();
-            echo "<html>
+            return "<html>
                 <head>
                     <meta http-equiv=\"refresh\" content=\"1; URL=http://127.0.0.1/wordpress/login-test/\">
                 </head>
               </html>";
         }
+
+        return $logout;
     }
 
     function showHeadline()
@@ -143,64 +149,98 @@ class GlobalContent
         $linkPatternDownl = "/\?d.*/";
         $linkPatternSem = "/\?l.*/";
         $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+        $headline = "";
 
         if($url === "http://127.0.0.1/wordpress/")
         {
-            echo "<h1 style='font-family: \"roboto condensed\";'>INFOCENTER<br>IVU INFORMATIONSSYSTEME</h1>";
+            $headline = "<img src=\"http://127.0.0.1/wordpress/wp-content/uploads/2022/02/IVU-Logo_Transparent_zuschnitt.png\" width=\"300\" height=\"400\">";
+            return $headline;
         }
-        else if($url ===  "http://127.0.0.1/wordpress/akademie-events/")
+        /*else if($url ===  "http://127.0.0.1/wordpress/akademie-events/")
         {
-            echo "<h1 style='font-family: \"roboto condensed\"'>AKADEMIE UND EVENTS</h1>";
+            $headline = "<h1>AKADEMIE UND EVENTS</h1>";
+            return $headline;
         }
         else if($url ===  "http://127.0.0.1/wordpress/akademie-events-uebersicht/")
         {
-            echo "<h1 style='font-family: \"roboto condensed\"'>AKADEMIE UND EVENTS</h1>";
+            $headline = "<h1>AKADEMIE UND EVENTS</h1>";
+            return $headline;
         }
         else if($url ===  "http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/")
         {
-            echo "<h1 style='font-family: \"roboto condensed\"'>AKADEMIE UND EVENTS</h1>";
+            $headline = "<h1>AKADEMIE UND EVENTS</h1>";
+            return $headline;
         }
         else if($url ===  "http://127.0.0.1/wordpress/akademie-events-buchung-schritt-2/")
         {
-            echo "<h1 style='font-family: \"roboto condensed\"'>AKADEMIE UND EVENTS</h1>";
+            $headline = "<h1>AKADEMIE UND EVENTS</h1>";
+            return $headline;
         }
         else if($url ===  "http://127.0.0.1/wordpress/akademie-events-buchung-schritt-3/")
         {
-            echo "<h1 style='font-family: \"roboto condensed\"'>AKADEMIE UND EVENTS</h1>";
+            $headline = "<h1>AKADEMIE UND EVENTS</h1>";
+            return $headline;
         }
         else if($url ===  "http://127.0.0.1/wordpress/einstellungen/")
         {
-            echo "<h1 style='font-family: \"roboto condensed\"'>EINSTELLUNGEN</h1>";
-
+            $headline = "<h1>EINSTELLUNGEN</h1>";
+            return $headline;
         }
         else if($url ===  "http://127.0.0.1/wordpress/download-center/")
         {
-            echo "<h1>DOWNLOAD CENTER</h1>";
+            $headline = "<h1>DOWNLOAD CENTER</h1>";
+            return $headline;
         }
         else if($url ===  "http://127.0.0.1/wordpress/downloads/")
         {
-            echo "<h1>DOWNLOAD CENTER</h1>";
+            $headline = "<h1>DOWNLOAD CENTER</h1>";
+            return $headline;
         }
         else if(preg_match_all($linkPatternDownl, $url))
         {
-            echo "<h1>DOWNLOAD CENTER</h1>";
+            $headline = "<h1>DOWNLOAD CENTER</h1>";
+            return $headline;
         }
         else if($url ===  "http://127.0.0.1/wordpress/hilfe/")
         {
-            echo "<h1>HILFE UND INFOS</h1>";
+            $headline = "<h1>HILFE UND INFOS</h1>";
+            return $headline;
         }
-        else if($url ===  "http://127.0.0.1/wordpress/support-anfragen/")
+        else if($url ===  "http://127.0.0.1/wordpress/support-center/")
         {
-            echo "<h1>SUPPORT CENTER</h1>";
+            $headline = "<h1>SUPPORT CENTER</h1>";
+            return $headline;
         }
         else if($url ===  "http://127.0.0.1/wordpress/infos/")
         {
-            echo "<h1>INFORMATIONEN</h1>";
+            $headline = "<h1>INFORMATIONEN</h1>";
+            return $headline;
+        }
+        else if($url ===  "http://127.0.0.1/wordpress/neue-supportanfrage/")
+        {
+            $headline = "<h1>NEUE SUPPORTANFRAGE</h1>";
+            return $headline;
+        }
+        else if($url ===  "http://127.0.0.1/wordpress/daten-zur-supportanfrage-ergaenzen/")
+        {
+            $headline = "<h1>NEUE SUPORTANFRAGE</h1>";
+            return $headline;
+        }
+        else if($url ===  "http://127.0.0.1/wordpress/support-anfrage-nummer/")
+        {
+            $headline = "<h1>NEUE SUPORTANFRAGE</h1>";
+            return $headline;
+        }
+        else if($url ===  "http://127.0.0.1/wordpress/uebersicht-supportanfragen/")
+        {
+            $headline = "<h1>ÜBERSICHT SUPPORTANFRAGEN</h1>";
+            return $headline;
         }
         else
         {
-            echo "<h1>AKADEMIE UND EVENTS</h1>";
-        }
+            $headline = "<h1>AKADEMIE UND EVENTS</h1>";
+            return $headline;
+        }*/
     }
 
     function showSubheadline()
@@ -274,6 +314,10 @@ class GlobalContent
         else if($url ===  "http://127.0.0.1/wordpress/daten-zur-supportanfrage-ergaenzen/")
         {
             echo "<span class='subHeadline'>DATEN ZUR SPPORTANFRAGE ERGÄNZEN</span>";
+        }
+        else if($url ===  "http://127.0.0.1/wordpress/support-anfrage-nummer/")
+        {
+            echo "<span class='subHeadline'>ÜBERSICHT DER SUPPORTANFRAGE</span>";
         }
         else
         {

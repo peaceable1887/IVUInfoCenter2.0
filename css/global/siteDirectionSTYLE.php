@@ -3,6 +3,7 @@
     {
         padding: 0 0 0 23px;
         font-family: var(--fontfamily-global);
+        margin: 10px 0 0 0;
     }
     .sdLink a
     {
