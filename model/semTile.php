@@ -35,7 +35,6 @@ class semTile
 
     public function __toString()
     {
-
         return "<a id='linkDescription' href='http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/?linkDescription".$this->linkVarCount."'>
                 <div id='seminarBlock'>
                 <p class='seminarBlockText'>

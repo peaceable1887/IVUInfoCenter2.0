@@ -3,35 +3,32 @@
 
 class DownloadCenter
 {
-    function showDownloadOverview()
+    function showDownloadOverview($dbCon, $sqlStm)
     {
-        $dbConTest = new infoCenterDbCon();
-        $sqlStatement = new loadTableContent();
-
         //hardcodierung raus, noch dynamisch gestalten....
 
         if(isset($_POST['sortASC']))
         {
-            $sqlStatement->sqlQuery_loadDownloadsASC();
-            $sql = $sqlStatement->sqlQuery_loadDownloadsASC();
+            $sqlStm->sqlQuery_loadDownloadsASC();
+            $sql = $sqlStm->sqlQuery_loadDownloadsASC();
         }
         else if(isset($_POST['sortDESC']))
         {
-            $sqlStatement->sqlQuery_loadDownloadsDESC();
-            $sql = $sqlStatement->sqlQuery_loadDownloadsDESC();
+            $sqlStm->sqlQuery_loadDownloadsDESC();
+            $sql = $sqlStm->sqlQuery_loadDownloadsDESC();
         }
         else if(isset($_POST['sortCategory']))
         {
-            $sqlStatement->sqlQuery_sortByCategory();
-            $sql = $sqlStatement->sqlQuery_sortByCategory();
+            $sqlStm->sqlQuery_sortByCategory();
+            $sql = $sqlStm->sqlQuery_sortByCategory();
         }
         else
         {
-            $sqlStatement->sqlQuery_loadDownloadsDESC();
-            $sql = $sqlStatement->sqlQuery_loadDownloadsDESC();
+            $sqlStm->sqlQuery_loadDownloadsDESC();
+            $sql = $sqlStm->sqlQuery_loadDownloadsDESC();
         }
 
-        $sqlRes = mysqli_query($dbConTest, $sql);
+        $sqlRes = mysqli_query($dbCon, $sql);
         $countDownloads = mysqli_num_rows($sqlRes);
         $_SESSION["recordListDownload"] = $countDownloads;
 
@@ -86,19 +83,16 @@ class DownloadCenter
         echo "</table>\n";
     }
 
-    function showDownloadContent()
+    function showDownloadContent($dbCon, $sqlStm)
     {
         //Anzahl der Termine
         $recordCount = $_SESSION["recordListDownload"];
-
-        $dbCon = new infoCenterDbCon();
-        $sqlContent = new downloadDetails();
 
         for($i = 0; $i < $recordCount; $i++)
         {
             if(isset($_GET["downl_id_".$i]))
             {
-                $sqlRes = mysqli_query($dbCon, $sqlContent->sqlQuery_showDownloadDetails($_SESSION[$i."downlNumber"]));
+                $sqlRes = mysqli_query($dbCon, $sqlStm->sqlQuery_showDownloadDetails($_SESSION[$i."downlNumber"]));
                 $arCur = mysqli_fetch_array($sqlRes);
 
                 $downloadSubject = utf8_encode($arCur["Download_Subject"]);

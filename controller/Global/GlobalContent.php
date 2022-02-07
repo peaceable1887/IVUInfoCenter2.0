@@ -5,7 +5,6 @@ class GlobalContent
 {
     function showSiteDirection()
     {
-
         $linkDir = new LinkVerzeichnis();
         $linkPatternDownl = "/\?d.*/";
         $linkPatternSem = "/\?l.*/";
@@ -123,7 +122,7 @@ class GlobalContent
     }
     function showUserData()
     {
-        return "<a href='http://127.0.0.1/wordpress/einstellungen/'>Meine Daten</a>";
+        return "<a href='http://127.0.0.1/wordpress/einstellungen/'>Persönliche Daten</a>";
     }
 
     function showLogout()

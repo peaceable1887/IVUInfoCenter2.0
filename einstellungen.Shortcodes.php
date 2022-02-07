@@ -23,5 +23,5 @@ function profilSettings()
 
     $profilSettings = new Einstellungen();
 
-    $profilSettings->showProfilSettings();
+    $profilSettings->showProfilSettings(new infoCenterDbCon(),new loadProfilData(),new ProfilEditieren());
 }

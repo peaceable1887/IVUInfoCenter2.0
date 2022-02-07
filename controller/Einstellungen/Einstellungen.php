@@ -3,15 +3,13 @@
 
 class Einstellungen
 {
-    function showProfilSettings()
+    function showProfilSettings($dbCon, $userData, $container)
     {
-        $dbCon = new infoCenterDbCon();
-        $userData = new loadProfilData();
-        $container = new ProfilEditieren();
         $userid = $_SESSION['userid'];
 
         $sqlRes = mysqli_query($dbCon, $userData->loadData($userid));
         $arCur = mysqli_fetch_array($sqlRes);
+
         $_SESSION["User_Firstname"] = utf8_encode($arCur["User_Firstname"]);
         $_SESSION["User_Surname"] = utf8_encode($arCur["User_Surname"]);
         $_SESSION["User_Gender"] = utf8_encode($arCur["User_Gender"]);

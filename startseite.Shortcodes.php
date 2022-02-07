@@ -8,7 +8,7 @@ Author: Felix Hansmann
 
 add_shortcode("sc_btnSupportRequest","btnSupportRequest");
 
-function btnSupportRequest()
+/*function btnSupportRequest()
 {
     include_once "controller/Startseite/Startseite.php";
     include_once "view/Startseite/ButtonSupportanfrage.php";
@@ -17,7 +17,7 @@ function btnSupportRequest()
 
     $addFunctions->showBtnSupportRequest();
 
-}
+}*/
 
 add_shortcode("sc_sliderCurrentSeminare", "sliderCurrentSeminare");
 
@@ -35,7 +35,7 @@ function sliderCurrentSeminare()
 
     $slider = new Startseite();
 
-    $slider->show_sc_sliderCurrentSeminare();
+    $slider->show_sc_sliderCurrentSeminare(new infoCenterDbCon(),new loadTileContent());
 
 }
 

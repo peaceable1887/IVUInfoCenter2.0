@@ -2,7 +2,7 @@
 
 class Startseite
 {
-    function showBtnSupportRequest()
+   /* function showBtnSupportRequest()
     {
         $btn = new ButtonSupportanfrage();
         $localPort = "http://127.0.0.1";
@@ -55,20 +55,16 @@ class Startseite
         {
             echo $btn->hideButton();
         }
-    }
+    }*/
 
-    function show_sc_sliderCurrentSeminare()
+    function show_sc_sliderCurrentSeminare($dbCon, $sqlStm)
     {
-        $dbCon = new infoCenterDbCon();
-        $sqlStatement = new loadTileContent();
         $currentDate = date("Y-m-d");
-
-        $sql = $sqlStatement->tile_content($currentDate);
-        $sqlRes = mysqli_query($dbCon, $sql);
+        $sqlRes = mysqli_query($dbCon, $sqlStm->tile_content($currentDate));
 
         $recordCount = mysqli_num_rows($sqlRes);
 
-        echo "<div class='sliderContainer'><span class='sliderSemHeadline'>ANSTEHENDE SEMINARE</span>
+        echo "<div class='sliderContainer'><span class='sliderSemHeadline'>ANSTEHENDE VERANSTALTUNGEN</span>
                 <div class=\"slideshow-container\">";
 
         for ($i = 0;$i <= $recordCount ;$i++)

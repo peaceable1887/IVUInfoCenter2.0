@@ -76,8 +76,7 @@ add_shortcode("sc_showSeminarDetails", "showSeminarDetails");
 
 function showSeminarDetails()
 {
-
-  /*  include_once "css/rootSTYLE.php";
+    include_once "css/rootSTYLE.php";
     include_once("css/style.php");
     include_once "css/btn.style.php";
     include_once "css/AkademieEvents/akademieEventsSTYLE.php";
@@ -95,10 +94,12 @@ function showSeminarDetails()
     $seminarDetails = new SeminarDetails();
     $semContent = new Akademie();
 
-    echo "hallo welt1";
-    echo $seminarDetails->showSeminarDetails($semContent->showBuchung_seminarBlock(),
-        $semContent->showBuchung_beschreibung(), $semContent->showBuchung_inhalt(), $semContent->showBuchung_zielgruppe(),
-        $semContent->showBuchung_voraussetzungen(), $semContent->showBuchung_button_zurBuchung());*/
+       echo $seminarDetails->showSeminarDetails($semContent->showBuchung_seminarBlock(new infoCenterDbCon(),new loadTileContent()),
+        $semContent->showBuchung_beschreibung(new infoCenterDbCon(),new loadDescription()),
+        $semContent->showBuchung_inhalt(new infoCenterDbCon(),new loadMatter()),
+        $semContent->showBuchung_zielgruppe(new infoCenterDbCon(),new loadTargetGroup()),
+        $semContent->showBuchung_voraussetzungen(new infoCenterDbCon(),new loadRequirement()),
+        $semContent->showBuchung_button_zurBuchung());
 }
 
 add_shortcode("shortcode_buchung_seminarBlock", "buchung_seminarBlock");
@@ -115,7 +116,7 @@ function buchung_seminarBlock()
 
     $SBContent = new Akademie();
 
-    $SBContent->showBuchung_seminarBlock();
+    $SBContent->showBuchung_seminarBlock(new infoCenterDbCon(),new loadTileContent());
 
 }
 
@@ -130,7 +131,7 @@ function buchung_beschreibung()
 
     $BBContent = new Akademie();
 
-    $BBContent->showBuchung_beschreibung();
+    $BBContent->showBuchung_beschreibung(new infoCenterDbCon(),new loadDescription());
 }
 
 add_shortcode("shortcode_buchung_inhalt", "buchung_inhalt");
@@ -144,7 +145,7 @@ function buchung_inhalt()
 
     $BIContent = new Akademie();
 
-    $BIContent->showBuchung_inhalt();
+    $BIContent->showBuchung_inhalt(new infoCenterDbCon(),new loadMatter());
 
 }
 
@@ -159,7 +160,7 @@ function buchung_zielgruppe()
 
     $BZContent = new Akademie();
 
-    $BZContent->showBuchung_zielgruppe();
+    $BZContent->showBuchung_zielgruppe(new infoCenterDbCon(),new loadTargetGroup());
 }
 
 add_shortcode("shortcode_buchung_voraussetzungen", "buchung_voraussetzungen");
@@ -173,7 +174,7 @@ function buchung_voraussetzungen()
 
     $BVContent = new Akademie();
 
-    $BVContent->showBuchung_voraussetzungen();
+    $BVContent->showBuchung_voraussetzungen(new infoCenterDbCon(),new loadRequirement());
 }
 
 add_shortcode("shortcode_buchung_button_zurBuchung", "buchung_button_zurBuchung");

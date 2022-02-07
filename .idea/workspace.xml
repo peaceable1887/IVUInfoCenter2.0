@@ -26,41 +26,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="Edit: kleine Änderungen gemacht">
-      <change afterPath="$PROJECT_DIR$/css/global/headerPictureBgSTYLE.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/menuSTYLE.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/Akademie/SeminarDetails.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/Global/headerPartTwo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/Global/headerTop.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/dbCon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Database/dbCon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/Supportbereich/overlays.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/Supportbereich/overlays.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript/startseite/slider.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/akademie.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/akademie.Shortcodes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/Akademie/Akademie.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Akademie/Akademie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/DownloadCenter/DownloadCenter.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/DownloadCenter/DownloadCenter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Einstellungen/Einstellungen.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Einstellungen/Einstellungen.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/Global/GlobalContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Global/GlobalContent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/Login/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Login/Login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/Startseite/Startseite.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Startseite/Startseite.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/AkademieEvents/akademieEventsSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/AkademieEvents/akademieEventsSTYLE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/DownloadCenter/downloadContentSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/DownloadCenter/downloadContentSTYLE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Hilfe und Infos/helpAndInfosSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Hilfe und Infos/helpAndInfosSTYLE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Slider/sliderCurrentInfosSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Slider/sliderCurrentInfosSTYLE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Slider/sliderSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Slider/sliderSTYLE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Supportbereich/supportRequestTextSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Supportbereich/supportRequestTextSTYLE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Supportbereich/supportRequestTicketSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Supportbereich/supportRequestTicketSTYLE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/btn.style.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/btn.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/formContainerSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/formContainerSTYLE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/global/siteDirectionSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/global/siteDirectionSTYLE.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/downloadCenter.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/downloadCenter.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/global.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/infoTile.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/infoTile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/einstellungen.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/einstellungen.Shortcodes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/semTile.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/semTile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startseite.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/startseite.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supportbereich.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/supportbereich.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Akademie/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Akademie/Menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/DownloadCenter/MenuDownloadCenter.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/DownloadCenter/MenuDownloadCenter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Startseite/MenuStartseite.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Startseite/MenuStartseite.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Supportbereich/MenuSupportanfragen.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Supportbereich/MenuSupportanfragen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Supportbereich/TicketUebersicht.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Supportbereich/TicketUebersicht.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Akademie/SeminarDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Akademie/SeminarDetails.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +59,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>

@@ -32,7 +32,7 @@ function sortDownloads()
     include_once "view/DownloadCenter/DownloadFilter.php";
 
     $downloadFilter = new DownloadFilter();
-
+    //noch unfertig
     echo $downloadFilter->testshowSortDownloads();
 
 }
@@ -50,7 +50,7 @@ function downloadOverview()
 
     $downloadOverview = new DownloadCenter();
 
-    $downloadOverview->showDownloadOverview();
+    $downloadOverview->showDownloadOverview(new infoCenterDbCon(),new loadTableContent());
 }
 add_shortcode("sc_tableDownloadCenter", "tableDownloadCenter");
 
@@ -81,7 +81,7 @@ function downloadContent()
 
     $DLContent = new DownloadCenter();
 
-    $DLContent ->showDownloadContent();
+    $DLContent ->showDownloadContent(new infoCenterDbCon(),new downloadDetails());
 }
 
 
