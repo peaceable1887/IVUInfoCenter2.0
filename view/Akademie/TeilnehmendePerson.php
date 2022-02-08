@@ -8,9 +8,9 @@ class TeilnehmendePerson
                 <h5>Informationen zur teilnehmende Person</h5>
                 <table id='formular'>
                 <tr>
-                    <th>Vorname: <input class='formInput' name='vorname' value='".$firstName."'></th>
-                    <th>Name: <input class='formInput' name='nachname' value='".$surname."'></th>
-                    <th>E-Mail: <input class='formInput' name='email' value='".$eMail."'></th>
+                    <th>Vorname:<br><input class='formInput' name='vorname' value='".$firstName."'></th>
+                    <th>Name:<br><input class='formInput' name='nachname' value='".$surname."'></th>
+                    <th>E-Mail:<br><input class='formInput' name='email' value='".$eMail."'></th>
                 </tr>
               </table>
                <div class=\"field_wrapper\">

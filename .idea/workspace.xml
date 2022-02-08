@@ -25,19 +25,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="Edit: kleine Änderungen gemacht">
+    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="Edit: Funktionen entschlackt">
+      <change afterPath="$PROJECT_DIR$/Sql/AkademieEvents/sqlQueryAkademieEvents.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sql/AkademieEvents/allEvents/sqlQueryAllEvents.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/AkademieEvents/allEvents/sqlQueryAllEvents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sql/AkademieEvents/tile/loadTileContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/AkademieEvents/tile/loadTileContent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/akademie.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/akademie.Shortcodes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/Akademie/Akademie.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Akademie/Akademie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/DownloadCenter/DownloadCenter.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/DownloadCenter/DownloadCenter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/Einstellungen/Einstellungen.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Einstellungen/Einstellungen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/Global/GlobalContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Global/GlobalContent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/Startseite/Startseite.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Startseite/Startseite.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloadCenter.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/downloadCenter.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/einstellungen.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/einstellungen.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/semTile.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/semTile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startseite.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/startseite.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/AkademieEvents/akademieEventsSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/AkademieEvents/akademieEventsSTYLE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/formContainerSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/formContainerSTYLE.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/Akademie/SeminarDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Akademie/SeminarDetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Akademie/TeilnehmendePerson.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Akademie/TeilnehmendePerson.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,6 +208,7 @@
       <workItem from="1643875347004" duration="3397000" />
       <workItem from="1643879651677" duration="666000" />
       <workItem from="1643882578116" duration="10718000" />
+      <workItem from="1644314785462" duration="13935000" />
     </task>
     <task id="LOCAL-00001" summary="weiterer Push des Codes">
       <created>1637168082069</created>
@@ -288,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639578817832</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Edit: Funktionen entschlackt">
+      <created>1644250342086</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1644250342086</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +336,8 @@
     <MESSAGE value="Slider überarbeitet" />
     <MESSAGE value="Filter Menü überarbeitet" />
     <MESSAGE value="Edit: Downloadbereich, Supportanfragen und Akademiebereich" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit: Downloadbereich, Supportanfragen und Akademiebereich" />
+    <MESSAGE value="Edit: Funktionen entschlackt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit: Funktionen entschlackt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638029757564">
@@ -351,6 +358,10 @@
     <state x="451" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.770/2880.0.1920.1040@0.0.1440.770" timestamp="1636028535256" />
     <state x="451" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637935827906" />
     <state x="3406" y="642" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.770/2880.469.1680.1010@2880.469.1680.1010" timestamp="1639577928811" />
+    <state x="93" y="93" width="1253" height="583" key="DiffContextDialog" timestamp="1644250431739">
+      <screen x="0" y="0" width="1440" height="770" />
+    </state>
+    <state x="93" y="93" width="1253" height="583" key="DiffContextDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644250431739" />
     <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1638030159525">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -371,12 +382,12 @@
     <state x="146" y="169" key="NewPhpClassDialog/0.0.1440.770/2880.0.1920.1040@0.0.1440.770" timestamp="1638435092784" />
     <state x="278" y="193" key="NewPhpClassDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1643819080216" />
     <state x="3050" y="745" width="711" height="500" key="NewPhpClassDialog/0.0.1440.770/2880.469.1680.1010@2880.469.1680.1010" timestamp="1639573785320" />
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1643888322216">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="462" y="489" key="NewPhpFileDialog" timestamp="1644315784777">
+      <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="566" y="314" key="NewPhpFileDialog/0.0.1440.770/2880.0.1920.1040@0.0.1440.770" timestamp="1638449208336" />
     <state x="3635" y="424" key="NewPhpFileDialog/0.0.1440.770/2880.0.1920.1040@2880.0.1920.1040" timestamp="1637238591606" />
-    <state x="462" y="489" key="NewPhpFileDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1643822573450" />
+    <state x="462" y="489" key="NewPhpFileDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644315784777" />
     <state x="3540" y="881" key="NewPhpFileDialog/0.0.1440.770/2880.469.1680.1010@2880.469.1680.1010" timestamp="1639580154937" />
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1643888322216" />
     <state x="222" y="30" key="SettingsEditor" timestamp="1638443956599">
@@ -413,10 +424,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="540" y="314" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1643892691755" />
-    <state x="412" y="189" key="run.anything.popup" timestamp="1638380536769">
+    <state x="413" y="190" key="run.anything.popup" timestamp="1644317147275">
       <screen x="0" y="0" width="1440" height="770" />
     </state>
-    <state x="412" y="189" key="run.anything.popup/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1638380536769" />
+    <state x="413" y="190" key="run.anything.popup/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644317147275" />
     <state x="406" y="137" width="672" height="634" key="search.everywhere.popup" timestamp="1643799842828">
       <screen x="0" y="0" width="1440" height="770" />
     </state>

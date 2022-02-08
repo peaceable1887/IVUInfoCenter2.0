@@ -3,7 +3,7 @@ class sqlQueryAllEvents
 {
     function sqlQuery_loadASC($currentDate)
     {
-        $sql = "SELECT Seminar_Name, Field_Name, Event_StartDate, Event_EndDate, Event_Location, Seminar_Status
+        $sql = "SELECT Event_ID,Seminar_Name, Field_Name, Event_StartDate, Event_EndDate, Event_Location, Seminar_Status
               FROM info_sem
               INNER JOIN info_sem_field ON info_sem_field.Field_ID=info_sem.Seminar_Field
               INNER JOIN info_sem_event ON info_sem_event.Event_Seminar = info_sem.Seminar_ID

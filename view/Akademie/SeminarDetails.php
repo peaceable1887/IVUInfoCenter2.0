@@ -2,12 +2,11 @@
 
 class SeminarDetails
 {
-    function showSeminarDetails($seminarTile, $descriptionContent, $contentContent, $targetGrpContent,
+    function showSeminarDetails($descriptionContent, $contentContent, $targetGrpContent,
                                 $preconditionContent, $btnContent)
     {
         $seminarDetails = "<div class='detailsContainer'>
-                                <div class='tileContent'>
-                                ".$seminarTile."
+                                <div class='tileContent'>     
                                 </div>
                                 <div class='detailsContent'>
                                     <div class='descriptionContent'>
@@ -31,4 +30,5 @@ class SeminarDetails
 
         return $seminarDetails;
     }
+
 }

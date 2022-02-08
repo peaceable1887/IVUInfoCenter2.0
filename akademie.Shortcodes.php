@@ -72,7 +72,28 @@ function pageNumber()
           </div></div>";
 }
 
-add_shortcode("sc_showSeminarDetails", "showSeminarDetails");
+add_shortcode("sc_showEventContent", "showEventContent");
+
+function showEventContent()
+{
+    include_once "Database/ivu-dbCon.php";
+    include_once "css/rootSTYLE.php";
+    include_once "css/style.php";
+    include_once "css/btn.style.php";
+    include_once "css/AkademieEvents/akademieEventsSTYLE.php";
+    include_once "Sql/AkademieEvents/sqlQueryAkademieEvents.php";
+    include_once("Sql/AkademieEvents/allEvents/sqlQueryAllEvents.php");
+    include_once "Sql/AkademieEvents/tile/loadTileContent.php";
+    include_once "model/semTile.php";
+    include_once "view/Akademie/SeminarDetails.php";
+    include_once "controller/Akademie/Akademie.php";
+
+    $eventContent = new Akademie();
+
+    echo $eventContent->eventContent(new infoCenterDbCon(), new sqlQueryAkademieEvents());
+}
+
+/*add_shortcode("sc_showSeminarDetails", "showSeminarDetails");
 
 function showSeminarDetails()
 {
@@ -100,7 +121,7 @@ function showSeminarDetails()
         $semContent->showBuchung_zielgruppe(new infoCenterDbCon(),new loadTargetGroup()),
         $semContent->showBuchung_voraussetzungen(new infoCenterDbCon(),new loadRequirement()),
         $semContent->showBuchung_button_zurBuchung());
-}
+}*/
 
 add_shortcode("shortcode_buchung_seminarBlock", "buchung_seminarBlock");
 
@@ -110,13 +131,14 @@ function buchung_seminarBlock()
     include_once("css/style.php");
     include_once("Sql/AkademieEvents/tile/loadTileContent.php");
     include_once("Sql/AkademieEvents/allEvents/sqlQueryAllEvents.php");
+    include_once("Sql/AkademieEvents/contentMatter/loadMatter.php");
     include_once("Database/ivu-dbCon.php");
     include_once "model/semTile.php";
     include_once "controller/Akademie/Akademie.php";
 
     $SBContent = new Akademie();
 
-    $SBContent->showBuchung_seminarBlock(new infoCenterDbCon(),new loadTileContent());
+    echo $SBContent->showBuchung_seminarBlock(new infoCenterDbCon(),new loadTileContent());
 
 }
 

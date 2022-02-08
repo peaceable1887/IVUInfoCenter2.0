@@ -12,7 +12,7 @@ class Akademie
 
         echo "<table>\n";
         echo "<tr>\n";
-        echo "<th>Datum</th>\n";
+        echo "<th>Datum1</th>\n";
         echo "<th>Ort</th>\n";
         echo "<th>Fachbereich</th>\n";
         echo "<th>Name</th>\n";
@@ -28,7 +28,7 @@ class Akademie
             $newStartDate = date("d.",strtotime($infoSemEvent->getEventStartDate()));
             $infoSemEvent->setEventEndDate(utf8_encode($arCur["Event_EndDate"]));
             $newEndDate = date("d.m.Y",strtotime($infoSemEvent->getEventEndDate()));
-            $_SESSION[$i."eventNumber"] = utf8_encode($arCur["Seminar_ID"]);
+            $_SESSION[$i."eventNumber"] = utf8_encode($arCur["Event_ID"]);
 
             echo "<tr>\n";
 
@@ -59,42 +59,6 @@ class Akademie
         echo "</table>\n";
 
     }
-
-    //Funktion noch umändern und ausbauen
-   /* function eventContent($dbCon, $sqlStm)
-    {
-        //Anzahl der Termine
-        $recordCount = $_SESSION["recordList"];
-
-        for($i = 0; $i < $recordCount; $i++)
-        {
-            if(isset($_GET["linkDescription".$i]))
-            {
-                $sqlRes = mysqli_query($dbCon, $sqlStm->sqlQuery_showDownloadDetails($_SESSION[$i."eventNumber"]));
-                $arCur = mysqli_fetch_array($sqlRes);
-
-                $downloadSubject = utf8_encode($arCur["Download_Subject"]);
-                $downloadDate = utf8_encode($arCur["Download_Date"]);
-                $downloadDateConvert = strtotime($downloadDate);
-                $newDownloadDate = date("d.m.Y",$downloadDateConvert);
-                $downloadNumber = utf8_encode($arCur["Download_Number"]);
-                $fieldName = utf8_encode($arCur["Field_Name"]);
-                $downloadDescription = utf8_encode($arCur["Download_Description"]);
-                //nochmal nachsehen ob richtige Spalte
-                $fileSize = utf8_encode($arCur["File_Size"]);
-
-                break;
-            }
-
-        }
-        mysqli_close($dbCon);
-
-        $content = new downloadContent();
-
-        echo $content->downloadContentDescription($downloadSubject,$newDownloadDate,
-            $downloadNumber,$fieldName,$downloadDescription, $fileSize);
-
-    }*/
 
     function showBuchung_seminarBlock($dbCon, $sqlStm)
     {
@@ -148,27 +112,35 @@ class Akademie
 
     }
 
-    function showBuchung_beschreibung($dbCon, $sqlStm)
+    //Funktion noch umändern und ausbauen
+    function eventContent($dbCon, $sqlStm)
     {
         //Anzahl der Termine
         $recordCount = $_SESSION["recordList"];
-        $currentDate = date("Y-m-d");
 
         for($i = 0; $i < $recordCount; $i++)
         {
             if(isset($_GET["linkDescription".$i]))
             {
-                $sqlRes = mysqli_query($dbCon, $sqlStm->content_description($currentDate));
+                $sqlRes = mysqli_query($dbCon, $sqlStm->showEventContent($_SESSION[$i."eventNumber"]));
+                $arCur = mysqli_fetch_array($sqlRes);
 
-                for($x = 0; $x < $i+1; $x++)
-                {
-                    $arCur = mysqli_fetch_array($sqlRes);
-                    $arr[$x] = utf8_encode($arCur["Seminar_Description"]);
-                    return "<span class='semBookingDescription'>".$arr[$i]."</span>";
-                }
-                mysqli_close($dbCon);
+                $Seminar_Description = utf8_encode($arCur["Seminar_Description"]);
+                $Seminar_Target = utf8_encode($arCur["Seminar_Target"]);
+                $Seminar_Premises = utf8_encode($arCur["Seminar_Premises"]);
+                $Seminar_Content = utf8_encode($arCur["Seminar_Content"]);
+
+                break;
             }
+
         }
+        mysqli_close($dbCon);
+        $seminarDetails = new SeminarDetails();
+        $content = new Akademie();
+
+        return $seminarDetails->showSeminarDetails(
+            $Seminar_Description, $Seminar_Content, $Seminar_Target,
+            $Seminar_Premises, $content->showBuchung_button_zurBuchung());
 
     }
 
@@ -188,9 +160,10 @@ class Akademie
                 {
                     $arCur = mysqli_fetch_array($sqlRes);
                     $arr[$x] = utf8_encode($arCur["Seminar_Content"]);
-                    $teilung = explode(";",$arr[$i]);
+                    $regex = "[a-zA-Z]\s-";
+                    $teilung = explode("-",$arr[$i]);
                     //echo $arr[$i];
-                    for($z = 0; $z <= substr_count($arr[$i], ";"); $z++)
+                    for($z = 0; $z <= substr_count($arr[$i], "-"); $z++)
                     {
                         if(isset($arr[$i]))
                         {
@@ -206,55 +179,6 @@ class Akademie
 
     }
 
-    function showBuchung_zielgruppe($dbCon, $sqlStm)
-    {
-        //Anzahl der Termine
-        $recordCount = $_SESSION["recordList"];
-        $currentDate = date("Y-m-d");
-
-        for($i = 0; $i < $recordCount; $i++)
-        {
-            if(isset($_GET["linkDescription".$i]))
-            {
-                $sqlRes = mysqli_query($dbCon, $sqlStm->targetGroup($currentDate));
-
-                for($x = 0; $x < $i+1; $x++)
-                {
-                    $arCur = mysqli_fetch_array($sqlRes);
-                    $arr[$x] = utf8_encode($arCur["Seminar_Target"]);
-                    return "<span class='semBookingTargetGrp'>".$arr[$i]."</span>";
-                }
-
-                mysqli_close($dbCon);
-            }
-        }
-
-    }
-
-    function showBuchung_voraussetzungen($dbCon, $sqlStm)
-    {
-        //Anzahl der Termine
-        $recordCount = $_SESSION["recordList"];
-        $currentDate = date("Y-m-d");
-
-        for($i = 0; $i < $recordCount; $i++)
-        {
-            if(isset($_GET["linkDescription".$i]))
-            {
-
-                $sqlRes = mysqli_query($dbCon, $sqlStm->requirement($currentDate));
-
-                for($x = 0; $x < $i+1; $x++)
-                {
-                    $arCur = mysqli_fetch_array($sqlRes);
-                    $arr[$x] = utf8_encode($arCur["Seminar_Premises"]);
-                    return "<span class='semBookingPreCond'>".$arr[$i]."</span>";
-                }
-
-                mysqli_close($dbCon);
-            }
-        }
-    }
 
     function showBuchung_button_zurBuchung()
     {
@@ -283,9 +207,9 @@ class Akademie
                 var wrapper = $('.field_wrapper');
                 var fieldHTML = '<div><table id=\'formular\'>\n' +
                     '                <tr>\n' +
-                    '                    <th>Vorname: <input class=\'formInput\' name=\'vorname\'></th>\n' +
-                    '                    <th>Name: <input class=\'formInput\' name=\'nachname\'></th>\n' +
-                    '                    <th>E-Mail: <input class=\'formInput\' name=\'email\'></th>' +
+                    '                    <th>Vorname:<br><input class=\'formInput\' name=\'vorname\'></th>\n' +
+                    '                    <th>Name:<br><input class=\'formInput\' name=\'nachname\'></th>\n' +
+                    '                    <th>E-Mail:<br><input class=\'formInput\' name=\'email\'></th>' +
                     '                     Teilnehmer | <a href="javascript:void(0);" class="remove_button">Entfernen</a>' +
                     '                </tr>' +
                     '              </table></div>';

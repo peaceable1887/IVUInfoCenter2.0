@@ -8,6 +8,7 @@
         padding: 15px;
         margin: 0 20px 20px 20px ;
         border-radius: 10px;
+        float: left;
     }
     /*Bereich Einstellungen*/
     .formContainerSettings
@@ -75,6 +76,7 @@
     .addAttendees p
     {
         color: black;
+        margin: 0;
     }
     .plusChar
     {
