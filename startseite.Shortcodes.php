@@ -23,6 +23,10 @@ add_shortcode("sc_sliderCurrentSeminare", "sliderCurrentSeminare");
 
 function sliderCurrentSeminare()
 {
+    include_once "css/global/slider.style.php";
+    include_once "controller/Global/sliderFunction.php";
+    include_once "view/Global/slider.php";
+
     include_once "css/rootSTYLE.php";
     include_once "css/style.php";
     include_once "Database/ivu-dbCon.php";

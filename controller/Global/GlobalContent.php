@@ -261,17 +261,17 @@ class GlobalContent
         {
             echo "<span class='subHeadline'>Gesamte Kursübersicht</span>";
         }
-        else if($url ===  "http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/")
+        else if(preg_match_all($linkPatternSem, $url))
         {
-            echo "<span class='subHeadline'>AKADEMIE UND EVENTS</span>";
+            echo "<span class='subHeadline'>KURS BUCHEN</span>";
         }
         else if($url ===  "http://127.0.0.1/wordpress/akademie-events-buchung-schritt-2/")
         {
-            echo "<span class='subHeadline'>AKADEMIE UND EVENTS</span>";
+            echo "<span class='subHeadline'>KURS BUCHEN</span>";
         }
         else if($url ===  "http://127.0.0.1/wordpress/akademie-events-buchung-schritt-3/")
         {
-            echo "<span class='subHeadline'>AKADEMIE UND EVENTS</span>";
+            echo "<span class='subHeadline'>KURS BUCHEN</span>";
         }
         else if($url ===  "http://127.0.0.1/wordpress/meine-gebuchten-veranstaltungen/")
         {

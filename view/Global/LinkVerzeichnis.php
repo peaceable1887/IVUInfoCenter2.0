@@ -43,7 +43,8 @@ class LinkVerzeichnis
         $link = "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
             "<a href=\"http://127.0.0.1/wordpress/akademie-events/\">Akademie und Events</a>"." > ".
             "<a href=\"http://127.0.0.1/wordpress/akademie-events-uebersicht/\">Gesamte Kursübersicht</a>"." > ".
-            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/\">Kurs buchen</a></div>";
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/\">Kursübersicht</a>"." > ".
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-2/\">Registrierung</a></div>";
 
         return $link;
     }
@@ -52,7 +53,8 @@ class LinkVerzeichnis
         $link = "<div class='sdLink'><a href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
             "<a href=\"http://127.0.0.1/wordpress/akademie-events/\">Akademie und Events</a>"." > ".
             "<a href=\"http://127.0.0.1/wordpress/akademie-events-uebersicht/\">Gesamte Kursübersicht</a>"." > ".
-            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/\">Kurs buchen</a>"." > ".
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/\">Kursübersicht</a>"." > ".
+            "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-2/\">Registrierung</a>"." > ".
             "<a href=\"http://127.0.0.1/wordpress/akademie-events-buchung-schritt-3/\">Buchung erfolgreich</a></div>";
 
         return $link;

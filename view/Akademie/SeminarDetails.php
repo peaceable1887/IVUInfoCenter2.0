@@ -2,12 +2,13 @@
 
 class SeminarDetails
 {
-    function showSeminarDetails($descriptionContent, $contentContent, $targetGrpContent,
+    function showSeminarDetails($semTile,$descriptionContent, $contentContent, $targetGrpContent,
                                 $preconditionContent, $btnContent)
     {
-        $seminarDetails = "<div class='detailsContainer'>
-                                <div class='tileContent'>     
-                                </div>
+        $seminarDetails = "<div class='tileContainer'>     
+                              ".$semTile."  
+                            </div>
+                            <div class='detailsContainer'>                                
                                 <div class='detailsContent'>
                                     <div class='descriptionContent'>
                                         <span class='infoTitle'>Beschreibung</span><br>".$descriptionContent."
@@ -25,7 +26,7 @@ class SeminarDetails
                                         <span class='infoTitle'>Preis</span><br>
                                     </div>                                  
                                 </div>
-                                <div class='btnContent'>".$btnContent."</div>
+                                <div class='btnContent'><div class='btnReg'>".$btnContent."</div></div>
                            </div>";
 
         return $seminarDetails;

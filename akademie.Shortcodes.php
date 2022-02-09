@@ -204,10 +204,18 @@ function buchungsBestaetigung()
     include_once "css/rootSTYLE.php";
     include_once "view/Akademie/BuchungText.php";
     include_once "css/AkademieEvents/akademieEventsSTYLE.php";
+    include_once("css/style.php");
+    include_once("Sql/AkademieEvents/tile/loadTileContent.php");
+    include_once("Sql/AkademieEvents/allEvents/sqlQueryAllEvents.php");
+    include_once("Sql/AkademieEvents/contentMatter/loadMatter.php");
+    include_once("Database/ivu-dbCon.php");
+    include_once "model/semTile.php";
+    include_once "controller/Akademie/Akademie.php";
 
     $text = new BuchungText();
+    $SBContent = new Akademie();
 
-    echo $text->bookingConfirmed();
+    echo $text->bookingConfirmed($SBContent->showBuchung_seminarBlock(new infoCenterDbCon(),new loadTileContent()));
 }
 
 add_shortcode("sc_kommendeVeranstaltungen","kommendeVeranstaltungen");

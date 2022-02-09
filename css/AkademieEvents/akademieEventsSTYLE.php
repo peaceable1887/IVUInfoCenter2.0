@@ -9,10 +9,11 @@
         font-family: var(--fontfamily-global);
 
     }
-    .tileContent
+    .tileContainer
     {
         display: flex;
         justify-content: start;
+        padding: 0 0 0 1.2%;
     }
     .infoTitle
     {
@@ -24,7 +25,7 @@
         display: flex;
         width: 100%;
         flex-direction: column;
-        padding-right: 10%;
+        padding: 0 10% 0 1.5%;
     }
     .descriptionContent
     {
@@ -45,10 +46,17 @@
     .priceContent
     {
         width: 100%;
+        margin: 0 0 5% 0;
     }
     .btnContent
     {
-        width: 100%;
+        display: flex;
+        justify-content: end;
+        padding: 0 5% 0 0;
+    }
+    .btnReg
+    {
+
     }
     /*Beschreibung*/
     .semBookingDescription
@@ -87,20 +95,46 @@
 
 
     /*----------Buchung(Schritt 3) Design----------*/
+    .tileContent
+    {
+        display: flex;
+        justify-content: center;
+    }
     .textContent
     {
-        width: 100%;
-        height: 30vh;
         display: flex;
-        align-items: center;
         justify-content: center;
+        margin: 1.5% 0 0 0;
     }
     .semBookingTextConfirmed
     {
         font-size: 17px;
         font-family: var(--fontfamily-global);
+        width: 60%;
     }
+    .checkmarkContent
+    {
+        display: flex;
+        justify-content: center;
+        margin: 2% 0 2% 0;
+    }
+    .checkmark
+    {
 
+    }
+    .lowerHeadlineContent
+    {
+        display: flex;
+        justify-content: center;
+        margin: 5% 0 2% 0;
+    }
+    .lowerHeadline
+    {
+        font-family: var(--fontfamily-global);
+        font-size: 32px;
+        color: var(--color-ivu-red);
+        text-decoration: underline;
+    }
     /*-------PageNumber Design-------*/
 
     .paginationContainer

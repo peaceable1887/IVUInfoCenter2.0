@@ -12,7 +12,7 @@ class Akademie
 
         echo "<table>\n";
         echo "<tr>\n";
-        echo "<th>Datum1</th>\n";
+        echo "<th>Datum</th>\n";
         echo "<th>Ort</th>\n";
         echo "<th>Fachbereich</th>\n";
         echo "<th>Name</th>\n";
@@ -138,7 +138,7 @@ class Akademie
         $seminarDetails = new SeminarDetails();
         $content = new Akademie();
 
-        return $seminarDetails->showSeminarDetails(
+        return $seminarDetails->showSeminarDetails($content->showBuchung_seminarBlock(new infoCenterDbCon(),new loadTileContent()),
             $Seminar_Description, $Seminar_Content, $Seminar_Target,
             $Seminar_Premises, $content->showBuchung_button_zurBuchung());
 

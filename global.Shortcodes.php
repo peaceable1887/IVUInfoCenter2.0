@@ -88,7 +88,29 @@ function headerPicture()
     $headerPartTwo = new headerPartTwo();
     echo $headerPartTwo->showHeader($headline->showHeadline());
 }
+add_shortcode("sc_slideshow", "slideshow");
 
+function slideshow()
+{
+
+    include_once "css/global/slider.style.php";
+    include_once "controller/Global/sliderFunction.php";
+    include_once "view/Global/slider.php";
+
+    include_once "css/rootSTYLE.php";
+    include_once "css/style.php";
+    include_once "Database/ivu-dbCon.php";
+    include_once "css/Slider/sliderSTYLE.php";
+    include_once "css/formContainerSTYLE.php";
+    include_once "model/semTile.php";
+    include_once "controller/Startseite/Startseite.php";
+    include_once("css/AkademieEvents/akademieEventsSTYLE.php");
+    include_once("Sql/AkademieEvents/tile/loadTileContent.php");
+
+    $slider = new slider();
+    $sliderFunction = new sliderFunction();
+    echo $slider->eventSlider($sliderFunction->showEventTile(new infoCenterDbCon(),new loadTileContent()));
+}
 /*add_shortcode("sc_headline", "headline");
 
 function headline()

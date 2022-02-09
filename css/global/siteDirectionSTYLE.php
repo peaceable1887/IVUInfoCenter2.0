@@ -1,9 +1,9 @@
 <style>
     .sdLink
     {
-        padding: 0 0 0 23px;
+        padding: 0 0 0 2.4%;
         font-family: var(--fontfamily-global);
-        margin: 10px 0 0 0;
+        margin: 1% 0 0.5% 0;
     }
     .sdLink a
     {

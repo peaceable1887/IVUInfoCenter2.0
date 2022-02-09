@@ -56,7 +56,6 @@
         width: 400px;
         border: solid 2.5px #dadada;
         border-radius: 10px;
-        float: left;
         text-align: center;
         background: rgb(218,218,218);
         background: linear-gradient(180deg, rgba(218,218,218,1) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);

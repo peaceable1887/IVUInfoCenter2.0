@@ -6,7 +6,7 @@
         width: 97%;
         height: auto;
         padding: 15px;
-        margin: 0 20px 20px 20px ;
+        margin: 0 2% 2% 2%;
         border-radius: 10px;
         float: left;
     }
