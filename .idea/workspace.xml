@@ -26,23 +26,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="Akademiebereich editiert: CSS angepasst und Funktionen entschlackt">
-      <change afterPath="$PROJECT_DIR$/JavaScript/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/Global/sliderFunction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/global/slider.style.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/Global/slider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/akademie.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/akademie.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/Akademie/Akademie.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Akademie/Akademie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/Global/GlobalContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Global/GlobalContent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/AkademieEvents/akademieEventsSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/AkademieEvents/akademieEventsSTYLE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/formContainerSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/formContainerSTYLE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/global/siteDirectionSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/global/siteDirectionSTYLE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/global/subHeadlineSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/global/subHeadlineSTYLE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Global/sliderFunction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Startseite/Startseite.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Startseite/Startseite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Slider/sliderSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Slider/sliderSTYLE.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/global.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/global.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Akademie/BuchungText.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Akademie/BuchungText.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Akademie/SeminarDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Akademie/SeminarDetails.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Global/LinkVerzeichnis.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Global/LinkVerzeichnis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Global/slider.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -375,11 +364,11 @@
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="303" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644424224917" />
-    <state x="3406" y="642" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1639577928811">
-      <screen x="2880" y="469" width="1680" height="1010" />
+    <state x="451" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1644426752538">
+      <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="451" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.770/2880.0.1920.1040@0.0.1440.770" timestamp="1636028535256" />
-    <state x="451" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637935827906" />
+    <state x="451" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644426752538" />
     <state x="3406" y="642" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.770/2880.469.1680.1010@2880.469.1680.1010" timestamp="1639577928811" />
     <state x="93" y="93" width="1253" height="583" key="DiffContextDialog" timestamp="1644331839111">
       <screen x="0" y="0" width="1440" height="770" />

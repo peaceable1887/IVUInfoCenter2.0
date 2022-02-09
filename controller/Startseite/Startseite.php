@@ -64,7 +64,7 @@ class Startseite
 
         $recordCount = mysqli_num_rows($sqlRes);
 
-        echo "<div class='sliderContainer'><span class='sliderSemHeadline'>ANSTEHENDE VERANSTALTUNGEN</span>
+        echo "<div class='sliderContainer'><div class='sliderSemHeadline'>ANSTEHENDE VERANSTALTUNGEN</div>
                 <div class=\"slideshow-container\">";
 
         for ($i = 0;$i <= $recordCount ;$i++)
@@ -125,7 +125,7 @@ class Startseite
                 for (i = 0; i < dots.length; i++) {
                     dots[i].className = dots[i].className.replace(" active", "");
                 }
-                slides[slideIndex-1].style.display = "block";
+                slides[slideIndex-1].style.display = "flex";
                 dots[slideIndex-1].className += " active";
             }
             // Slider: Bildwechsel in Sekundenintervallen
@@ -135,14 +135,14 @@ class Startseite
                 let slides = document.querySelectorAll(".mySlides");
                 for (i = 0; i < slides.length; i++)
                 {
-                    slides[i].setAttribute("style","display:none");
+                    slides[i].setAttribute("style","display:flex");
                 }
                 count++;
                 if (count > slides.length)
                 {
                     count = 1;
                 }
-                slides[count-1].setAttribute("style","display:block");
+                slides[count-1].setAttribute("style","display:flex");
                 setTimeout(simpleSlides, 6000);
             }
         </script><?php

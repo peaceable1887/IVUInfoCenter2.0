@@ -28,11 +28,12 @@
         color: var(--color-default-white);
         font-family: var(--fontfamily-global);
         font-size: 28px;
-        text-align: center;
+        display: flex;
+        justify-content: center;
     }
     .mySlides
     {
-        display: none;
+        display: flex;
     }
     .arrows
     {
