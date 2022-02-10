@@ -181,6 +181,30 @@ function buchung_button_zurBuchung()
 
     $btnContent->showBuchung_button_zurBuchung();
 }
+add_shortcode("sc_eventRegisterBox", "eventRegisterBox");
+
+function eventRegisterBox()
+{
+    include_once "css/rootSTYLE.php";
+    include_once "css/btn.style.php";
+    include_once "css/AkademieEvents/akademieEventsSTYLE.php";
+    include_once "css/formContainerSTYLE.php";
+    include_once "view/Akademie/TeilnehmendePerson.php";
+    include_once "controller/Akademie/Akademie.php";
+
+    include_once("css/style.php");
+    include_once("Sql/AkademieEvents/tile/loadTileContent.php");
+    include_once("Sql/AkademieEvents/allEvents/sqlQueryAllEvents.php");
+    include_once("Sql/AkademieEvents/contentMatter/loadMatter.php");
+    include_once("Database/ivu-dbCon.php");
+    include_once "model/semTile.php";
+
+    $eventBox = new TeilnehmendePerson();
+    $SBContent = new Akademie();
+
+    echo $eventBox->showEventBox($SBContent->showBuchung_seminarBlock(new infoCenterDbCon(),new loadTileContent()));
+
+}
 
 add_shortcode("shortcode_information_teilnehmendePerson", "information_teilnehmendePerson");
 

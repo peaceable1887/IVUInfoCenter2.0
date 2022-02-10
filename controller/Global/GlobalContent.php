@@ -63,7 +63,7 @@ class GlobalContent
         {
             echo $linkDir->kursuebersicht();
         }
-        else if(preg_match_all($linkPatternSem, $url))
+        else if($url === $links["akademie"]["registrierung"])
         {
             echo $linkDir->registrierung();
         }
@@ -292,7 +292,7 @@ class GlobalContent
         }
         else if($url ===  "http://127.0.0.1/wordpress/hilfe/")
         {
-            echo "<h5 class='subHeadline'>Hotline Nummern</h5>";
+            echo "<span class='subHeadline'>Hilfe und Infos</span>";
         }
         else if($url ===  "http://127.0.0.1/wordpress/support-anfragen/")
         {

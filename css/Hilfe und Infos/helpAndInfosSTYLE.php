@@ -1,89 +1,77 @@
 <style>
 
-    .mainContainer
-    {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        flex-direction: column;
-        font-family: var(--fontfamily-global);
-        background-color: var(--color-brightgrey);
-        margin: 20px 20px 0 20px;
-    }
-    .infoText
-    {
-        width: 100%;
-        height: 50px;
-        padding: 20px 0 60px 50px;
-        font-size: 22px;
-        color: var(--color-ivu-red);
-        background-color: var(--color-brightgrey);
-        border-bottom: 2px solid var(--color-ivu-grey2);
-    }
-    .infoTextNumber
-    {
-        width: 100%;
-        height: 50px;
-        padding: 20px 0 60px 50px;
-        margin: 0 0 20px 0;
-        font-size: 22px;
-        color: var(--color-ivu-red);
-        background-color: var(--color-default-white);
-        border-bottom: 2px solid var(--color-ivu-grey2);
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 15px 10px -15px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    }
-    .callNumberCollections
-    {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        padding: 20px 0 20px 0;
-        color: var(--color-ivu-red);
-        font-weight: bold;
-    }
-    .callEndNumber
-    {
-        width: 15%;
-        height: fit-content;
-        padding: 10px 0 10px 25px;
-        color: var(--color-ivu-red);
-        background-color: var(--color-default-white);
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-        border: 2px solid var(--color-ivu-grey2);
-        border-radius: 4px;
-        line-height: 40px;
-    }
-    .callEndNumber b
-    {
-        text-decoration: underline;
-    }
-    .handbookInfo
-    {
-        font-family: var(--fontfamily-global);
-        display: flex;
-        justify-content: start;
-        width: 100%;
-        height: 300px;
-        padding: 0 0 0 50px;
-    }
-    .handbookInfo p
-    {
-        margin: 0;
-        color: var(--color-ivu-red);
-        font-size: 22px;
-        padding-top: 17px;
-    }
-    .handbookInfo p img
-    {
-        height: 190px;
-        width: 125px;
-        margin-top: 25px;
-    }
-    .handbookInfo img
-    {
-        margin: 0 20px 0 0;
-        width: 70px;
-        height: 70px;
-    }
+.infoContent
+{
+    width: 95%;
+    font-family: var(--fontfamily-global);
+    margin: 2% 2.4% 0 2.4%;
+}
+.infoContent h2
+{
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+}
+.infoText
+{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    padding: 5px 0 20px 0;
+}
+.hotline
+{
+    color: var(--color-ivu-red);
+    font-size: 30px;
+    font-weight: bold;
+}
+.infoHotline
+{
+    display: flex;
+    flex-direction: column;
+}
+.callNumberHeadline
+{
+    color: var(--color-ivu-red);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+    font-size: 22px;
+    border-top: 1px solid var(--color-ivu-red);
+    border-bottom: 1px solid var(--color-ivu-red);
+    font-weight: bold;
 
+}
+.infoCallnumber
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0 20px 0;
+}
+.handbookHeadline
+{
+    color: var(--color-ivu-red);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+    border-top: 1px solid var(--color-ivu-red);
+    border-bottom: 1px solid var(--color-ivu-red);
+    font-weight: bold;
+}
+.handbookContent
+{
+    display: flex;
+    justify-content: center;
+    padding: 4% 0 4% 0;
+}
+.handbookContent img
+{
+    height: 270px;
+    width: 190px;
+    margin: 0 4% 0 4%;
+}
 </style>

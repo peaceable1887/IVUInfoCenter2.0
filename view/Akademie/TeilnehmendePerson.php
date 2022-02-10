@@ -2,6 +2,13 @@
 
 class TeilnehmendePerson
 {
+    function showEventBox($eventBox)
+    {
+        $box = "<div class='boxContainer'>".$eventBox."</div>";
+
+        return $box;
+    }
+
     function showRegister($firstName, $surname, $eMail,$linkCounter)
     {
         $container = "<div class='formContainer'>

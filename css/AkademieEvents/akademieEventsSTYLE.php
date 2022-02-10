@@ -93,6 +93,13 @@
 
     /*----------Buchung(Schritt 2) Design----------*/
 
+    .boxContainer
+    {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        padding: 0 0 0 1%;
+    }
 
     /*----------Buchung(Schritt 3) Design----------*/
     .tileContent
