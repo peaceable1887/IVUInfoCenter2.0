@@ -6,7 +6,7 @@
         border: 2px solid var(--color-ivu-grey2);
         border-radius: 10px;
         padding: 10px 0 10px 20px;
-        margin: 20px 20px 0 20px;
+        margin: 20px 2.4% 0 2.4%;
     }
     .descriptionText
     {
@@ -30,7 +30,7 @@
         font-size: 18px;
         border-radius: 10px;
         padding: 20px 0 2px 20px;
-        margin: 30px 20px 80px 20px;
+        margin: 30px 2.4% 80px 2.4%;
 
     }
     .detailsContainer table

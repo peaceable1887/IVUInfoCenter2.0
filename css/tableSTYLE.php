@@ -2,8 +2,8 @@
     /*-------Table Design-------*/
     table
     {
-        width: 97%;
-        margin: 0 22px 50px 22px;
+        width: 95%;
+        margin: 0 2.4% 50px 2.4%;
     }
     table th, table td
     {

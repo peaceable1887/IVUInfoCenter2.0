@@ -31,6 +31,7 @@ class HilfeUndInfos
           </div>";
 
         $infoContent = "<div class=\"infoContent\">
+
                           <h2>Persönlicher Kontakt</h2>
                           <div class=\"infoText\">
                                     Montag bis Freitag von 9-17 Uhr 
@@ -86,19 +87,22 @@ class HilfeUndInfos
                         <ul>Windows - 43</ul>
                               </div>
                           </div>
-                          <div class='handbookInfo'>
-                        <div class='handbookHeadline'> Handbuch zum Einstellen von Supportanfragen</div>
-                        <div class='handbookContent'>
-                        <img src='http://127.0.0.1/wordpress/wp-content/uploads/2021/08/terminblatt.png'>
+                         <h3>Handbuch zum Einstellen von Supportanfragen</h3>
+                         <div class='handbookInfo'>
+                           
+                            <div class='handbookContent'>
+                                <img src='http://127.0.0.1/wordpress/wp-content/uploads/2021/08/terminblatt.png'>
+                                <div class='handbookText'>
+                                 <p>Nutzen Sie unser Handbuch und erledigen Sie Ihr Anliegen
+                                 unabhängig von unseren Servicezeiten bequem selbst.<br>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                                 sed diam nonumy eirmod tempor<br> invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+                                 <button class='downloadHandbook'>JETZT DOWNLOADEN</button>
+                                </div>
+                            </div>
                         </div>
-                        </div>
-                        </div>";
+                     </div>";
 
         return $infoContent;
     }
 
-    function handbookInfo()
-    {
-
-    }
 }

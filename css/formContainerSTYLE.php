@@ -3,10 +3,10 @@
     .formContainer
     {
         background-color:#dadada;
-        width: 97%;
+        width: 95%;
         height: auto;
         padding: 15px;
-        margin: 0 2% 2% 2%;
+        margin: 1% 2.4% 2% 2.4%;
         border-radius: 10px;
         float: left;
     }
@@ -14,10 +14,10 @@
     .formContainerSettings
     {
         background-color:#dadada;
-        width: 97%;
+        width: 95%;
         height: auto;
         padding: 15px;
-        margin: 0 22px 20px 22px;
+        margin: 1% 2.4% 20px 2.4%;
         border-radius: 10px;
     }
     summary

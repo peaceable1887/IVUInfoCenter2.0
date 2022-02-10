@@ -25,17 +25,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="Absicherung">
+    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="Edit: HilfeUndInfo-Seite neu gestaltet, CSS-Anpassungen im Akademiebereich(Buchungsschritte) und weitere minimale Anpassungen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/akademie.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/akademie.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/Global/GlobalContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Global/GlobalContent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/AkademieEvents/akademieEventsSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/AkademieEvents/akademieEventsSTYLE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/DownloadCenter/downloadContentSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/DownloadCenter/downloadContentSTYLE.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/Hilfe und Infos/helpAndInfosSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Hilfe und Infos/helpAndInfosSTYLE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/global/siteDirectionSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/global/siteDirectionSTYLE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/global/slider.style.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/startseite.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/startseite.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Akademie/TeilnehmendePerson.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Akademie/TeilnehmendePerson.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Global/LinkVerzeichnis.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Global/LinkVerzeichnis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Supportbereich/supportRequestTextSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Supportbereich/supportRequestTextSTYLE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/formContainerSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/formContainerSTYLE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/global/filterSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/global/filterSTYLE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/tableSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/tableSTYLE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hilfeUndInfos.Shortcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/hilfeUndInfos.Shortcode.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/Hilfe und Infos/HilfeUndInfos.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Hilfe und Infos/HilfeUndInfos.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -211,7 +209,7 @@
       <workItem from="1643882578116" duration="10718000" />
       <workItem from="1644314785462" duration="14801000" />
       <workItem from="1644402609530" duration="13069000" />
-      <workItem from="1644487238297" duration="10279000" />
+      <workItem from="1644487238297" duration="17375000" />
     </task>
     <task id="LOCAL-00001" summary="weiterer Push des Codes">
       <created>1637168082069</created>
@@ -318,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644428714033</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Edit: HilfeUndInfo-Seite neu gestaltet, CSS-Anpassungen im Akademiebereich(Buchungsschritte) und weitere minimale Anpassungen">
+      <created>1644499913632</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1644499913632</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +368,8 @@
     <MESSAGE value="Edit: Funktionen entschlackt" />
     <MESSAGE value="Akademiebereich editiert: CSS angepasst und Funktionen entschlackt" />
     <MESSAGE value="Absicherung" />
-    <option name="LAST_COMMIT_MESSAGE" value="Absicherung" />
+    <MESSAGE value="Edit: HilfeUndInfo-Seite neu gestaltet, CSS-Anpassungen im Akademiebereich(Buchungsschritte) und weitere minimale Anpassungen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit: HilfeUndInfo-Seite neu gestaltet, CSS-Anpassungen im Akademiebereich(Buchungsschritte) und weitere minimale Anpassungen" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638029757564">
@@ -422,12 +428,12 @@
     <state x="222" y="30" key="SettingsEditor/0.0.1440.770/2880.0.1920.1040@0.0.1440.770" timestamp="1638443956599" />
     <state x="222" y="30" key="SettingsEditor/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1638191445098" />
     <state x="237" y="32" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1638031658456" />
-    <state x="313" y="118" key="Vcs.Push.Dialog.v2" timestamp="1644331425714">
+    <state x="313" y="118" key="Vcs.Push.Dialog.v2" timestamp="1644499938039">
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="313" y="118" key="Vcs.Push.Dialog.v2/0.0.1440.770/2880.0.1920.1040@0.0.1440.770" timestamp="1638440524266" />
     <state x="3297" y="159" key="Vcs.Push.Dialog.v2/0.0.1440.770/2880.0.1920.1040@2880.0.1920.1040" timestamp="1637239326418" />
-    <state x="313" y="118" key="Vcs.Push.Dialog.v2/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644331425714" />
+    <state x="313" y="118" key="Vcs.Push.Dialog.v2/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644499938039" />
     <state x="334" y="126" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1643892908650" />
     <state x="2972" y="561" width="1496" height="826" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1639578671234">
       <screen x="2880" y="469" width="1680" height="1010" />
