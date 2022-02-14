@@ -74,6 +74,7 @@ function supportRequestTicket()
     include_once "css/style.php";
     include_once "css/btn.style.php";
     include_once "css/Supportbereich/supportRequestTicketSTYLE.php";
+    include_once "css/Supportbereich/supportbereich.style.php";
     include_once "view/Supportbereich/TicketUebersicht.php";
 
     $ticketOverview = new TicketUebersicht();
