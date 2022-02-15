@@ -7,6 +7,7 @@ class GlobalContent
     {
         $linkDir = new LinkVerzeichnis();
         $linkPatternDownl = "/\?d.*/";
+        $linkPatternCall = "/\?t.*/";
         $linkPatternSem = "/\?l.*/";
         $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
@@ -29,7 +30,7 @@ class GlobalContent
                 "overviewSupportcall" => "http://127.0.0.1/wordpress/uebersicht-supportanfragen/",
                 "newSupportcall" => "http://127.0.0.1/wordpress/neue-supportanfrage/",
                 "extendSupportData" => "http://127.0.0.1/wordpress/daten-zur-supportanfrage-ergaenzen/",
-                "supportcallNumber" => "http://127.0.0.1/wordpress/support-anfrage-nummer/",
+                "supportcallNumber" => "http://127.0.0.1/wordpress/support-anfrage-nummer/$linkPatternCall",
             ),
             "downloads" => array
             (
@@ -99,7 +100,7 @@ class GlobalContent
         {
             echo $linkDir->extendSupportData();
         }
-        else if($url === $links["supportanfrage"]["supportcallNumber"])
+        else if(preg_match_all($linkPatternCall, $url))
         {
             echo $linkDir->supportcallNumber();
         }

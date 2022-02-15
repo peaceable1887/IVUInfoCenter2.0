@@ -53,16 +53,23 @@
 {
     padding: 1% 0 1% 0;
     width: 100%;
+    color: var(--color-ivu-red);
     font-weight: bold;
+}
+.metaDataContent
+{
+    color: var(--color-font);
+    font-weight: normal;
 }
 .callTicketDescription
 {
     padding: 1% 0 1% 0;
-    font-weight: bold;
+
 }
 .descriptionField
 {
-
+    color: var(--color-ivu-red);
+    font-weight: bold;
 }
 .callTicketProcess
 {
@@ -76,6 +83,39 @@
 }
 .process
 {
+    color: var(--color-ivu-red);
+    font-weight: bold;
+}
+.chatContainer
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 
+}
+.chatInfo
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 1% 0;
+    padding: 1% 0 0 0;
+    border-bottom: 1px solid grey;
+}
+.chatContent
+{
+    width: 100%;
+    font-weight: normal;
+    padding: 0 0 0 0;
+}
+.chatHeadline
+{
+    color: black;
+    font-weight: bold;
+}
+.chatDate
+{
+    color: #b72a37;
+    font-weight: normal;
 }
 </style>

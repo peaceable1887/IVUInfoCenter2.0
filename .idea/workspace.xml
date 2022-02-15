@@ -25,9 +25,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="Edit: CSS-Design vom Supportticket fertiggestellt">
+    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="Edit: Overlay-Design überarbeitet und fertiggestellt">
+      <change afterPath="$PROJECT_DIR$/Sql/Supportanfragen/supportCallQuerys.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/Supportbereich/overlays.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/Supportbereich/overlays.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Global/GlobalContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Global/GlobalContent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Supportbereich/Supportbereich.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Supportbereich/Supportbereich.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Supportbereich/supportbereich.style.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Supportbereich/supportbereich.style.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supportbereich.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/supportbereich.Shortcodes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/Supportbereich/TicketUebersicht.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Supportbereich/TicketUebersicht.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,16 +80,16 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\includes\login.inc" />
-      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\images\header" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\newInfoCenter\css\Slider" />
       <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\css" />
       <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\Trash" />
       <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\model" />
       <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\TrashCode" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\includes\login.inc" />
+      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\images\header" />
     </key>
   </component>
   <component name="TaskManager">
@@ -206,7 +210,7 @@
       <workItem from="1644487238297" duration="18028000" />
       <workItem from="1644573401606" duration="9601000" />
       <workItem from="1644835742871" duration="19409000" />
-      <workItem from="1644919965942" duration="2308000" />
+      <workItem from="1644919965942" duration="18281000" />
     </task>
     <task id="LOCAL-00001" summary="weiterer Push des Codes">
       <created>1637168082069</created>
@@ -334,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644853496456</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Edit: Overlay-Design überarbeitet und fertiggestellt">
+      <created>1644922580310</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1644922580310</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,7 +393,8 @@
     <MESSAGE value="Edit: HilfeUndInfo-Seite neu gestaltet, CSS-Anpassungen im Akademiebereich(Buchungsschritte) und weitere minimale Anpassungen" />
     <MESSAGE value="Edit: CSS-Anpassungen" />
     <MESSAGE value="Edit: CSS-Design vom Supportticket fertiggestellt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit: CSS-Design vom Supportticket fertiggestellt" />
+    <MESSAGE value="Edit: Overlay-Design überarbeitet und fertiggestellt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit: Overlay-Design überarbeitet und fertiggestellt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638029757564">
@@ -420,11 +432,11 @@
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="380" y="83" key="Github.UntrackedFilesDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637167842220" />
-    <state x="382" y="202" width="711" height="500" key="NewPhpClassDialog" timestamp="1644575305761">
+    <state x="382" y="202" width="711" height="500" key="NewPhpClassDialog" timestamp="1644925254464">
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="146" y="169" key="NewPhpClassDialog/0.0.1440.770/2880.0.1920.1040@0.0.1440.770" timestamp="1638435092784" />
-    <state x="382" y="202" key="NewPhpClassDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644575305761" />
+    <state x="382" y="202" key="NewPhpClassDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644925254464" />
     <state x="3050" y="745" width="711" height="500" key="NewPhpClassDialog/0.0.1440.770/2880.469.1680.1010@2880.469.1680.1010" timestamp="1639573785320" />
     <state x="462" y="489" key="NewPhpFileDialog" timestamp="1644575328978">
       <screen x="0" y="0" width="1440" height="770" />
@@ -473,10 +485,10 @@
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="414" y="191" key="run.anything.popup/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644417438341" />
-    <state x="406" y="137" width="672" height="634" key="search.everywhere.popup" timestamp="1643799842828">
+    <state x="407" y="138" width="672" height="634" key="search.everywhere.popup" timestamp="1644927251127">
       <screen x="0" y="0" width="1440" height="770" />
     </state>
-    <state x="406" y="137" width="672" height="634" key="search.everywhere.popup/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1643799842828" />
+    <state x="407" y="138" width="672" height="634" key="search.everywhere.popup/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644927251127" />
     <state x="3353" y="647" width="784" height="832" key="search.everywhere.popup/0.0.1440.770/2880.469.1680.1010@2880.469.1680.1010" timestamp="1639578313134" />
   </component>
   <component name="WordPressConfiguration" enabled="true">

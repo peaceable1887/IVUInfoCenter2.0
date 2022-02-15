@@ -2,9 +2,9 @@
 
 class TicketUebersicht
 {
-    function showContent($overlay)
+    function showContent($callDate, $fieldName, $statusName, $priorityName, $categoryName, $userSurname,
+    $callSubject, $callDescription)
     {
-
         $content = "
                     <div class='callTicketContainer'>
                     <div class='menuContent'>
@@ -25,27 +25,52 @@ class TicketUebersicht
                         </div>                     
                         <div class='callTicketContent'>
                             <div class='callTicketMetaData'>
-                                <span class='metaData'>Datum:<br></span>
-                                <span class='metaData'>Sachgebiet<br></span>
-                                <span class='metaData'>Status<br></span>
+                                <span class='metaData'>Datum:<br><span class='metaDataContent'>".$callDate."</span></span>
+                                <span class='metaData'>Sachgebiet<br><span class='metaDataContent'>".$fieldName."</span></span>
+                                <span class='metaData'>Status<br><span class='metaDataContent'>".$statusName."</span></span>
                             </div>
                             <div class='callTicketMetaData'>
-                                <span class='metaData'>Priorität:<br></span>
-                                <span class='metaData'>Kategorie:<br></span>
-                                <span class='metaData'>Eingestellt von:<br></span>
+                                <span class='metaData'>Priorität:<br><span class='metaDataContent'>".$priorityName."</span></span>
+                                <span class='metaData'>Kategorie:<br><span class='metaDataContent'>".$categoryName."</span></span>
+                                <span class='metaData'>Eingestellt von:<br><span class='metaDataContent'>".$userSurname."</span></span>
                             </div>
                             <div class='callTicketMetaData'>
-                                <span class='metaData'>Betreff:<br></span>
+                                <span class='metaData'>Betreff:<br><span class='metaDataContent'>".$callSubject."</span></span>
                             </div>
                             <div class='callTicketDescription'>
-                                <span class='descriptionField'>Beschreibung:<br></span>                       
+                                <span class='descriptionField'>Beschreibung:<br><span class='metaDataContent'>".$callDescription."</span></span>                       
                             </div>                         
                         </div>
                         <div class='callTicketProcess'>
                             <div class='process'>Verlauf / Zwischenbericht:</div>
+                            <div class='chatContainer'>
+                                <div class='chatInfo'>
+                                    <span class='chatHeadline'>Supportanfrage abgeschlossen</span>
+                                    <span class='chatDate'>29.10.2021</span>
+                                </div>
+                                <div class='chatContent'>Vorgang wurde nach 7 Tagen automatisch durch das System abgeschlossen.</div>
+                            </div>                         
                         </div>
                     </div>
                    ";
+
+        return $content;
+    }
+
+    function showTicketChat($ticketType, $ticketDate, $ticketContent)
+    {
+        $content = " <div class='callTicketContainer'>
+                        <div class='callTicketProcess'>
+                            <div class='process'>Verlauf / Zwischenbericht:</div>
+                            <div class='chatContainer'>
+                                <div class='chatInfo'>
+                                    <span class='chatHeadline'>".$ticketType."</span>
+                                    <span class='chatDate'>".$ticketDate."</span>
+                                </div>
+                                <div class='chatContent'>".$ticketContent."</div>
+                            </div>                         
+                        </div>
+                    </div>";
 
         return $content;
     }

@@ -79,7 +79,49 @@ function supportRequestTicket()
 
     $ticketOverview = new TicketUebersicht();
 
-    echo $ticketOverview->showContent(include('HTML/Supportbereich/overlays.php'));
+    /*echo $ticketOverview->showContent(include('HTML/Supportbereich/overlays.php'));*/
+}
+
+add_shortcode("sc_ticketContent", "ticketContent");
+
+function ticketContent()
+{
+    include_once "Database/ivu-dbCon.php";
+    include_once "Sql/Supportanfragen/supportCallQuerys.php";
+    include_once "css/rootSTYLE.php";
+    include_once "css/btn.style.php";
+    include_once "css/style.php";
+    include_once "css/formContainerSTYLE.php";
+    include_once "css/Supportbereich/supportbereich.style.php";
+    include_once "css/Supportbereich/supportRequestTicketSTYLE.php";
+    include_once "controller/Supportbereich/Supportbereich.php";
+    include_once "view/Supportbereich/TicketUebersicht.php";
+    include "HTML/Supportbereich/overlays.php";
+
+    $ticketContent = new Supportbereich();
+
+    $ticketContent->showTicketContent(new infoCenterDbCon(), new supportCallQuerys());
+}
+
+add_shortcode("sc_ticketChat", "ticketChat");
+
+function ticketChat()
+{
+    include_once "Database/ivu-dbCon.php";
+    include_once "Sql/Supportanfragen/supportCallQuerys.php";
+    include_once "css/rootSTYLE.php";
+    include_once "css/btn.style.php";
+    include_once "css/style.php";
+    include_once "css/formContainerSTYLE.php";
+    include_once "css/Supportbereich/supportbereich.style.php";
+    include_once "css/Supportbereich/supportRequestTicketSTYLE.php";
+    include_once "controller/Supportbereich/Supportbereich.php";
+    include_once "view/Supportbereich/TicketUebersicht.php";
+    include "HTML/Supportbereich/overlays.php";
+
+    $ticketChat = new Supportbereich();
+
+    $ticketChat->showTicketChat(new infoCenterDbCon(), new supportCallQuerys());
 }
 
 //Übersicht Supportanfragen
