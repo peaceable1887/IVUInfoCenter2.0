@@ -25,13 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="Edit: CSS-Anpassungen">
-      <change afterPath="$PROJECT_DIR$/css/Supportbereich/supportbereich.style.php" afterDir="false" />
+    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="Edit: CSS-Design vom Supportticket fertiggestellt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/Supportbereich/overlays.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/Supportbereich/overlays.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Supportbereich/supportRequestTicketSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Supportbereich/supportRequestTicketSTYLE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/menuSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/menuSTYLE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supportbereich.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/supportbereich.Shortcodes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/Supportbereich/TicketUebersicht.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Supportbereich/TicketUebersicht.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -209,7 +205,8 @@
       <workItem from="1644402609530" duration="13069000" />
       <workItem from="1644487238297" duration="18028000" />
       <workItem from="1644573401606" duration="9601000" />
-      <workItem from="1644835742871" duration="15939000" />
+      <workItem from="1644835742871" duration="19409000" />
+      <workItem from="1644919965942" duration="2308000" />
     </task>
     <task id="LOCAL-00001" summary="weiterer Push des Codes">
       <created>1637168082069</created>
@@ -330,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644510783298</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Edit: CSS-Design vom Supportticket fertiggestellt">
+      <created>1644853496456</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1644853496456</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +381,8 @@
     <MESSAGE value="Absicherung" />
     <MESSAGE value="Edit: HilfeUndInfo-Seite neu gestaltet, CSS-Anpassungen im Akademiebereich(Buchungsschritte) und weitere minimale Anpassungen" />
     <MESSAGE value="Edit: CSS-Anpassungen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit: CSS-Anpassungen" />
+    <MESSAGE value="Edit: CSS-Design vom Supportticket fertiggestellt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit: CSS-Design vom Supportticket fertiggestellt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638029757564">
@@ -397,10 +402,10 @@
     </state>
     <state x="451" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644428806402" />
     <state x="3406" y="642" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.770/2880.469.1680.1010@2880.469.1680.1010" timestamp="1639577928811" />
-    <state x="93" y="93" width="1253" height="583" key="DiffContextDialog" timestamp="1644589371311">
+    <state x="93" y="93" width="1253" height="583" key="DiffContextDialog" timestamp="1644855835598">
       <screen x="0" y="0" width="1440" height="770" />
     </state>
-    <state x="93" y="93" width="1253" height="583" key="DiffContextDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644589371311" />
+    <state x="93" y="93" width="1253" height="583" key="DiffContextDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644855835598" />
     <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1638030159525">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -435,12 +440,12 @@
     <state x="222" y="30" key="SettingsEditor/0.0.1440.770/2880.0.1920.1040@0.0.1440.770" timestamp="1638443956599" />
     <state x="222" y="30" key="SettingsEditor/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1638191445098" />
     <state x="237" y="32" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1638031658456" />
-    <state x="313" y="118" key="Vcs.Push.Dialog.v2" timestamp="1644510803289">
+    <state x="313" y="118" key="Vcs.Push.Dialog.v2" timestamp="1644853550250">
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="313" y="118" key="Vcs.Push.Dialog.v2/0.0.1440.770/2880.0.1920.1040@0.0.1440.770" timestamp="1638440524266" />
     <state x="3297" y="159" key="Vcs.Push.Dialog.v2/0.0.1440.770/2880.0.1920.1040@2880.0.1920.1040" timestamp="1637239326418" />
-    <state x="313" y="118" key="Vcs.Push.Dialog.v2/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644510803289" />
+    <state x="313" y="118" key="Vcs.Push.Dialog.v2/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644853550250" />
     <state x="334" y="126" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1643892908650" />
     <state x="2972" y="561" width="1496" height="826" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1639578671234">
       <screen x="2880" y="469" width="1680" height="1010" />

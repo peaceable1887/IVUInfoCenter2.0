@@ -1,49 +1,106 @@
 <?php
 
+echo "<div id='overlayTest' >
+        <div id='text'>
+            <div class='overlayTop'>         
+                <span>Rückfrage an IVU:</span>
+                <button class='overlayCloseBtn' onclick='offConsultation()'>
+                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\"><path d=\"M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z\"/></svg>
+                </button>
+            </div>
+            <div class='overlayCenter'>
+                <textarea></textarea>
+            </div>
+            <div class='overlayBottom'>
+                <div class='btnDiv'>
+                    <button class='overlayBtn'>
+                        <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>
+                        DATEN SPEICHERN
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>";
 
+echo "<div id='overlayNote' >
+        <div id='text'>
+            <div class='overlayTop'>         
+                <span>Notiz an IVU:</span>
+                <button class='overlayCloseBtn' onclick='offNote()'>
+                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\"><path d=\"M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z\"/></svg>
+                </button>
+            </div>
+            <div class='overlayCenter'>
+                <textarea></textarea>
+            </div>
+            <div class='overlayBottom'>
+                <div class='btnDiv'>
+                    <button class='overlayBtn'>
+                        <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>
+                        DATEN SPEICHERN
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>";
 
-echo "<div id='overlay' >
-    <div id=\"text\">
-    <p>Rückfrage an IVU:<button class='overlayCloseBtn' onclick='offInquiry()'>X</button></p><br>
-    <textarea></textarea>
-    <div class='btnDiv'><button class='overlayBtn'>
-                <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>
-                DATEN SPEICHERN</a></button></div>
-    </div>
-</div>";
-echo "<div id='overlayNote'>
-    <div id=\"text\">
-    <p>Notiz an IVU:<button class='overlayCloseBtn' onclick='offNote()'>X</button></p><br>
-    <textarea></textarea>
-    <div class='btnDiv'><button class='overlayBtn'>
-                <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>
-                DATEN SPEICHERN</a></button></div>
-    </div>
-</div>";
 echo "<div id='overlayInterimReport' >
-    <div id=\"text\">
-    <p>Möchten Sie einen Zwischenbericht anfordern?<button class='overlayCloseBtn' onclick='offInterimReport()'>X</button></p><br>
-    <div class='btnDiv'>
-    <button class='overlayBtn'>
-        <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>Ja</a> 
-        </button>
-       </div>
-    </div>
-</div>";
+        <div id='text'>
+            <div class='overlayTop'>         
+                <span>Möchten Sie einen Zwischenbericht anfordern?</span>
+                <button class='overlayCloseBtn' onclick='offInterimReport()'>
+                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\"><path d=\"M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z\"/></svg>
+                </button>
+            </div>
+            
+            <div class='overlayBottom'>
+                <div class='btnDiv'>
+                    <button class='overlayBtn'>
+                        <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>
+                        JA
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>";
+
 echo "<div id='overlayFile' >
-    <div id=\"text\">
-    <p>Weitere Datei an die Supportanfrage anhängen<button class='overlayCloseBtn' onclick='offFile()'>X</button></p><br>
-    <span>Dateianhang*</span><br>
-    <input id=\"fileFile\" type=\"File\" name=\"file\">
-    <div class='btnDiv'><button class='overlayBtn'>
-                <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>
-                DATEN SPEICHERN</a></button></div>
-    </div>
-</div>";
+        <div id='text'>
+            <div class='overlayTop'>         
+                <span>Weitere Datei an die Supportanfrage anhängen</span>
+                <button class='overlayCloseBtn' onclick='offFile()'>
+                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\"><path d=\"M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z\"/></svg>
+                </button>
+            </div>
+            <div class='overlayCenter'>
+                 <span>Dateianhang*</span><br>
+                 <input id=\"fileFile\" type=\"File\" name=\"file\">
+            </div>
+            <div class='overlayBottom'>
+                <div class='btnDiv'>
+                    <button class='overlayBtn'>
+                        <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>
+                        DATEN SPEICHERN
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>";
+
 echo "<div id='overlayAddInfos' >
-    <div id=\"text\">
-    <p>Information hinzufügen<button class='overlayCloseBtn' onclick='offAddInfos()'>X</button></p><br>
-     <table class='tableTicketOverlay'>
+        <div id='text'>
+            <div class='overlayTop'>         
+                <span>Information hinzufügen</span>
+                <button class='overlayCloseBtn' onclick='offAddInfos()'>
+                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\"><path d=\"M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z\"/></svg>
+                </button>
+            </div>
+            <div class='overlayCenter'>
+                <table class='tableTicketOverlay'>
                  <tr>
                     <th>Software-Version*<br><input class='inputField' name='vorname' value=''></th>
                 </tr>
@@ -80,32 +137,52 @@ echo "<div id='overlayAddInfos' >
                 <tr>
                     <th>Welche Aktion löst die Fehlermeldung aus? <br><input class='inputField' name='vorname' value=''></th>
                 </tr>
-              </table>
-              <span><span style='font-weight: bold'>Hinweis:</span><br>Zur Erfassung Ihrer Supportanfrage füllen Sie 
-                bitte alle Felder vollständig aus und klicken dann auf „Daten speichern“.<br><p></p><br>
-                Bitte hängen Sie ein Bildschirmfoto oder eine weiterführende Datei an Ihre Anfrage an.</span><br><br>
-                <div class='btnDiv'><button class='overlayBtn'>
-                <a id='linkDescription' href='http://127.0.0.1/wordpress/daten-zur-supportanfrage-ergaenzen/'>
-                DATEN SPEICHERN</a></button></div>
-    </div>
-</div>";
-echo "<div id='overlayCompleteSupportRequest'>
-    <div id=\"text\">
-    <p>Erläuterung:*<button class='overlayCloseBtn' onclick='offCompleteSupportRequest()'>X</button></p><br>
-    <textarea></textarea>
-    <div class='btnDiv'><button class='overlayBtn'>
-                <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>
-                Abschließen</a></button></div>
-    </div>
-</div>";
+              </table>        
+            </div>
+            <div class='overlayBottom'> 
+                <div class='btnDiv'>
+                    <button class='overlayBtn'>
+                        <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>
+                        DATEN SPEICHERN
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>";
+
+
+echo "<div id='overlayCompleteSupportRequest' >
+        <div id='text'>
+            <div class='overlayTop'>         
+                <span>Erläuterung:*</span>
+                <button class='overlayCloseBtn' onclick='offCompleteSupportRequest()'>
+                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\"><path d=\"M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z\"/></svg>
+                </button>
+            </div>
+            <div class='overlayCenter'>
+               <textarea></textarea>
+            </div>
+            <div class='overlayBottom'>
+                <div class='btnDiv'>
+                    <button class='overlayBtn'>
+                        <a id='linkDescription' href='http://127.0.0.1/wordpress/support-anfrage-nummer/'>
+                        ABSCHLIEßEN
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>";
+
 ?>
 <script>
     //Rückfrage
-    function inquiry() {
-        document.getElementById("overlay").style.display = "block";
+    function consultation() {
+        document.getElementById("overlayTest").style.display = "block";
     }
-    function offInquiry() {
-        document.getElementById("overlay").style.display = "none";
+    function offConsultation() {
+        document.getElementById("overlayTest").style.display = "none";
     }
 
     //Notiz
@@ -149,9 +226,9 @@ echo "<div id='overlayCompleteSupportRequest'>
     }
 </script>
 <style>
-    #overlay, #overlayNote, #overlayInterimReport, #overlayFile, #overlayAddInfos,#overlayCompleteSupportRequest
+    #overlayTest, #overlayNote, #overlayInterimReport, #overlayFile, #overlayCompleteSupportRequest, #overlayAddInfos
     {
-        position: fixed;
+        position: absolute;
         display: none;
         width: 100%;
         height: 100%;
@@ -162,6 +239,25 @@ echo "<div id='overlayCompleteSupportRequest'>
         background-color: rgba(0,0,0,0.5);
         z-index: 2;
         cursor: pointer;
+    }
+    .overlayTop
+    {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 3% 0;
+    }
+    .overlayTop span
+    {
+        font-size: 20px;
+    }
+    .overlayCenter
+    {
+
+    }
+    .overlayBottom
+    {
+        display: flex;
+        justify-content: end;
     }
     .overlayBtn
     {
@@ -177,8 +273,8 @@ echo "<div id='overlayCompleteSupportRequest'>
     }
     .overlayCloseBtn
     {
-        color: white;
-        background-color: #b72a37;
+        color: black;
+        background-color: white;
         line-height: normal;
         float: right;
         padding: 5px;
@@ -188,13 +284,25 @@ echo "<div id='overlayCompleteSupportRequest'>
     {
         color: white;
     }
-    .overlayBtn:hover, .overlayCloseBtn:hover
+    .overlayBtn:hover
     {
         background-color: #af3843;
         transition: all .4s ease;
         -webkit-transition: all .4s ease;
     }
+    .overlayCloseBtn:hover
+    {
+        color:#af3843 ;
+        background-color: white;
+        transition: all .4s ease;
+        -webkit-transition: all .4s ease;
+    }
+    #overlayAddInfos p
+    {
+        margin: 0;
+    }
     #text{
+        font-family: var(--fontfamily-global);
         position: absolute;
         background-color: white;
         padding: 20px;
@@ -218,19 +326,19 @@ echo "<div id='overlayCompleteSupportRequest'>
     }
     select
     {
-        width: 96.25%;
+        width: 100%;
         padding: 0 0 0 10px;
         font-size: 16px;
         border: 1px solid #9d9d9c;
     }
     option
     {
-        width: 96.25%;
+        width: 100%;
         border: 1px solid #9d9d9c;
     }
     .inputField
     {
-        width: 96.25%;
+        width: 100%;
         height: 35px;
         border: 1px solid #9d9d9c;
 
@@ -243,7 +351,8 @@ echo "<div id='overlayCompleteSupportRequest'>
     {
         border: none;
     }
-    }
+
+
 </style>
 <?php
 
