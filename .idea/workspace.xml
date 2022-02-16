@@ -25,14 +25,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="Edit: Overlay-Design überarbeitet und fertiggestellt">
-      <change afterPath="$PROJECT_DIR$/Sql/Supportanfragen/supportCallQuerys.php" afterDir="false" />
+    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="Supporttickets nehmen jetzt Variablen aus der DB entgegen (Absicherung)">
+      <change afterPath="$PROJECT_DIR$/css/AkademieEvents/infoAndDownloads.style.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/Akademie/infoAndDownloads.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/akademie.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/akademie.Shortcodes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/Global/GlobalContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Global/GlobalContent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/Supportbereich/Supportbereich.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Supportbereich/Supportbereich.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Supportbereich/supportbereich.style.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Supportbereich/supportbereich.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supportbereich.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/supportbereich.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Supportbereich/TicketUebersicht.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Supportbereich/TicketUebersicht.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Akademie/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Akademie/Menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Global/LinkVerzeichnis.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Global/LinkVerzeichnis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Hilfe und Infos/HilfeUndInfos.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Hilfe und Infos/HilfeUndInfos.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +211,8 @@
       <workItem from="1644487238297" duration="18028000" />
       <workItem from="1644573401606" duration="9601000" />
       <workItem from="1644835742871" duration="19409000" />
-      <workItem from="1644919965942" duration="18281000" />
+      <workItem from="1644919965942" duration="18608000" />
+      <workItem from="1645008845803" duration="6671000" />
     </task>
     <task id="LOCAL-00001" summary="weiterer Push des Codes">
       <created>1637168082069</created>
@@ -345,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644922580310</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Supporttickets nehmen jetzt Variablen aus der DB entgegen (Absicherung)">
+      <created>1644946420714</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1644946420714</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +403,8 @@
     <MESSAGE value="Edit: CSS-Anpassungen" />
     <MESSAGE value="Edit: CSS-Design vom Supportticket fertiggestellt" />
     <MESSAGE value="Edit: Overlay-Design überarbeitet und fertiggestellt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit: Overlay-Design überarbeitet und fertiggestellt" />
+    <MESSAGE value="Supporttickets nehmen jetzt Variablen aus der DB entgegen (Absicherung)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Supporttickets nehmen jetzt Variablen aus der DB entgegen (Absicherung)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638029757564">
@@ -414,10 +424,10 @@
     </state>
     <state x="451" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644428806402" />
     <state x="3406" y="642" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.770/2880.469.1680.1010@2880.469.1680.1010" timestamp="1639577928811" />
-    <state x="93" y="93" width="1253" height="583" key="DiffContextDialog" timestamp="1644855835598">
+    <state x="93" y="93" width="1253" height="583" key="DiffContextDialog" timestamp="1644946639567">
       <screen x="0" y="0" width="1440" height="770" />
     </state>
-    <state x="93" y="93" width="1253" height="583" key="DiffContextDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644855835598" />
+    <state x="93" y="93" width="1253" height="583" key="DiffContextDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644946639567" />
     <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1638030159525">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -432,18 +442,18 @@
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="380" y="83" key="Github.UntrackedFilesDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637167842220" />
-    <state x="382" y="202" width="711" height="500" key="NewPhpClassDialog" timestamp="1644925254464">
+    <state x="382" y="202" width="711" height="500" key="NewPhpClassDialog" timestamp="1645011147730">
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="146" y="169" key="NewPhpClassDialog/0.0.1440.770/2880.0.1920.1040@0.0.1440.770" timestamp="1638435092784" />
-    <state x="382" y="202" key="NewPhpClassDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644925254464" />
+    <state x="382" y="202" key="NewPhpClassDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1645011147730" />
     <state x="3050" y="745" width="711" height="500" key="NewPhpClassDialog/0.0.1440.770/2880.469.1680.1010@2880.469.1680.1010" timestamp="1639573785320" />
-    <state x="462" y="489" key="NewPhpFileDialog" timestamp="1644575328978">
+    <state x="462" y="489" key="NewPhpFileDialog" timestamp="1645011231946">
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="566" y="314" key="NewPhpFileDialog/0.0.1440.770/2880.0.1920.1040@0.0.1440.770" timestamp="1638449208336" />
     <state x="3635" y="424" key="NewPhpFileDialog/0.0.1440.770/2880.0.1920.1040@2880.0.1920.1040" timestamp="1637238591606" />
-    <state x="462" y="489" key="NewPhpFileDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1644575328978" />
+    <state x="462" y="489" key="NewPhpFileDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1645011231946" />
     <state x="3540" y="881" key="NewPhpFileDialog/0.0.1440.770/2880.469.1680.1010@2880.469.1680.1010" timestamp="1639580154937" />
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1643888322216" />
     <state x="222" y="30" key="SettingsEditor" timestamp="1638443956599">

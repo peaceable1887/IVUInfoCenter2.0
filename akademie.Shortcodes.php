@@ -255,6 +255,20 @@ function vergangeneVeranstaltungen()
 {
     echo "vergangeneVeranstaltungen";
 }
+
+add_shortcode("sc_infoAndDownloads","infoAndDownloads");
+
+function infoAndDownloads()
+{
+    include_once "css/rootSTYLE.php";
+    include_once "css/AkademieEvents/infoAndDownloads.style.php";
+    include_once "view/Akademie/infoAndDownloads.php";
+
+    $content = new infoAndDownloads();
+
+    echo $content->showContent();
+
+}
 ?>
 
 

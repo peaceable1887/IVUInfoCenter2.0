@@ -20,6 +20,15 @@ class LinkVerzeichnis
         return $link;
     }
 
+    function infosAndDownloads()
+    {
+        $link = "<div class='sdContainer'><a class='sdLink' href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
+            "<a class='sdLink' href=\"http://127.0.0.1/wordpress/akademie-events/\">Akademie und Events</a>"." > ".
+            "<a class='sdLink' href=\"http://127.0.0.1/wordpress/informationen-und-downloads/\">Informationen und Downloads</a></div>";
+
+        return $link;
+    }
+
     function akademieUebersicht()
     {
         $link = "<div class='sdContainer'><a class='sdLink' href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .

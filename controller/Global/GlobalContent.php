@@ -23,6 +23,7 @@ class GlobalContent
                 "kursuebersicht" => "http://127.0.0.1/wordpress/akademie-events-buchung-schritt-1/$linkPatternSem",
                 "registrierung" => "http://127.0.0.1/wordpress/akademie-events-buchung-schritt-2/$linkPatternSem",
                 "buchungErfolgreich" => "http://127.0.0.1/wordpress/akademie-events-buchung-schritt-3/$linkPatternSem",
+                "infosUndDownloads" => "http://127.0.0.1/wordpress/informationen-und-downloads/"
             ),
             "supportanfrage" => array
             (
@@ -71,6 +72,10 @@ class GlobalContent
         else if(preg_match_all($linkPatternSem, $url))
         {
             echo $linkDir->buchungErfolgreich();
+        }
+        else if($url === $links["akademie"]["infosUndDownloads"])
+        {
+            echo $linkDir->infosAndDownloads();
         }
         else if($url === $links["downloads"]["downloadCenter"])
         {
@@ -277,6 +282,10 @@ class GlobalContent
         else if($url ===  "http://127.0.0.1/wordpress/meine-gebuchten-veranstaltungen/")
         {
             echo "<span class='subHeadline'>MEINE GEBUCHTEN VERANSTALTUNGEN UND EVENTS</span>";
+        }
+        else if($url ===  "http://127.0.0.1/wordpress/informationen-und-downloads/")
+        {
+            echo "<span class='subHeadline'>INFORMATIONEN UND DOWNLOADS</span>";
         }
         else if($url ===  "http://127.0.0.1/wordpress/einstellungen/")
         {

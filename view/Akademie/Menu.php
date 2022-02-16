@@ -17,7 +17,7 @@ class Menu
                         </div>
                         <span class=\"btnMenuText\">Gesamte Kursübersicht</span>
                     </a>
-                    <a href='' class=\"btnMenu\">
+                    <a href='http://127.0.0.1/wordpress/informationen-und-downloads/' class=\"btnMenu\">
                         <div class=\"btnMenuImg\">
                              <img src='http://127.0.0.1/wordpress/wp-content/uploads/2021/10/akademie-bild.png'>
                         </div>
