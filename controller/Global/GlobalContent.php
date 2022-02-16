@@ -250,9 +250,9 @@ class GlobalContent
 
     function showSubheadline()
     {
-
         $linkPatternDownl = "/\?d.*/";
         $linkPatternSem = "/\?l.*/";
+        $linkPatternCall = "/\?t.*/";
         $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
         if($url === "http://127.0.0.1/wordpress/")
@@ -261,7 +261,7 @@ class GlobalContent
         }
         else if($url ===  "http://127.0.0.1/wordpress/akademie-events/")
         {
-            echo "<span class='subHeadline'>AKADEMIE UND EVENTS</span>";
+            echo "<span class='subHeadline'>Akademie und Events</span>";
         }
         else if($url ===  "http://127.0.0.1/wordpress/akademie-events-uebersicht/")
         {
@@ -269,23 +269,23 @@ class GlobalContent
         }
         else if(preg_match_all($linkPatternSem, $url))
         {
-            echo "<span class='subHeadline'>KURS BUCHEN</span>";
+            echo "<span class='subHeadline'>Kurs Buchen</span>";
         }
         else if($url ===  "http://127.0.0.1/wordpress/akademie-events-buchung-schritt-2/")
         {
-            echo "<span class='subHeadline'>KURS BUCHEN</span>";
+            echo "<span class='subHeadline'>Kurs Buchen</span>";
         }
         else if($url ===  "http://127.0.0.1/wordpress/akademie-events-buchung-schritt-3/")
         {
-            echo "<span class='subHeadline'>KURS BUCHEN</span>";
+            echo "<span class='subHeadline'>Kurs Buchen</span>";
         }
         else if($url ===  "http://127.0.0.1/wordpress/meine-gebuchten-veranstaltungen/")
         {
-            echo "<span class='subHeadline'>MEINE GEBUCHTEN VERANSTALTUNGEN UND EVENTS</span>";
+            echo "<span class='subHeadline'>Meine gebuchten Veranstaltungen und Events</span>";
         }
         else if($url ===  "http://127.0.0.1/wordpress/informationen-und-downloads/")
         {
-            echo "<span class='subHeadline'>INFORMATIONEN UND DOWNLOADS</span>";
+            echo "<span class='subHeadline'>Informationen und Downloads</span>";
         }
         else if($url ===  "http://127.0.0.1/wordpress/einstellungen/")
         {
@@ -294,11 +294,11 @@ class GlobalContent
         }
         else if($url ===  "http://127.0.0.1/wordpress/downloads/")
         {
-            echo "<span class='subHeadline'>Download Übersicht</span>";
+            echo "<span class='subHeadline'>Alle Downloads</span>";
         }
         else if(preg_match_all($linkPatternDownl, $url))
         {
-            echo "<span class='subHeadline'>Download</span>";
+            echo "<span class='subHeadline'>Download Details</span>";
         }
         else if($url ===  "http://127.0.0.1/wordpress/hilfe/")
         {
@@ -306,31 +306,31 @@ class GlobalContent
         }
         else if($url ===  "http://127.0.0.1/wordpress/support-anfragen/")
         {
-            echo "<span class='subHeadline'>SUPPORT CENTER</span>";
+            echo "<span class='subHeadline'>Support Center</span>";
         }
         else if($url ===  "http://127.0.0.1/wordpress/infos/")
         {
-            echo "<span class='subHeadline'>INFORMATIONEN</span>";
+            echo "<span class='subHeadline'>Informationen</span>";
         }
         else if($url ===  "http://127.0.0.1/wordpress/uebersicht-supportanfragen/")
         {
-            echo "<span class='subHeadline'>ÜBERSICHT SUPPORTANFRAGEN</span>";
+            echo "<span class='subHeadline'>Übersicht Supportanfragen</span>";
         }
         else if($url ===  "http://127.0.0.1/wordpress/neue-supportanfrage/")
         {
-            echo "<span class='subHeadline'>NEUE SUPPORTANFRAGEN</span>";
+            echo "<span class='subHeadline'>Neue Supportanfrage</span>";
         }
         else if($url ===  "http://127.0.0.1/wordpress/daten-zur-supportanfrage-ergaenzen/")
         {
-            echo "<span class='subHeadline'>DATEN ZUR SPPORTANFRAGE ERGÄNZEN</span>";
+            echo "<span class='subHeadline'>Daten zur Supportanfrage ergänzen</span>";
         }
-        else if($url ===  "http://127.0.0.1/wordpress/support-anfrage-nummer/")
+        else if(preg_match_all($linkPatternCall, $url))
         {
-            echo "<span class='subHeadline'>ÜBERSICHT DER SUPPORTANFRAGE</span>";
+            echo "<span class='subHeadline'>Supportanfrage Übersicht</span>";
         }
         else
         {
-            echo "<span class='subHeadline'>AKADEMIE UND EVENTS</span>";
+            echo "<span class='subHeadline'>Akademie und Events</span>";
         }
     }
 }

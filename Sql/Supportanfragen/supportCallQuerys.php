@@ -5,7 +5,7 @@ class supportCallQuerys
     function loadTicketContent($callNumber)
     {
         $sql = "SELECT Call_Number, Call_Date_Received, ossy_call_status.Status_Name, ossy_call_field.Field_Name, Call_Subject, ossy_cus_user_det.User_Surname,
-                ossy_call_priority.Priority_Name, ossy_call_cat.Category_Name, Call_Description
+                ossy_cus_user_det.User_Firstname,ossy_call_priority.Priority_Name, ossy_call_cat.Category_Name, Call_Description
                 FROM ossy_call
                 INNER JOIN ossy_call_status ON ossy_call_status.Status_ID = ossy_call.Call_Status
                 INNER JOIN ossy_call_field ON ossy_call_field.Field_ID = ossy_call.Call_Field

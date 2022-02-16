@@ -87,12 +87,14 @@ class Supportbereich
                 $sqlRes = mysqli_query($dbCon, $sqlStm->loadTicketContent($_SESSION[$i."ticket_number"]));
                 $arCur = mysqli_fetch_array($sqlRes);
 
+                $callNumber = utf8_encode($arCur["Call_Number"]);
                 $callDate = utf8_encode($arCur["Call_Date_Received"]);
                 $callDateConvert = strtotime($callDate);
                 $newCallDate = date("d.m.Y",$callDateConvert);
                 $statusName = utf8_encode($arCur["Status_Name"]);
                 $fieldName = utf8_encode($arCur["Field_Name"]);
                 $callSubject = utf8_encode($arCur["Call_Subject"]);
+                $userFirst = utf8_encode($arCur["User_Firstname"]);
                 $userSurname = utf8_encode($arCur["User_Surname"]);
                 $priorityName = utf8_encode($arCur["Priority_Name"]);
                 $categoryName = utf8_encode($arCur["Category_Name"]);
@@ -105,8 +107,8 @@ class Supportbereich
 
         $content = new TicketUebersicht();
 
-        echo $content->showContent($newCallDate,$fieldName,
-            $statusName,$priorityName,$categoryName, $userSurname,$callSubject,$callDescription);
+        echo $content->showContent($callNumber,$newCallDate,$fieldName,
+            $statusName,$priorityName,$categoryName,$userFirst, $userSurname,$callSubject,$callDescription);
 
 
     }

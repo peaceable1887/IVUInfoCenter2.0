@@ -41,7 +41,6 @@
     margin: 1% 0 1% 0;
     font-size: 18px;
     border-radius: 4px;
-
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
 }
@@ -55,6 +54,15 @@
     width: 100%;
     color: var(--color-ivu-red);
     font-weight: bold;
+}
+.metaDataHeadline
+{
+    padding: 1% 0 0 0;
+    width: 100%;
+    color: var(--color-font);
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    font-size: 20px;
 }
 .metaDataContent
 {
@@ -83,8 +91,9 @@
 }
 .process
 {
-    color: var(--color-ivu-red);
+    color: var(--color-font);
     font-weight: bold;
+    font-size: 20px;
 }
 .chatContainer
 {
@@ -110,7 +119,7 @@
 }
 .chatHeadline
 {
-    color: black;
+    color: var(--color-ivu-red);
     font-weight: bold;
 }
 .chatDate

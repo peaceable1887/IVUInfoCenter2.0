@@ -130,7 +130,7 @@ class LinkVerzeichnis
     {
         $link = "<div class='sdContainer'><a class='sdLink'href=\"http://127.0.0.1/wordpress/\">InfoCenter</a>". " > " .
             "<a class='sdLink' href=\"http://127.0.0.1/wordpress/support-center/\">Support Center</a>". " > " .
-            "<a class='sdLink' href=\"http://127.0.0.1/wordpress/support-anfrage-nummer/\">Supportanfrage Nummer</a></div>";
+            "<a class='sdLink' href=\"http://127.0.0.1/wordpress/support-anfrage-nummer/\">Supportanfrage Übersicht</a></div>";
 
         return $link;
     }

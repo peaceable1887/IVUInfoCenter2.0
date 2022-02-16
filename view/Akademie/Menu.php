@@ -24,26 +24,7 @@ class Menu
                         <span class=\"btnMenuText\">Informationen und Downloads</span>
                     </a>                    
                     </div>
-                    <div class=\"menu\">
-                    <a href='' class=\"btnMenu\">
-                        <div class=\"btnMenuImg\">
-                             <img src='http://127.0.0.1/wordpress/wp-content/uploads/2021/10/akademie-bild.png'>
-                        </div>
-                        <span class=\"btnMenuText\">Inhouse Schulungen</span>
-                    </a>
-                    <a href='' class=\"btnMenu\">
-                        <div class=\"btnMenuImg\">
-                             <img src='http://127.0.0.1/wordpress/wp-content/uploads/2021/10/akademie-bild.png'>
-                        </div>
-                        <span class=\"btnMenuText\">Akademiekatalog</span>
-                    </a>
-                    <a href='' class=\"btnMenu\">
-                        <div class=\"btnMenuImg\">
-                              <img src='http://127.0.0.1/wordpress/wp-content/uploads/2021/10/akademie-bild.png'>
-                        </div>
-                        <span class=\"btnMenuText\">Terminblatt</span>
-                    </a>                    
-                    </div>";
+                   ";
 
         return $menu;
     }
