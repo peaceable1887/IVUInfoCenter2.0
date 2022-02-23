@@ -1,4 +1,25 @@
 <style>
+select
+{
+    width: 96.25%;
+    border: none;
+    padding: 0 0 0 10px;
+    font-size: 16px;
+}
+option
+{
+    width: 96.25%;
+}
+.inputField
+{
+    width: 96.25%;
+    height: 35px;
+    border: none;
+}
+.supportDescription
+{
+    height: 200px;
+}
 .contentTest
 {
 
@@ -127,4 +148,91 @@
     color: #b72a37;
     font-weight: normal;
 }
+/*Supportanfrage: Textstil*/
+.infoText
+{
+    font-family: var(--fontfamily-global);
+    font-size: 16px;
+    margin: 0 23px 20px 2.4%;
+}
+.highlightedText
+{
+    color: var(--color-ivu-red);
+}
+/**Supportanfrage: Ticketinhalt**/
+.content
+{
+    width: 100%;
+    height: 100%;
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fontfamily-global);
+}
+.content h5
+{
+    margin: 10px 0 0 5px;
+}
+.mainContent
+{
+    display: flex;
+    padding: 0.5% 20px 20px 0;
+}
+.ticketContent
+{
+    padding: 1% 0 0 0;
+    order: 3;
+    width: -webkit-fill-available;
+}
+.ticketContent th
+{
+    font-weight: normal;
+    text-align: left;
+    padding: 5px 50px 5px 0px;
+    font-size: 18px;
+    color: var(--color-ivu-red);
+}
+.ticketContent table
+{
+    border-collapse: collapse;
+}
+.ticketContent tr
+{
+    border-bottom: 1px solid var(--color-ivu-grey2);
+}
+.ticketContent h5
+{
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+.ticketChat
+{
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.ticketChat p
+{
+    color: var(--color-ivu-red);
+    font-size: 18px;
+}
+.secContent
+{
+    display: flex;
+    justify-content: flex-end;
+}
+.finallyRequest button
+{
+    height: 60px;
+    width: 210px;
+    color: white;
+    background-color: var(--color-ivu-red);
+    line-height: normal;
+    font-size: 22px;
+    font-family: var(--fontfamily-global);
+    padding: 0 40px 0 40px;
+    margin: 0 32px 0 0;
+}
+
 </style>

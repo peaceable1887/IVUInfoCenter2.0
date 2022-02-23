@@ -4,7 +4,6 @@ session_start();
 
 class infoTile
 {
-
     public function __toString()
     {
         return "<div class=\"infoTile\">

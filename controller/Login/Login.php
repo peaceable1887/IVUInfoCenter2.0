@@ -5,7 +5,7 @@ class Login
     function showLogin()
     {
         $dbCon = new infoCenterDbCon();
-        $sqlUser = new loadUser();
+        $sqlUser = new selectUserData();
 
         if(isset($_GET['login'])) {
             $username = encrypt('oSsy4UserN4me', $_POST['username']);

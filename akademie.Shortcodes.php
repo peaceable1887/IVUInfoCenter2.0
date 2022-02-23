@@ -11,9 +11,9 @@ add_shortcode("sc_buttonsMenu", "buttonsMenu");
 
 function buttonsMenu()
 {
-    include_once "css/rootSTYLE.php";
+    include_once "css/root.style.php";
     include_once "css/btn.style.php";
-    include_once "css/menuSTYLE.php";
+    include_once "css/menu.style.php";
     include_once "view/Akademie/Menu.php";
 
     $menu = new Menu();
@@ -26,10 +26,10 @@ add_shortcode("shortcode_sortByDateOrSubject", "sortByDateOrSubject");
 
 function sortByDateOrSubject()
 {
-    include_once "css/rootSTYLE.php";
-    include_once("css/btn.style.php");
-    include_once "css/global/filterSTYLE.php";
-    include_once("css/AkademieEvents/akademieEventsSTYLE.php");
+    include_once "css/root.style.php";
+    include_once "css/btn.style.php";
+    include_once "css/Global/global.style.php";
+    include_once "css/Akademie/akademie.style.php";
     include_once "view/Akademie/Filter.php";
 
     $filter = new Filter();
@@ -42,17 +42,17 @@ add_shortcode("sc_loadUpcommingEvents", "loadUpcommingEvents");
 
 function loadUpcommingEvents()
 {
-    include_once("Database/ivu-dbCon.php");
-    include_once("model/info_sem_event.php");
+    include_once "Database/ivu-dbCon.php";
+    include_once "model/info_sem_event.php";
     include_once "controller/Akademie/Akademie.php";
-    include_once "css/rootSTYLE.php";
-    include_once("css/AkademieEvents/akademieEventsSTYLE.php");
-    include_once "css/tableSTYLE.php";
-    include_once("Sql/AkademieEvents/allEvents/sqlQueryAllEvents.php");
+    include_once "css/root.style.php";
+    include_once "css/Akademie/akademie.style.php";
+    include_once "css/table.style.php";
+    include_once "Sql/Akademie/SelectQueryAkademie.php";
 
     $UEContent = new Akademie();
 
-    $UEContent->showLoadUpcommingEvents(new infoCenterDbCon(),new sqlQueryAllEvents());
+    $UEContent->showLoadUpcommingEvents(new infoCenterDbCon(),new SelectQueryAkademie());
 }
 
 //in Arbeit....
@@ -60,8 +60,8 @@ add_shortcode("sc_pageNumber", "pageNumber");
 
 function pageNumber()
 {
-    include_once "css/rootSTYLE.php";
-    include_once "css/AkademieEvents/akademieEventsSTYLE.php";
+    include_once "css/root.style.php";
+    include_once "css/Akademie/akademie.style.php";
 
     //noch unfertig und auslagern....
     echo "<div class='paginationContainer'>
@@ -77,38 +77,34 @@ add_shortcode("sc_showEventContent", "showEventContent");
 function showEventContent()
 {
     include_once "Database/ivu-dbCon.php";
-    include_once "css/rootSTYLE.php";
+    include_once "css/root.style.php";
     include_once "css/style.php";
     include_once "css/btn.style.php";
-    include_once "css/AkademieEvents/akademieEventsSTYLE.php";
-    include_once "Sql/AkademieEvents/sqlQueryAkademieEvents.php";
-    include_once("Sql/AkademieEvents/allEvents/sqlQueryAllEvents.php");
-    include_once "Sql/AkademieEvents/tile/loadTileContent.php";
+    include_once "css/Akademie/akademie.style.php";
+    include_once "Sql/Akademie/SelectQueryAkademie.php";
     include_once "model/semTile.php";
     include_once "view/Akademie/SeminarDetails.php";
     include_once "controller/Akademie/Akademie.php";
 
     $eventContent = new Akademie();
 
-    echo $eventContent->eventContent(new infoCenterDbCon(), new sqlQueryAkademieEvents());
+    echo $eventContent->eventContent(new infoCenterDbCon(), new SelectQueryAkademie());
 }
 
 add_shortcode("shortcode_buchung_seminarBlock", "buchung_seminarBlock");
 
 function buchung_seminarBlock()
 {
-    include_once "css/rootSTYLE.php";
-    include_once("css/style.php");
-    include_once("Sql/AkademieEvents/tile/loadTileContent.php");
-    include_once("Sql/AkademieEvents/allEvents/sqlQueryAllEvents.php");
-    include_once("Sql/AkademieEvents/contentMatter/loadMatter.php");
-    include_once("Database/ivu-dbCon.php");
+    include_once "css/root.style.php";
+    include_once "css/style.php";
+    include_once "Sql/Akademie/SelectQueryAkademie.php";
+    include_once "Database/ivu-dbCon.php";
     include_once "model/semTile.php";
     include_once "controller/Akademie/Akademie.php";
 
     $SBContent = new Akademie();
 
-    echo $SBContent->showBuchung_seminarBlock(new infoCenterDbCon(),new loadTileContent());
+    echo $SBContent->showBuchung_seminarBlock(new infoCenterDbCon(),new SelectQueryAkademie());
 
 }
 
@@ -116,9 +112,9 @@ function buchung_seminarBlock()
 
 function buchung_beschreibung()
 {
-    include_once "css/rootSTYLE.php";
+    include_once "css/root.style.php";
     include_once("Sql/AkademieEvents/contentDescription/loadDescription.php");
-    include_once "css/AkademieEvents/akademieEventsSTYLE.php";
+    include_once "css/AkademieEvents/akademie.style.php";
     include_once "controller/Akademie/Akademie.php";
 
     $BBContent = new Akademie();
@@ -130,9 +126,9 @@ add_shortcode("shortcode_buchung_inhalt", "buchung_inhalt");
 
 function buchung_inhalt()
 {
-    include_once "css/rootSTYLE.php";
+    include_once "css/root.style.php";
     include_once("Sql/AkademieEvents/contentMatter/loadMatter.php");
-    include_once "css/AkademieEvents/akademieEventsSTYLE.php";
+    include_once "css/AkademieEvents/akademie.style.php";
     include_once "controller/Akademie/Akademie.php";
 
     $BIContent = new Akademie();
@@ -145,9 +141,9 @@ add_shortcode("shortcode_buchung_zielgruppe", "buchung_zielgruppe");
 
 function buchung_zielgruppe()
 {
-    include_once "css/rootSTYLE.php";
+    include_once "css/root.style.php";
     include_once("Sql/AkademieEvents/contentTargetGroup/loadTargetGroup.php");
-    include_once "css/AkademieEvents/akademieEventsSTYLE.php";
+    include_once "css/AkademieEvents/akademie.style.php";
     include_once "controller/Akademie/Akademie.php";
 
     $BZContent = new Akademie();
@@ -159,9 +155,9 @@ add_shortcode("shortcode_buchung_voraussetzungen", "buchung_voraussetzungen");
 
 function buchung_voraussetzungen()
 {
-    include_once "css/rootSTYLE.php";
+    include_once "css/root.style.php";
     include_once("Sql/AkademieEvents/contentRequirement/loadRequirement.php");
-    include_once "css/AkademieEvents/akademieEventsSTYLE.php";
+    include_once "css/AkademieEvents/akademie.style.php";
     include_once "controller/Akademie/Akademie.php";
 
     $BVContent = new Akademie();
@@ -173,7 +169,7 @@ add_shortcode("shortcode_buchung_button_zurBuchung", "buchung_button_zurBuchung"
 
 function buchung_button_zurBuchung()
 {
-    include_once "css/rootSTYLE.php";
+    include_once "css/root.style.php";
     include_once "css/btn.style.php";
     include_once "controller/Akademie/Akademie.php";
 
@@ -185,24 +181,22 @@ add_shortcode("sc_eventRegisterBox", "eventRegisterBox");
 
 function eventRegisterBox()
 {
-    include_once "css/rootSTYLE.php";
+    include_once "css/root.style.php";
     include_once "css/btn.style.php";
-    include_once "css/AkademieEvents/akademieEventsSTYLE.php";
-    include_once "css/formContainerSTYLE.php";
+    include_once "css/Akademie/akademie.style.php";
+    include_once "css/form.style.php";
     include_once "view/Akademie/TeilnehmendePerson.php";
     include_once "controller/Akademie/Akademie.php";
 
-    include_once("css/style.php");
-    include_once("Sql/AkademieEvents/tile/loadTileContent.php");
-    include_once("Sql/AkademieEvents/allEvents/sqlQueryAllEvents.php");
-    include_once("Sql/AkademieEvents/contentMatter/loadMatter.php");
-    include_once("Database/ivu-dbCon.php");
+    include_once "css/style.php";
+    include_once "Sql/Akademie/SelectQueryAkademie.php";
+    include_once "Database/ivu-dbCon.php";
     include_once "model/semTile.php";
 
     $eventBox = new TeilnehmendePerson();
     $SBContent = new Akademie();
 
-    echo $eventBox->showEventBox($SBContent->showBuchung_seminarBlock(new infoCenterDbCon(),new loadTileContent()));
+    echo $eventBox->showEventBox($SBContent->showBuchung_seminarBlock(new infoCenterDbCon(),new SelectQueryAkademie()));
 
 }
 
@@ -210,10 +204,10 @@ add_shortcode("shortcode_information_teilnehmendePerson", "information_teilnehme
 
 function information_teilnehmendePerson()
 {
-    include_once "css/rootSTYLE.php";
+    include_once "css/root.style.php";
     include_once "css/btn.style.php";
-    include_once "css/AkademieEvents/akademieEventsSTYLE.php";
-    include_once "css/formContainerSTYLE.php";
+    include_once "css/Akademie/akademie.style.php";
+    include_once "css/form.style.php";
     include_once "view/Akademie/TeilnehmendePerson.php";
     include_once "controller/Akademie/Akademie.php";
 
@@ -225,21 +219,19 @@ add_shortcode("shortcode_buchungsBestaetigung", "buchungsBestaetigung");
 
 function buchungsBestaetigung()
 {
-    include_once "css/rootSTYLE.php";
+    include_once "css/root.style.php";
     include_once "view/Akademie/BuchungText.php";
-    include_once "css/AkademieEvents/akademieEventsSTYLE.php";
-    include_once("css/style.php");
-    include_once("Sql/AkademieEvents/tile/loadTileContent.php");
-    include_once("Sql/AkademieEvents/allEvents/sqlQueryAllEvents.php");
-    include_once("Sql/AkademieEvents/contentMatter/loadMatter.php");
-    include_once("Database/ivu-dbCon.php");
+    include_once "css/Akademie/akademie.style.php";
+    include_once "css/style.php";
+    include_once "Sql/Akademie/SelectQueryAkademie.php";
+    include_once "Database/ivu-dbCon.php";
     include_once "model/semTile.php";
     include_once "controller/Akademie/Akademie.php";
 
     $text = new BuchungText();
     $SBContent = new Akademie();
 
-    echo $text->bookingConfirmed($SBContent->showBuchung_seminarBlock(new infoCenterDbCon(),new loadTileContent()));
+    echo $text->bookingConfirmed($SBContent->showBuchung_seminarBlock(new infoCenterDbCon(),new SelectQueryAkademie()));
 }
 
 add_shortcode("sc_kommendeVeranstaltungen","kommendeVeranstaltungen");
@@ -260,8 +252,8 @@ add_shortcode("sc_infoAndDownloads","infoAndDownloads");
 
 function infoAndDownloads()
 {
-    include_once "css/rootSTYLE.php";
-    include_once "css/AkademieEvents/infoAndDownloads.style.php";
+    include_once "css/root.style.php";
+    include_once "css/Akademie/akademie.style.php";
     include_once "view/Akademie/infoAndDownloads.php";
 
     $content = new infoAndDownloads();

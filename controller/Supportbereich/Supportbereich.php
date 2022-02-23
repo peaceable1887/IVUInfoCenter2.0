@@ -3,12 +3,8 @@
 
 class Supportbereich
 {
-    function showTableDownloadCenter()
+    function showTableSupportCalls($dbCon,$sqlStatement)
     {
-
-        $dbCon = new infoCenterDbCon();
-        $sqlStatement = new myCalls_query();
-
         $sql = $sqlStatement->myCompleted($_SESSION['userid']);
         $sqlRes = mysqli_query($dbCon, $sql);
 

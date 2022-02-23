@@ -138,7 +138,7 @@ class Akademie
         $seminarDetails = new SeminarDetails();
         $content = new Akademie();
 
-        return $seminarDetails->showSeminarDetails($content->showBuchung_seminarBlock(new infoCenterDbCon(),new loadTileContent()),
+        return $seminarDetails->showSeminarDetails($content->showBuchung_seminarBlock(new infoCenterDbCon(),new SelectQueryAkademie()),
             $Seminar_Description, $Seminar_Content, $Seminar_Target,
             $Seminar_Premises, $content->showBuchung_button_zurBuchung());
 

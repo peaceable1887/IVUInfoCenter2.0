@@ -11,8 +11,7 @@ add_shortcode("sc_siteDirection", "siteDirection");
 
 function siteDirection()
 {
-    include_once "css/rootSTYLE.php";
-    include_once "css/global/siteDirectionSTYLE.php";
+    include_once "css/root.style.php";
     include_once "view/Global/LinkVerzeichnis.php";
     include_once "controller/Global/GlobalContent.php";
 
@@ -25,7 +24,7 @@ function siteDirection()
 
 function userGreeting()
 {
-    include_once "css/rootSTYLE.php";
+    include_once "css/root.style.php";
     include_once "controller/Global/GlobalContent.php";
 
     $greeting = new GlobalContent();
@@ -37,7 +36,7 @@ add_shortcode("sc_editData", "editData");
 
 function editData()
 {
-    include_once "css/rootSTYLE.php";
+    include_once "css/root.style.php";
     include_once "controller/Global/GlobalContent.php";
 
     $editData = new GlobalContent();
@@ -50,7 +49,7 @@ add_shortcode("sc_logout", "logout");
 
 function logout()
 {
-    include_once "css/rootSTYLE.php";
+    include_once "css/root.style.php";
     include_once "controller/Global/GlobalContent.php";
 
     $logout = new GlobalContent();
@@ -62,9 +61,9 @@ add_shortcode("sc_headerTopProfilData", "headerTopProfilData");
 
 function headerTopProfilData()
 {
-    include_once "css/rootSTYLE.php";
-    include_once "css/global/headerTopSTYLE.php";
-    include_once "view/Global/headerTop.php";
+    include_once "css/root.style.php";
+    include_once "css/Global/global.style.php";
+    include_once "view/Global/HeaderTop.php";
     include_once "controller/Global/GlobalContent.php";
 
     $profilData = new headerTop();
@@ -78,14 +77,14 @@ add_shortcode("sc_headerPicture", "headerPicture");
 
 function headerPicture()
 {
-    include_once "css/global/headerPictureBgSTYLE.php";
+    include_once "css/Global/global.style.php";
     include_once "css/btn.style.php";
-    include_once "view/global/headerPartTwo.php";
+    include_once "view/global/HeaderBottom.php";
     include_once "controller/Global/GlobalContent.php";
 
     $headline = new GlobalContent();
 
-    $headerPartTwo = new headerPartTwo();
+    $headerPartTwo = new headerBottom();
     echo $headerPartTwo->showHeader($headline->showHeadline());
 }
 
@@ -104,9 +103,9 @@ add_shortcode("sc_subHeadline", "subHeadline");
 
 function subHeadline()
 {
-    include_once "css/rootSTYLE.php";
+    include_once "css/root.style.php";
     include_once "css/style.php";
-    include_once "css/global/subHeadlineSTYLE.php";
+    include_once "css/Global/global.style.php";
     include_once "controller/Global/GlobalContent.php";
 
     $subHeadline = new GlobalContent();
@@ -120,10 +119,10 @@ add_shortcode("sc_filterOptions","filterOptions");
 
 function filterOptions()
 {
-    include_once "css/rootSTYLE.php";
-    include_once("css/btn.style.php");
-    include_once ("css/style.php");
-    include_once "css/global/filterSTYLE.php";
+    include_once "css/root.style.php";
+    include_once "css/btn.style.php";
+    include_once "css/style.php";
+    include_once "css/Global/global.style.php";
     include_once "view/Global/GlobalFilter.php";
 
     $filter = new GlobalFilter();

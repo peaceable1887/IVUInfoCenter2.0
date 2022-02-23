@@ -11,9 +11,9 @@ add_shortcode("sc_login", "login");
 
 function login()
 {
-    include_once "css/rootSTYLE.php";
-    include_once ("Database/ivu-dbCon.php");
-    include_once ("Sql/Users/Login/loadUser.php");
+    include_once "css/root.style.php";
+    include_once "Database/ivu-dbCon.php";
+    include_once "Sql/Login/SelectUserData.php";
     include_once "controller/Login/Login.php";
 
     $LoginContent = new Login();
@@ -25,10 +25,10 @@ add_shortcode("sc_notLoggedIn", "notLoggedIn");
 
 function notLoggedIn()
 {
-    include_once "css/rootSTYLE.php";
-    include_once ("Database/ivu-dbCon.php");
-    include_once ("Sql/Users/Login/loadUser.php");
-    include_once ("Sql/Einstellungen/loadProfilData/loadProfilData.php");
+    include_once "css/root.style.php";
+    include_once "Database/ivu-dbCon.php";
+    include_once "Sql/Login/SelectUserData.php";
+    include_once "Sql/Einstellungen/SelectQueryEinstellungen.php";
     include_once "controller/Login/Login.php";
 
     $LoginSuccess = new Login();

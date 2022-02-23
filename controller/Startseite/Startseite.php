@@ -153,7 +153,7 @@ class Startseite
    function show_sc_sliderCurrentInfos()
     {
         $dbCon = new infoCenterDbCon();
-        $sqlStatement = new loadTileContent();
+        $sqlStatement = new SelectQueryAkademie();
         $currentDate = date("Y-m-d");
 
         $sql = $sqlStatement->tile_content($currentDate);
