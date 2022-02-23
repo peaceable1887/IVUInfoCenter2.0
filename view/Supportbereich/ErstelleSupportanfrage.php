@@ -3,9 +3,9 @@
 
 class ErstelleSupportanfrage
 {
-    function showContent()
+    function showContent(array $priorityName)
     {
-        $content = "<div class='formContainer'>
+        $content = "<form action='' method='post'><div class='formContainer'>
             <table id='formular'>
                  <tr>
                     <th>Sachgebiet*<br>
@@ -21,19 +21,19 @@ class ErstelleSupportanfrage
                 <tr>
                     <th>Typ der Anfrage* <br><select>
                                             <option value=\"\" disabled selected hidden>Typ der Anfrage auswählen...</option>
-                                            <option></option>
-                                            <option></option>
-                                            <option></option>
-                                            <option></option>
+                                            <option>Fehlermeldung</option>
+                                            <option>Infoanfrage</option>
+                                            <option>Änderungswunsch</option>
                                           </select></th></th>
                 </tr>
                 <tr>
                     <th>Priorität* <br><select>
                                             <option value=\"\" disabled selected hidden>Priorität auswählen...</option>
-                                            <option></option>
-                                            <option></option>
-                                            <option></option>
-                                            <option></option>
+                                            <option>".$priorityName[0]."</option>
+                                            <option>".$priorityName[1]."</option>
+                                            <option>".$priorityName[2]."</option>
+                                            <option>".$priorityName[3]."</option>
+                                            <option>".$priorityName[4]."</option> 
                                           </select></th></th>
                 </tr>
                 <tr>
@@ -46,15 +46,15 @@ class ErstelleSupportanfrage
                     <th>Dateianhang* <br><input id=\"fileFile\" type=\"File\" name=\"file\"></th>
                 </tr>
               </table>
-              <form>
+          
                 <span><span style='font-weight: bold'>Hinweis:</span><br>Zur Erfassung Ihrer Supportanfrage füllen Sie 
                 bitte alle Felder vollständig aus und klicken dann auf „Daten speichern“.<br><p></p><br>
                 Bitte hängen Sie ein Bildschirmfoto oder eine weiterführende Datei an Ihre Anfrage an.</span><br><br>
                 <div class='btnDiv'><button class='buttonConfirm'>
                 <a id='linkDescription' href='http://127.0.0.1/wordpress/daten-zur-supportanfrage-ergaenzen/'>
                 SUPPORT ANFRAGEN</a></button></div>
-            </form>
-         </div>";
+            
+         </div></form>";
 
         return $content;
     }

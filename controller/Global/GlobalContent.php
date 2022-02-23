@@ -138,11 +138,7 @@ class GlobalContent
         if(isset($_POST["logout"]))
         {
             session_destroy();
-            return "<html>
-                <head>
-                    <meta http-equiv=\"refresh\" content=\"1; URL=http://127.0.0.1/wordpress/login-test/\">
-                </head>
-              </html>";
+            return "<meta http-equiv=\"refresh\" content=\"0; URL=http://127.0.0.1/wordpress/login\">";
         }
 
         return $logout;

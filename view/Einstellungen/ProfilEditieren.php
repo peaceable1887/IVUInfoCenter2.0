@@ -4,7 +4,7 @@ class ProfilEditieren
 {
     function editProfil($gender, $firstname, $Surname, $eMail, $phone, $mobil)
     {
-        $container = "<div class='formContainerSettings'><details open>
+        $container = "<form action='' method='post'><div class='formContainerSettings'><details open>
             <summary>Änderung Ihres Profils</summary>
             <table id='formular'>
                  <tr>
@@ -38,22 +38,22 @@ class ProfilEditieren
                     </th>
                 </tr>
               </table>
-              <form>
+        
                 <span><span style='font-weight: bold'>Hinweis:</span><br>Bitte füllen Sie möglichst alle Felder vollständig 
                 aus und klicken dann auf „Daten speichern“. Die mit * gekennzeichneten<br> 
                       Felder sind Pflichtfelder.</span><br><br>
                 <div class='btnDiv'><button class='buttonConfirm'>
                 <a id='linkDescription' href=''>
                 DATEN SPEICHERN</a></button></div>
-            </form>
-          </details></div>";
+         
+          </details></div></form>";
 
         return $container;
     }
 
     function editAddress()
     {
-        $container = "<div class='formContainerSettings'><details>
+        $container = "<form action='' method='post'><div class='formContainerSettings'><details>
             <summary>Abweichende Anschrift zur Unternehmensadresse</summary>
             <table id='formular'>
                  <tr>
@@ -65,20 +65,20 @@ class ProfilEditieren
                     <th>Ort<br><input class='formInput' name='nachname' value=''></th>
                 </tr>
               </table>
-              <form>
+         
                  <br><br>
                 <div class='btnDiv'><button class='buttonConfirm'>
                 <a id='linkDescription' href=''>
                 DATEN SPEICHERN</a></button></div>
-            </form>
-          </details></div>";
+          
+          </details></div></form>";
 
         return $container;
     }
 
     function selectInterests()
     {
-        $container = "<div class='formContainerSettings'><details>
+        $container = "<form action='' method='post'><div class='formContainerSettings'><details>
             <summary>Meine Interessen</summary>
             <table id='formular' >
                  <tr>
@@ -126,20 +126,20 @@ class ProfilEditieren
                     <td style='border: hidden'><input type='checkbox' id='checkbox01'><label for='checkbox01'> Technik, EDV (Portale, Rechenzentrum)</label></td>
                 </tr>
               </table>
-              <form style='font-size: 17px; font-family: \"roboto condensed\";'>
+             
                  <br><br>
                 <div class='btnDiv'><button class='buttonConfirm'>
                 <a id='linkDescription' href=''>
                 DATEN SPEICHERN</a></button></div>
             </form>
-          </details></div>";
+          </details></div></form>";
 
         return $container;
     }
 
     function editAccessData()
     {
-        $container = "<div class='formContainerSettings'><details>
+        $container = "<form action='' method='post'><div class='formContainerSettings'><details>
             <summary>Änderung Ihrer Zugangsdaten</summary>
             <table id='formular'>
                  <tr>
@@ -156,13 +156,13 @@ class ProfilEditieren
               </table>
               <span>Die Mindestlänge für Kennwörter beträgt 6 Zeichen. Variieren Sie Zahlen mit Klein- und Großbuchstaben für eine<br>
                     möglichst hohe Sicherheit</span>
-              <form style='font-size: 17px; font-family: \"roboto condensed\";'>
+           
                  <br><br>
                 <div class='btnDiv'><button class='buttonConfirm'>
                 <a id='linkDescription' href=''>
                 DATEN SPEICHERN</a></button></div>
-            </form>
-          </details></div>";
+           
+          </details></div> </form>";
 
         return $container;
     }

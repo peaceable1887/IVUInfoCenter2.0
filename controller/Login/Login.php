@@ -4,7 +4,6 @@ class Login
 {
     function showLogin()
     {
-        session_start();
         $dbCon = new infoCenterDbCon();
         $sqlUser = new loadUser();
 
@@ -15,12 +14,21 @@ class Login
             $sqlRes = mysqli_query($dbCon, $sqlUser->userVerification($username, $password));
             $arCur = mysqli_fetch_array($sqlRes);
 
-            if($username == utf8_encode($arCur["User_Username"]) && $password == utf8_encode($arCur["User_Password"])) {
+            if($username == utf8_encode($arCur["User_Username"]) && $password == utf8_encode($arCur["User_Password"]))
+            {
                 $_SESSION['userid'] = $arCur['User_ID'];
-                die('<meta http-equiv="refresh" content="1; URL=http://127.0.0.1/wordpress/">');
-            } else {
-                $errorMessage = "E-Mail oder Passwort war ungültig<br>";
-            }
+                $userid = $_SESSION['userid'];
+                $sqlRes = mysqli_query($dbCon, $sqlUser->loadFullname($userid));
+                $arCur = mysqli_fetch_array($sqlRes);
+                $_SESSION["User_Firstname"] = utf8_encode($arCur["User_Firstname"]);
+                $_SESSION["User_Surname"] = utf8_encode($arCur["User_Surname"]);
+
+                die('<meta http-equiv="refresh" content="0; URL=http://127.0.0.1/wordpress/">');
+
+            } else
+                {
+                    $errorMessage = "E-Mail oder Passwort war ungültig<br>";
+                }
 
         }
 
@@ -35,25 +43,24 @@ class Login
             <input type=\"password\" size=\"40\"  maxlength=\"250\" name=\"password\"><br>            
             <input type=\"submit\" value=\"Einloggen\">
           </form>";
+
     }
 
-    function showLoginSuccess()
+    function showNotLoggedIn()
     {
-        session_start();
-        if(!isset($_SESSION['userid'])) {
-            die('Bitte zuerst <a href="http://127.0.0.1/wordpress/login-test">einloggen</a>');
+       if(!isset($_SESSION['userid']))
+        {
+            ?>
+            <style>
+                body
+                {
+                    display: none;
+                }
+            </style>
+            <meta http-equiv = "refresh" content = "0; url = http://127.0.0.1/wordpress/login/" />
+            <?php
         }
 
-        //Abfrage der Nutzer-ID vom Login
-        $dbCon = new infoCenterDbCon();
-        $userFullname = new loadUser();
-        $userid = $_SESSION['userid'];
-
-        $sqlRes = mysqli_query($dbCon, $userFullname->loadFullname($userid));
-        $arCur = mysqli_fetch_array($sqlRes);
-        $_SESSION["User_Firstname"] = utf8_encode($arCur["User_Firstname"]);
-        $_SESSION["User_Surname"] = utf8_encode($arCur["User_Surname"]);
     }
-
 
 }

@@ -48,12 +48,12 @@ class DownloadCenter
             $downloadDate = utf8_encode($arCur["Download_Date"]);
             $downloadDateConvert = strtotime($downloadDate);
             $newDownloadDate = date("d.m.Y",$downloadDateConvert);
-            $_SESSION[$i."downlNumber"] = utf8_encode($arCur["Download_Number"]);
+            $_SESSION[$i."download_ID"] = utf8_encode($arCur["Download_ID"]);
 
             echo "<tr>\n";
 
             echo "<td>";
-            echo $_SESSION[$i."downlNumber"];
+            echo utf8_encode($arCur["Download_Number"]);
             echo "</td>\n";
 
             echo "<td>\n";
@@ -92,7 +92,7 @@ class DownloadCenter
         {
             if(isset($_GET["downl_id_".$i]))
             {
-                $sqlRes = mysqli_query($dbCon, $sqlStm->sqlQuery_showDownloadDetails($_SESSION[$i."downlNumber"]));
+                $sqlRes = mysqli_query($dbCon, $sqlStm->sqlQuery_showDownloadDetails($_SESSION[$i."download_ID"]));
                 $arCur = mysqli_fetch_array($sqlRes);
 
                 $downloadSubject = utf8_encode($arCur["Download_Subject"]);
@@ -100,6 +100,8 @@ class DownloadCenter
                 $downloadDateConvert = strtotime($downloadDate);
                 $newDownloadDate = date("d.m.Y",$downloadDateConvert);
                 $downloadNumber = utf8_encode($arCur["Download_Number"]);
+                $userFirstname = utf8_encode($arCur["User_Firstname"]);
+                $userSurname = utf8_encode($arCur["User_Surname"]);
                 $fieldName = utf8_encode($arCur["Field_Name"]);
                 $downloadDescription = utf8_encode($arCur["Download_Description"]);
                 //nochmal nachsehen ob richtige Spalte
@@ -114,7 +116,7 @@ class DownloadCenter
         $content = new downloadContent();
 
         echo $content->downloadContentDescription($downloadSubject,$newDownloadDate,
-            $downloadNumber,$fieldName,$downloadDescription, $fileSize);
+            $downloadNumber,$userFirstname,$userSurname, $fieldName,$downloadDescription, $fileSize);
     }
 
 }

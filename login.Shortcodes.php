@@ -5,6 +5,8 @@ Description: Stellt den Login und alle dazugehörigen Funktionen zur Verfügung
 Version: 1.0.0
 Author: Felix Hansmann
 */
+session_start();
+
 add_shortcode("sc_login", "login");
 
 function login()
@@ -19,9 +21,9 @@ function login()
     $LoginContent->showLogin();
 }
 
-add_shortcode("sc_loginSuccess", "loginSuccess");
+add_shortcode("sc_notLoggedIn", "notLoggedIn");
 
-function loginSuccess()
+function notLoggedIn()
 {
     include_once "css/rootSTYLE.php";
     include_once ("Database/ivu-dbCon.php");
@@ -31,7 +33,7 @@ function loginSuccess()
 
     $LoginSuccess = new Login();
 
-    $LoginSuccess->showLoginSuccess();
+    $LoginSuccess->showNotLoggedIn();
 
 }
 //noch auslagern....

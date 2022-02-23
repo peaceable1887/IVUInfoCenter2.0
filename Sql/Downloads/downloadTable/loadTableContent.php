@@ -3,7 +3,7 @@ class loadTableContent
 {
     function sqlQuery_loadDownloadsASC()
     {
-        $sql = "SELECT Download_Number,Download_Date, Download_Subject, Field_Name, Subfield_Name FROM info_downl 
+        $sql = "SELECT Download_ID,Download_Number,Download_Date, Download_Subject, Field_Name, Subfield_Name FROM info_downl 
                 INNER JOIN info_downl_field ON info_downl_field.Field_ID = info_downl.Download_Field
                 INNER JOIN info_downl_subfield ON info_downl_subfield.Subfield_ID = info_downl.Download_Subfield
                 WHERE Download_Status = 1
@@ -16,7 +16,7 @@ class loadTableContent
     }
     function sqlQuery_loadDownloadsDESC()
     {
-        $sql = "SELECT Download_Number,Download_Date, Download_Subject, Field_Name, Subfield_Name FROM info_downl 
+        $sql = "SELECT Download_ID,Download_Number,Download_Date, Download_Subject, Field_Name, Subfield_Name FROM info_downl 
                 INNER JOIN info_downl_field ON info_downl_field.Field_ID = info_downl.Download_Field
                 INNER JOIN info_downl_subfield ON info_downl_subfield.Subfield_ID = info_downl.Download_Subfield
                 WHERE Download_Status = 1

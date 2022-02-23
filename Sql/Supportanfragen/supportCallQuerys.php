@@ -27,4 +27,18 @@ class supportCallQuerys
 
         return $sql;
     }
+
+    function load_call_priority()
+    {
+        $sql = "SELECT Priority_Name FROM ossy_call_priority;";
+
+        return $sql;
+    }
+
+    function load_call_field()
+    {
+        $sql = "SELECT Field_Name FROM ossy_call_field WHERE Field_Deleted = 0;";
+
+        return $sql;
+    }
 }

@@ -36,15 +36,17 @@ add_shortcode("sc_createSupportRequest", "createSupportRequest");
 
 function createSupportRequest()
 {
+    include_once "Database/ivu-dbCon.php";
+    include_once "Sql/Supportanfragen/supportCallQuerys.php";
     include_once("css/formContainerSTYLE.php");
     include_once ("css/style.php");
     include_once "css/btn.style.php";
     include_once("css/Supportbereich/neueSupportanfrageSTYLE.php");
     include_once "view/Supportbereich/ErstelleSupportanfrage.php";
+    include_once "controller/Supportbereich/Supportbereich.php";
 
-    $supportRequest = new ErstelleSupportanfrage();
-
-    echo $supportRequest->showContent();
+    $supportContent = new Supportbereich();
+    echo $supportContent->show_createNewCallContent(new infoCenterDbCon(), new supportCallQuerys());
 
 }
 

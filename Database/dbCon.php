@@ -1,5 +1,5 @@
 <?php
-//Testverbindung: DummyDB
+//noch auf PDO wechseln !
 class dbCon extends mysqli
 {
     public function __construct()

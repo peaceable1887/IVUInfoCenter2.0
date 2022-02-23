@@ -136,4 +136,52 @@ class Supportbereich
         mysqli_close($dbCon);
     }
 
+    function show_createNewCallContent($dbCon, $sql)
+    {
+        $sqlRes = mysqli_query($dbCon, $sql->load_call_priority());
+        $countRows = mysqli_num_rows($sqlRes);
+
+        for($i = 0; $i <= $countRows; $i++)
+        {
+            $arCur = mysqli_fetch_array($sqlRes);
+            $priorityName[] = utf8_encode($arCur["Priority_Name"]);
+
+        }
+
+
+        $supportRequest = new ErstelleSupportanfrage();
+
+        return $supportRequest->showContent($priorityName);
+
+    }
+
+    function readOutDatabaseContent($dbCon, $sqlStm)
+    {
+        $sqlRes = mysqli_query($dbCon, $sqlStm);
+        $row = mysqli_fetch_assoc($sqlRes);
+        $colNames = array_keys($row);
+
+        while ($row = $sqlRes->fetch_assoc()) {
+            echo "a1<br>";
+        }
+
+        /*for($i = 0; $i <= $countColummns; $i++)
+        {
+            echo $countColummns."tt";
+            $countRows = mysqli_num_rows($sqlRes);
+
+            for($j = 0; $j <= $countRows; $i++)
+            {
+                $arCur = mysqli_fetch_array($sqlRes);
+                $arRow = utf8_encode($arCur[$countColummns]);
+
+                echo $arRow."<br>";
+            }
+
+
+        }*/
+
+        mysqli_close($dbCon);
+    }
+
 }

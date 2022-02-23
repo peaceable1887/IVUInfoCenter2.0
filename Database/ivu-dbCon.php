@@ -1,4 +1,5 @@
 <?php
+//noch auf PDO wechseln !
 class infoCenterDbCon extends mysqli
 {
     public function __construct()

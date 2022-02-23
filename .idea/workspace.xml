@@ -25,18 +25,26 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="Seite für den Bereich &quot;Informationen und Downloads&quot; fertiggestellt">
+    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="CSS-Anpassungen auf der Seite &quot;Download-Details&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/Supportbereich/overlays.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/Supportbereich/overlays.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/dbCon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Database/dbCon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/ivu-dbCon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Database/ivu-dbCon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sql/Downloads/downloadContent/downloadDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/Downloads/downloadContent/downloadDetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sql/Downloads/downloadTable/loadTableContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/Downloads/downloadTable/loadTableContent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sql/Supportanfragen/supportCallQuerys.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/Supportanfragen/supportCallQuerys.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/DownloadCenter/DownloadCenter.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/DownloadCenter/DownloadCenter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/Global/GlobalContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Global/GlobalContent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Login/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Login/Login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/Supportbereich/Supportbereich.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Supportbereich/Supportbereich.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/DownloadCenter/downloadContentSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/DownloadCenter/downloadContentSTYLE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Supportbereich/supportbereich.style.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Supportbereich/supportbereich.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Akademie/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Akademie/Menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/AkademieEvents/infoAndDownloads.style.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/AkademieEvents/infoAndDownloads.style.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/global/headerPictureBgSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/global/headerPictureBgSTYLE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supportbereich.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/supportbereich.Shortcodes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/DownloadCenter/downloadContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/DownloadCenter/downloadContent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Global/LinkVerzeichnis.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Global/LinkVerzeichnis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Supportbereich/TicketUebersicht.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Supportbereich/TicketUebersicht.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Einstellungen/ProfilEditieren.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Einstellungen/ProfilEditieren.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Global/headerPartTwo.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Global/headerPartTwo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Supportbereich/ErgaenzeSupportanfrage.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Supportbereich/ErgaenzeSupportanfrage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Supportbereich/ErstelleSupportanfrage.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Supportbereich/ErstelleSupportanfrage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +223,10 @@
       <workItem from="1644573401606" duration="9601000" />
       <workItem from="1644835742871" duration="19409000" />
       <workItem from="1644919965942" duration="18608000" />
-      <workItem from="1645008845803" duration="17402000" />
+      <workItem from="1645008845803" duration="18126000" />
+      <workItem from="1645086210904" duration="2926000" />
+      <workItem from="1645438083768" duration="13282000" />
+      <workItem from="1645525337420" duration="15003000" />
     </task>
     <task id="LOCAL-00001" summary="weiterer Push des Codes">
       <created>1637168082069</created>
@@ -364,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645016299339</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="CSS-Anpassungen auf der Seite &quot;Download-Details&quot;">
+      <created>1645028059984</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1645028059984</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +433,8 @@
     <MESSAGE value="Edit: Overlay-Design überarbeitet und fertiggestellt" />
     <MESSAGE value="Supporttickets nehmen jetzt Variablen aus der DB entgegen (Absicherung)" />
     <MESSAGE value="Seite für den Bereich &quot;Informationen und Downloads&quot; fertiggestellt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seite für den Bereich &quot;Informationen und Downloads&quot; fertiggestellt" />
+    <MESSAGE value="CSS-Anpassungen auf der Seite &quot;Download-Details&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="CSS-Anpassungen auf der Seite &quot;Download-Details&quot;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638029757564">

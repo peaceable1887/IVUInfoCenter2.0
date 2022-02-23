@@ -9,7 +9,7 @@
 .iadContent h2
 {
     padding: 0;
-    margin: 2% 0 0 0;
+    margin: 1% 0 0 0;
     display: flex;
     font-size: 35px;
 
@@ -18,6 +18,7 @@
 {
     display:flex;
     flex-direction: column;
+    margin: 1% 0 0 0;
 }
 .text
 {

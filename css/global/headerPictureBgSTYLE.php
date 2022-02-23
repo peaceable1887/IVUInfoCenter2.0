@@ -5,6 +5,8 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        color: var(--color-default-white);
+        font-family: var(--fontfamily-global);
         background-color: #46afdf;
         width: 100%;
         height: 400px;
@@ -12,10 +14,26 @@
         margin: 0 0 20px 0;
         box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
     }
+    .headerHeadline
+    {
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+    }
     .headerHeadline h1
     {
         color: var(--color-default-white);
         font-family: var(--fontfamily-global);
+    }
+    .headerSubheadline
+    {
+
+    }
+    .btnHeaderContainer
+    {
+        width: 100%;
+        display: flex;
+        justify-content: start;
     }
     .buttonHeader
     {
