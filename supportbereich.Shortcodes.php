@@ -34,7 +34,7 @@ function tableSupportCalls()
 
     $DCContent = new Supportbereich();
 
-    $DCContent ->showTableSupportCalls(new infoCenterDbCon(),new SelectQuerySupportCalls());
+    $DCContent ->showTableSupportCalls(new SelectQuerySupportCalls());
 }
 
 add_shortcode("sc_supportRequestText", "supportRequestText");
@@ -63,7 +63,7 @@ function createSupportRequest()
     include_once "controller/Supportbereich/Supportbereich.php";
 
     $supportContent = new Supportbereich();
-    echo $supportContent->show_createNewCallContent(new infoCenterDbCon(), new SelectQuerySupportCalls());
+    echo $supportContent->show_createNewCallContent(new SelectQuerySupportCalls());
 
 }
 
@@ -117,7 +117,7 @@ function ticketContent()
 
     $ticketContent = new Supportbereich();
 
-    $ticketContent->showTicketContent(new infoCenterDbCon(), new SelectQuerySupportCalls());
+    $ticketContent->showTicketContent(new SelectQuerySupportCalls());
 }
 
 add_shortcode("sc_ticketChat", "ticketChat");
@@ -137,7 +137,7 @@ function ticketChat()
 
     $ticketChat = new Supportbereich();
 
-    $ticketChat->showTicketChat(new infoCenterDbCon(), new SelectQuerySupportCalls());
+    $ticketChat->showTicketChat(new SelectQuerySupportCalls());
 }
 
 //Übersicht Supportanfragen

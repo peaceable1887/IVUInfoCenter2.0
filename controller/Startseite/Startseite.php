@@ -1,6 +1,6 @@
 <?php
 
-class Startseite
+class Startseite extends infoCenterDbCon
 {
    /* function showBtnSupportRequest()
     {
@@ -57,12 +57,12 @@ class Startseite
         }
     }*/
 
-    function show_sc_sliderCurrentSeminare($dbCon, $sqlStm)
+    function show_sc_sliderCurrentSeminare($sqlStm)
     {
         $currentDate = date("Y-m-d");
-        $sqlRes = mysqli_query($dbCon, $sqlStm->tile_content($currentDate));
 
-        $recordCount = mysqli_num_rows($sqlRes);
+        $sqlRes = $this->getMySqlQuery($this->dbCon(), $sqlStm->tile_content($currentDate));
+        $recordCount = $this->getNumRows($sqlRes);
 
         echo "<div class='sliderContainer'><div class='sliderSemHeadline'>ANSTEHENDE VERANSTALTUNGEN</div>
                 <div class=\"slideshow-container\">";
@@ -73,7 +73,7 @@ class Startseite
 
             for ($x = 0;$x < 3 ;$x++)
             {
-                $arCur = mysqli_fetch_array($sqlRes);
+                $arCur = $this->getFetchArray($sqlRes);
 
                 $seminarName = utf8_encode($arCur["Seminar_Name"]);
                 $startDate = utf8_encode($arCur["Event_StartDate"]);
@@ -150,16 +150,11 @@ class Startseite
     }
     /*Akutelle Informationen*/
 
-   function show_sc_sliderCurrentInfos()
+   function show_sc_sliderCurrentInfos($sql)
     {
-        $dbCon = new infoCenterDbCon();
-        $sqlStatement = new SelectQueryAkademie();
         $currentDate = date("Y-m-d");
-
-        $sql = $sqlStatement->tile_content($currentDate);
-        $sqlRes = mysqli_query($dbCon, $sql);
-
-        $recordCount = mysqli_num_rows($sqlRes);
+        $sqlRes = $this->getMySqlQuery($this->dbCon(), $sql->tile_content($currentDate));
+        $recordCount = $this->getNumRows($sqlRes);
 
         echo "<div class='mainDivInfos'><span class='sliderInfoHeadline'>AKTUELLES</span><div class=\"slideshow-containerInfos\">";
 

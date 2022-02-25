@@ -26,68 +26,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="Absicherung">
-      <change afterPath="$PROJECT_DIR$/Sql/Akademie/SelectQueryAkademie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sql/DownloadCenter/SelectQueryDownloadCenter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sql/Einstellungen/SelectQueryEinstellungen.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sql/Supportbereich/SelectQuerySupportCalls.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trash/infoAndDownloads.style.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trash/neueSupportanfrage.style.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trash/siteDirection.style.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trash/subHeadline.style.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trash/supportRequestText.style.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trash/supportRequestTicket.style..php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/AkademieModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/EinstellungenModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/AkademieView.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/Supportbereich/overlays.php" beforeDir="false" afterPath="$PROJECT_DIR$/OverlayContent/Supportbereich/overlays.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sql/AkademieEvents/allEvents/sqlQueryAllEvents.php" beforeDir="false" afterPath="$PROJECT_DIR$/Trash/allEvents/sqlQueryAllEvents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sql/AkademieEvents/contentDescription/loadDescription.php" beforeDir="false" afterPath="$PROJECT_DIR$/Trash/contentDescription/loadDescription.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sql/AkademieEvents/contentMatter/loadMatter.php" beforeDir="false" afterPath="$PROJECT_DIR$/Trash/contentMatter/loadMatter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sql/AkademieEvents/contentRequirement/loadRequirement.php" beforeDir="false" afterPath="$PROJECT_DIR$/Trash/contentRequirement/loadRequirement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sql/AkademieEvents/contentTargetGroup/loadTargetGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Trash/contentTargetGroup/loadTargetGroup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sql/AkademieEvents/sqlQueryAkademieEvents.php" beforeDir="false" afterPath="$PROJECT_DIR$/Trash/sqlQueryAkademieEvents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sql/AkademieEvents/tile/loadTileContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/Trash/tile/loadTileContent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sql/Downloads/downloadContent/downloadDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/Trash/downloadContent/downloadDetails.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sql/Downloads/downloadTable/loadTableContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/Trash/downloadTable/loadTableContent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sql/Einstellungen/loadProfilData/loadProfilData.php" beforeDir="false" afterPath="$PROJECT_DIR$/Trash/loadProfilData/loadProfilData.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sql/Supportanfragen/Meine Anfragen/myCalls_query.php" beforeDir="false" afterPath="$PROJECT_DIR$/Trash/Meine Anfragen/myCalls_query.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sql/Supportanfragen/supportCallQuerys.php" beforeDir="false" afterPath="$PROJECT_DIR$/Trash/supportCallQuerys.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sql/Users/Login/loadUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/Login/SelectUserData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/ivu-dbCon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Database/ivu-dbCon.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/akademie.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/akademie.Shortcodes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/Akademie/Akademie.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Akademie/Akademie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/DownloadCenter/DownloadCenter.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/DownloadCenter/DownloadCenter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Einstellungen/Einstellungen.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Einstellungen/Einstellungen.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/Login/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Login/Login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/Startseite/Startseite.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Startseite/Startseite.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/Supportbereich/Supportbereich.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Supportbereich/Supportbereich.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/AkademieEvents/akademieEventsSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Akademie/akademie.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/AkademieEvents/infoAndDownloads.style.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/DownloadCenter/downloadContentSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/DownloadCenter/downloadContent.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Hilfe und Infos/helpAndInfosSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Hilfe und Infos/helpAndInfos.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Slider/sliderCurrentInfosSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Slider/sliderCurrentInfos.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Slider/sliderSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Slider/slider.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Supportbereich/neueSupportanfrageSTYLE.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Supportbereich/supportRequestTextSTYLE.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Supportbereich/supportRequestTicketSTYLE.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Supportbereich/supportbereich.style.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Supportbereich/supportbereich.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/einstellungen/einstellungenSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Einstellungen/einstellungen.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/formContainerSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/form.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/global/filterSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Global/global.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/global/headerPictureBgSTYLE.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/global/siteDirectionSTYLE.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/global/subHeadlineSTYLE.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/menuSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/menu.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/rootSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/root.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/startseite/startseiteSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Startseite/startseite.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/tableSTYLE.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/table.style.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/downloadCenter.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/downloadCenter.Shortcodes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/einstellungen.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/einstellungen.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/global.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hilfeUndInfos.Shortcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/hilfeUndInfos.Shortcode.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/infoTile.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/infoTile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startseite.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/startseite.Shortcodes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/supportbereich.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/supportbereich.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/DownloadCenter/downloadContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/DownloadCenter/DownloadContent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Global/headerPartTwo.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Global/HeaderBottom.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Global/headerTop.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Global/HeaderTop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Supportbereich/supportRequestTextContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Supportbereich/SupportCallTextContent.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,16 +90,16 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\includes\login.inc" />
-      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\images\header" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\newInfoCenter\Trash" />
       <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\newInfoCenter\Sql\Login" />
       <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\newInfoCenter\css\Slider" />
       <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\css" />
       <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\Trash" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\includes\login.inc" />
+      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\images\header" />
     </key>
   </component>
   <component name="TaskManager">
@@ -271,6 +226,7 @@
       <workItem from="1645438083768" duration="13282000" />
       <workItem from="1645525337420" duration="15003000" />
       <workItem from="1645609234518" duration="10479000" />
+      <workItem from="1645784230749" duration="2528000" />
     </task>
     <task id="LOCAL-00001" summary="weiterer Push des Codes">
       <created>1637168082069</created>
@@ -523,11 +479,11 @@
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="380" y="83" key="Github.UntrackedFilesDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1637167842220" />
-    <state x="382" y="202" width="711" height="500" key="NewPhpClassDialog" timestamp="1645620582696">
+    <state x="382" y="202" width="711" height="500" key="NewPhpClassDialog" timestamp="1645713986032">
       <screen x="0" y="0" width="1440" height="770" />
     </state>
     <state x="146" y="169" key="NewPhpClassDialog/0.0.1440.770/2880.0.1920.1040@0.0.1440.770" timestamp="1638435092784" />
-    <state x="382" y="202" key="NewPhpClassDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1645620582696" />
+    <state x="382" y="202" key="NewPhpClassDialog/0.0.1440.770/2880.469.1680.1010@0.0.1440.770" timestamp="1645713986032" />
     <state x="3050" y="745" width="711" height="500" key="NewPhpClassDialog/0.0.1440.770/2880.469.1680.1010@2880.469.1680.1010" timestamp="1639573785320" />
     <state x="462" y="489" key="NewPhpFileDialog" timestamp="1645011231946">
       <screen x="0" y="0" width="1440" height="770" />

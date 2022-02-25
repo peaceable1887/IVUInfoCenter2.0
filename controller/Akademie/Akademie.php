@@ -1,13 +1,13 @@
 <?php
 
-class Akademie
+class Akademie extends infoCenterDbCon
 {
-    function showLoadUpcommingEvents($dbCon, $sqlStm)
+    function showLoadUpcommingEvents($sqlStm)
     {
         $currentDate = date("Y-m-d");
 
-        $sqlRes = mysqli_query($dbCon, $sqlStm->sqlQuery_loadASC($currentDate));
-        $recordCount = mysqli_num_rows($sqlRes);
+        $sqlRes = $this->getMySqlQuery($this->dbCon(), $sqlStm->sqlQuery_loadASC($currentDate));
+        $recordCount = $this->getNumRows($sqlRes);
         $_SESSION["recordList"] = $recordCount;
 
         echo "<table>\n";
@@ -21,7 +21,7 @@ class Akademie
 
         for ($i = 0;$i < $recordCount;$i++)
         {
-            $arCur = mysqli_fetch_array($sqlRes);
+            $arCur = $this->getFetchArray($sqlRes);
             $infoSemEvent = new info_sem_event();
 
             $infoSemEvent->setEventStartDate(utf8_encode($arCur["Event_StartDate"]));
@@ -60,7 +60,7 @@ class Akademie
 
     }
 
-    function showBuchung_seminarBlock($dbCon, $sqlStm)
+    function showBuchung_seminarBlock($sqlStm)
     {
         //Anzahl der Termine
         $recordCount = $_SESSION["recordList"];
@@ -71,11 +71,10 @@ class Akademie
             if(isset($_GET["linkDescription".$i]))
             {
                 //Statement ggf. nochmal Überarbeiten. Fehler bei gleichen Datum...
-                $sqlRes = mysqli_query($dbCon, $sqlStm->tile_content($currentDate));
-
+                $sqlRes = $this->getMySqlQuery($this->dbCon(), $sqlStm->tile_content($currentDate));
                 for($x = 0; $x < $i+1; $x++)
                 {
-                    $arCur = mysqli_fetch_array($sqlRes);
+                    $arCur = $this->getFetchArray($sqlRes);
                     $arr[$x] = utf8_encode($arCur["Event_StartDate"]);
                     //echo $arr[$i];
                     $arr[$x] = utf8_encode($arCur["Field_Name"]);
@@ -108,12 +107,12 @@ class Akademie
             }
 
         }
-        mysqli_close($dbCon);
+        $this->closeDbCon($this->dbCon());
 
     }
 
     //Funktion noch umändern und ausbauen
-    function eventContent($dbCon, $sqlStm)
+    function eventContent($sqlStm)
     {
         //Anzahl der Termine
         $recordCount = $_SESSION["recordList"];
@@ -122,8 +121,8 @@ class Akademie
         {
             if(isset($_GET["linkDescription".$i]))
             {
-                $sqlRes = mysqli_query($dbCon, $sqlStm->showEventContent($_SESSION[$i."eventNumber"]));
-                $arCur = mysqli_fetch_array($sqlRes);
+                $sqlRes = $this->getMySqlQuery($this->dbCon(), $sqlStm->showEventContent($_SESSION[$i."eventNumber"]));
+                $arCur = $this->getFetchArray($sqlRes);
 
                 $Seminar_Description = utf8_encode($arCur["Seminar_Description"]);
                 $Seminar_Target = utf8_encode($arCur["Seminar_Target"]);
@@ -134,16 +133,17 @@ class Akademie
             }
 
         }
-        mysqli_close($dbCon);
+        $this->closeDbCon($this->dbCon());
         $seminarDetails = new SeminarDetails();
         $content = new Akademie();
 
-        return $seminarDetails->showSeminarDetails($content->showBuchung_seminarBlock(new infoCenterDbCon(),new SelectQueryAkademie()),
+        return $seminarDetails->showSeminarDetails($content->showBuchung_seminarBlock(new SelectQueryAkademie()),
             $Seminar_Description, $Seminar_Content, $Seminar_Target,
             $Seminar_Premises, $content->showBuchung_button_zurBuchung());
 
     }
 
+    //wird nicht verwendet (später eventuell wieder einbauen)
     function showBuchung_inhalt($dbCon, $sqlStm)
     {
         //Anzahl der Termine
@@ -173,7 +173,7 @@ class Akademie
                         }
                     }
                 }
-                mysqli_close($dbCon);
+                $this->closeDbCon($this->dbCon());
             }
         }
 

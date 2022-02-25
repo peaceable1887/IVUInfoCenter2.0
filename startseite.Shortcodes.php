@@ -36,7 +36,7 @@ function sliderCurrentSeminare()
 
     $slider = new Startseite();
 
-    $slider->show_sc_sliderCurrentSeminare(new infoCenterDbCon(),new SelectQueryAkademie());
+    $slider->show_sc_sliderCurrentSeminare(new SelectQueryAkademie());
 
 }
 
@@ -74,5 +74,5 @@ function sliderCurrentInfos()
 
     $slider = new Startseite();
 
-    $slider->show_sc_sliderCurrentInfos();
+    $slider->show_sc_sliderCurrentInfos(new SelectQueryAkademie());
 }

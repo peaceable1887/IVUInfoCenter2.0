@@ -1,9 +1,9 @@
 <?php
 
 
-class DownloadCenter
+class DownloadCenter extends infoCenterDbCon
 {
-    function showDownloadOverview($dbCon, $sqlStm)
+    function showDownloadOverview($sqlStm)
     {
         //hardcodierung raus, noch dynamisch gestalten....
 
@@ -28,8 +28,8 @@ class DownloadCenter
             $sql = $sqlStm->sqlQuery_loadDownloadsDESC();
         }
 
-        $sqlRes = mysqli_query($dbCon, $sql);
-        $countDownloads = mysqli_num_rows($sqlRes);
+        $sqlRes = $this->getMySqlQuery($this->dbCon(), $sql);
+        $countDownloads = $this->getNumRows($sqlRes);
         $_SESSION["recordListDownload"] = $countDownloads;
 
         echo "<table>
@@ -44,7 +44,7 @@ class DownloadCenter
 
         for ($i = 0;$i < $countDownloads;$i++)
         {
-            $arCur = mysqli_fetch_array($sqlRes);
+            $arCur = $this->getFetchArray($sqlRes);
             $downloadDate = utf8_encode($arCur["Download_Date"]);
             $downloadDateConvert = strtotime($downloadDate);
             $newDownloadDate = date("d.m.Y",$downloadDateConvert);
@@ -83,7 +83,7 @@ class DownloadCenter
         echo "</table>\n";
     }
 
-    function showDownloadContent($dbCon, $sqlStm)
+    function showDownloadContent($sqlStm)
     {
         //Anzahl der Termine
         $recordCount = $_SESSION["recordListDownload"];
@@ -92,8 +92,8 @@ class DownloadCenter
         {
             if(isset($_GET["downl_id_".$i]))
             {
-                $sqlRes = mysqli_query($dbCon, $sqlStm->sqlQuery_showDownloadDetails($_SESSION[$i."download_ID"]));
-                $arCur = mysqli_fetch_array($sqlRes);
+                $sqlRes = $this->getMySqlQuery($this->dbCon(), $sqlStm->sqlQuery_showDownloadDetails($_SESSION[$i."download_ID"]));
+                $arCur = $this->getFetchArray($sqlRes);
 
                 $downloadSubject = utf8_encode($arCur["Download_Subject"]);
                 $downloadDate = utf8_encode($arCur["Download_Date"]);
@@ -111,7 +111,7 @@ class DownloadCenter
             }
 
         }
-        mysqli_close($dbCon);
+        $this->closeDbCon($this->dbCon());
 
         $content = new downloadContent();
 

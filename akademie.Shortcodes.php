@@ -7,6 +7,19 @@ Author: Felix Hansmann
 */
 session_start();
 
+add_shortcode("sc_test", "test");
+
+function test()
+{
+    include_once "Database/ivu-dbCon.php";
+    include_once "model/AkademieModel.php";
+    include_once "view/AkademieView.php";
+
+    $test = new AkademieView();
+
+    $test->showEvent(date("Y-m-d"));
+}
+
 add_shortcode("sc_buttonsMenu", "buttonsMenu");
 
 function buttonsMenu()
@@ -52,7 +65,7 @@ function loadUpcommingEvents()
 
     $UEContent = new Akademie();
 
-    $UEContent->showLoadUpcommingEvents(new infoCenterDbCon(),new SelectQueryAkademie());
+    $UEContent->showLoadUpcommingEvents(new SelectQueryAkademie());
 }
 
 //in Arbeit....
@@ -88,7 +101,7 @@ function showEventContent()
 
     $eventContent = new Akademie();
 
-    echo $eventContent->eventContent(new infoCenterDbCon(), new SelectQueryAkademie());
+    echo $eventContent->eventContent(new SelectQueryAkademie());
 }
 
 add_shortcode("shortcode_buchung_seminarBlock", "buchung_seminarBlock");
@@ -104,66 +117,9 @@ function buchung_seminarBlock()
 
     $SBContent = new Akademie();
 
-    echo $SBContent->showBuchung_seminarBlock(new infoCenterDbCon(),new SelectQueryAkademie());
+    echo $SBContent->showBuchung_seminarBlock(new SelectQueryAkademie());
 
 }
-
-/*add_shortcode("shortcode_buchung_beschreibung", "buchung_beschreibung");
-
-function buchung_beschreibung()
-{
-    include_once "css/root.style.php";
-    include_once("Sql/AkademieEvents/contentDescription/loadDescription.php");
-    include_once "css/AkademieEvents/akademie.style.php";
-    include_once "controller/Akademie/Akademie.php";
-
-    $BBContent = new Akademie();
-
-    $BBContent->showBuchung_beschreibung(new infoCenterDbCon(),new loadDescription());
-}
-
-add_shortcode("shortcode_buchung_inhalt", "buchung_inhalt");
-
-function buchung_inhalt()
-{
-    include_once "css/root.style.php";
-    include_once("Sql/AkademieEvents/contentMatter/loadMatter.php");
-    include_once "css/AkademieEvents/akademie.style.php";
-    include_once "controller/Akademie/Akademie.php";
-
-    $BIContent = new Akademie();
-
-    $BIContent->showBuchung_inhalt(new infoCenterDbCon(),new loadMatter());
-
-}
-
-add_shortcode("shortcode_buchung_zielgruppe", "buchung_zielgruppe");
-
-function buchung_zielgruppe()
-{
-    include_once "css/root.style.php";
-    include_once("Sql/AkademieEvents/contentTargetGroup/loadTargetGroup.php");
-    include_once "css/AkademieEvents/akademie.style.php";
-    include_once "controller/Akademie/Akademie.php";
-
-    $BZContent = new Akademie();
-
-    $BZContent->showBuchung_zielgruppe(new infoCenterDbCon(),new loadTargetGroup());
-}
-
-add_shortcode("shortcode_buchung_voraussetzungen", "buchung_voraussetzungen");
-
-function buchung_voraussetzungen()
-{
-    include_once "css/root.style.php";
-    include_once("Sql/AkademieEvents/contentRequirement/loadRequirement.php");
-    include_once "css/AkademieEvents/akademie.style.php";
-    include_once "controller/Akademie/Akademie.php";
-
-    $BVContent = new Akademie();
-
-    $BVContent->showBuchung_voraussetzungen(new infoCenterDbCon(),new loadRequirement());
-}*/
 
 add_shortcode("shortcode_buchung_button_zurBuchung", "buchung_button_zurBuchung");
 
@@ -196,7 +152,7 @@ function eventRegisterBox()
     $eventBox = new TeilnehmendePerson();
     $SBContent = new Akademie();
 
-    echo $eventBox->showEventBox($SBContent->showBuchung_seminarBlock(new infoCenterDbCon(),new SelectQueryAkademie()));
+    echo $eventBox->showEventBox($SBContent->showBuchung_seminarBlock(new SelectQueryAkademie()));
 
 }
 
@@ -231,7 +187,7 @@ function buchungsBestaetigung()
     $text = new BuchungText();
     $SBContent = new Akademie();
 
-    echo $text->bookingConfirmed($SBContent->showBuchung_seminarBlock(new infoCenterDbCon(),new SelectQueryAkademie()));
+    echo $text->bookingConfirmed($SBContent->showBuchung_seminarBlock(new SelectQueryAkademie()));
 }
 
 add_shortcode("sc_kommendeVeranstaltungen","kommendeVeranstaltungen");

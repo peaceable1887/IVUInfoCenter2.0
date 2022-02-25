@@ -1,14 +1,14 @@
 <?php
 
 
-class Einstellungen
+class Einstellungen extends infoCenterDbCon
 {
-    function showProfilSettings($dbCon, $userData, $container)
+    function showProfilSettings($userData, $container)
     {
         $userid = $_SESSION['userid'];
 
-        $sqlRes = mysqli_query($dbCon, $userData->loadData($userid));
-        $arCur = mysqli_fetch_array($sqlRes);
+        $sqlRes = $this->getMySqlQuery($this->dbCon(), $userData->loadData($userid));
+        $arCur = $this->getFetchArray($sqlRes);
 
         $_SESSION["User_Firstname"] = utf8_encode($arCur["User_Firstname"]);
         $_SESSION["User_Surname"] = utf8_encode($arCur["User_Surname"]);

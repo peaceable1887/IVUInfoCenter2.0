@@ -23,5 +23,5 @@ function profilSettings()
 
     $profilSettings = new Einstellungen();
 
-    $profilSettings->showProfilSettings(new infoCenterDbCon(),new SelectQueryEinstellungen(),new ProfilEditieren());
+    $profilSettings->showProfilSettings(new SelectQueryEinstellungen(),new ProfilEditieren());
 }

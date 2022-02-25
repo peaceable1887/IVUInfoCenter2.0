@@ -1,14 +1,12 @@
 <?php
 
 
-class Supportbereich
+class Supportbereich extends infoCenterDbCon
 {
-    function showTableSupportCalls($dbCon,$sqlStatement)
+    function showTableSupportCalls($sqlStatement)
     {
-        $sql = $sqlStatement->myCompleted($_SESSION['userid']);
-        $sqlRes = mysqli_query($dbCon, $sql);
-
-        $countCalls = mysqli_num_rows($sqlRes);
+        $sqlRes = $this->getMySqlQuery($this->dbCon(), $sqlStatement->myCompleted($_SESSION['userid']));
+        $countCalls = $this->getNumRows($sqlRes);
         $_SESSION["recordSupportCalls"] = $countCalls;
 
         echo "<table class='tableList'>\n";
@@ -24,7 +22,7 @@ class Supportbereich
 
         for ($i = 0;$i < $countCalls;$i++)
         {
-            $arCur = mysqli_fetch_array($sqlRes);
+            $arCur = $this->getFetchArray($sqlRes);
             $_SESSION[$i."ticket_number"] = utf8_encode($arCur["Call_Number"]);
 
             echo "<tr>\n";
@@ -71,7 +69,7 @@ class Supportbereich
 
     }
 
-    function showTicketContent($dbCon, $sqlStm)
+    function showTicketContent($sqlStm)
     {
         //Anzahl der Termine
         $recordCount = $_SESSION["recordSupportCalls"];
@@ -80,8 +78,8 @@ class Supportbereich
         {
             if(isset($_GET["ticket_number_".$i]))
             {
-                $sqlRes = mysqli_query($dbCon, $sqlStm->loadTicketContent($_SESSION[$i."ticket_number"]));
-                $arCur = mysqli_fetch_array($sqlRes);
+                $sqlRes = $this->getMySqlQuery($this->dbCon(), $sqlStm->loadTicketContent($_SESSION[$i."ticket_number"]));
+                $arCur = $this->getFetchArray($sqlRes);
 
                 $callNumber = utf8_encode($arCur["Call_Number"]);
                 $callDate = utf8_encode($arCur["Call_Date_Received"]);
@@ -99,7 +97,7 @@ class Supportbereich
             }
 
         }
-        mysqli_close($dbCon);
+        $this->closeDbCon($this->dbCon());
 
         $content = new TicketUebersicht();
 
@@ -109,41 +107,37 @@ class Supportbereich
 
     }
 
-    function showTicketChat($dbCon, $sqlStm)
+    function showTicketChat($sqlStm)
     {
 
         $recordCount = $_SESSION["recordSupportCalls"];
 
         for($i = 0; $i < $recordCount; $i++)
         {
-            $sqlRes = mysqli_query($dbCon, $sqlStm->loadTicketContent($_SESSION[$i."ticket_number"]));
-            $arCur = mysqli_fetch_array($sqlRes);
+            $sqlRes = $this->getMySqlQuery($this->dbCon(), $sqlStm->loadTicketContent($_SESSION[$i."ticket_number"]));
+            $arCur = $this->getFetchArray($sqlRes);
             $_SESSION[$i."ticket_number"] = utf8_encode($arCur["Call_Number"]);
 
             if(isset($_GET["ticket_number_".$i]))
             {
-
-                $sql = mysqli_query($dbCon, $sqlStm->loadTicketChat($_SESSION[$i."ticket_number"]));
+                $sql = mysqli_query($this->dbCon(), $sqlStm->loadTicketChat($_SESSION[$i."ticket_number"]));
                 /*echo $_SESSION[$i."ticket_number"];*/
-
             }
 
         }
-        mysqli_close($dbCon);
+        $this->closeDbCon($this->dbCon());
     }
 
-    function show_createNewCallContent($dbCon, $sql)
+    function show_createNewCallContent($sql)
     {
-        $sqlRes = mysqli_query($dbCon, $sql->load_call_priority());
-        $countRows = mysqli_num_rows($sqlRes);
+        $sqlRes = $this->getMySqlQuery($this->dbCon(), $sql->load_call_priority());
+        $countRows = $this->getNumRows($sqlRes);
 
         for($i = 0; $i <= $countRows; $i++)
         {
-            $arCur = mysqli_fetch_array($sqlRes);
+            $arCur = $this->getFetchArray($sqlRes);
             $priorityName[] = utf8_encode($arCur["Priority_Name"]);
-
         }
-
 
         $supportRequest = new ErstelleSupportanfrage();
 

@@ -50,7 +50,7 @@ function downloadOverview()
 
     $downloadOverview = new DownloadCenter();
 
-    $downloadOverview->showDownloadOverview(new infoCenterDbCon(),new SelectQueryDownloadCenter());
+    $downloadOverview->showDownloadOverview(new SelectQueryDownloadCenter());
 }
 
 
@@ -68,7 +68,7 @@ function downloadContent()
 
     $DLContent = new DownloadCenter();
 
-    $DLContent ->showDownloadContent(new infoCenterDbCon(),new SelectQueryDownloadCenter());
+    $DLContent ->showDownloadContent(new SelectQueryDownloadCenter());
 }
 
 

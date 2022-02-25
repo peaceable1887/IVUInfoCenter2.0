@@ -1,25 +1,23 @@
 <?php
 
-class Login
+class Login extends infoCenterDbCon
 {
-    function showLogin()
+    function showLogin($sql)
     {
-        $dbCon = new infoCenterDbCon();
-        $sqlUser = new selectUserData();
 
         if(isset($_GET['login'])) {
-            $username = encrypt('oSsy4UserN4me', $_POST['username']);
-            $password = encrypt('oSsy4UserN4me', $_POST['password']);
+            $username = $this->encrypt('oSsy4UserN4me', $_POST['username']);
+            $password = $this->encrypt('oSsy4UserN4me', $_POST['password']);
 
-            $sqlRes = mysqli_query($dbCon, $sqlUser->userVerification($username, $password));
-            $arCur = mysqli_fetch_array($sqlRes);
+            $sqlRes = $this->getMySqlQuery($this->dbCon(), $sql->userVerification($username, $password));
+            $arCur = $this->getFetchArray($sqlRes);
 
             if($username == utf8_encode($arCur["User_Username"]) && $password == utf8_encode($arCur["User_Password"]))
             {
                 $_SESSION['userid'] = $arCur['User_ID'];
                 $userid = $_SESSION['userid'];
-                $sqlRes = mysqli_query($dbCon, $sqlUser->loadFullname($userid));
-                $arCur = mysqli_fetch_array($sqlRes);
+                $sqlRes = $this->getMySqlQuery($this->dbCon(), $sql->loadFullname($userid));
+                $arCur = $this->getFetchArray($sqlRes);
                 $_SESSION["User_Firstname"] = utf8_encode($arCur["User_Firstname"]);
                 $_SESSION["User_Surname"] = utf8_encode($arCur["User_Surname"]);
 
@@ -61,6 +59,20 @@ class Login
             <?php
         }
 
+    }
+
+    private function encrypt($key, $string)
+    {
+        $result = '';
+
+        for ($i=0; $i<strlen($string); $i++)
+        {
+            $char		= substr($string, $i, 1);
+            $keychar	= substr($key, ($i % strlen($key))-1, 1);
+            $char		= chr(ord($char)+ord($keychar));
+            $result	   .= $char;
+        }
+        return base64_encode($result);
     }
 
 }
