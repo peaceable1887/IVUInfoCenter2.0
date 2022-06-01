@@ -32,7 +32,7 @@ function sliderCurrentSeminare()
     include_once "model/semTile.php";
     include_once "controller/Startseite/Startseite.php";
     include_once "css/Akademie/akademie.style.php";
-    include_once "Sql/Akademie/SelectQueryAkademie.php";
+    include_once ".gitignore.Sql/Akademie/SelectQueryAkademie.php";
 
     $slider = new Startseite();
 

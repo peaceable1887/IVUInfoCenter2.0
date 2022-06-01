@@ -13,7 +13,7 @@ function login()
 {
     include_once "css/root.style.php";
     include_once "Database/ivu-dbCon.php";
-    include_once "Sql/Login/SelectUserData.php";
+    include_once ".gitignore.Sql/Login/SelectUserData.php";
     include_once "controller/Login/Login.php";
 
     $LoginContent = new Login();
@@ -27,8 +27,8 @@ function notLoggedIn()
 {
     include_once "css/root.style.php";
     include_once "Database/ivu-dbCon.php";
-    include_once "Sql/Login/SelectUserData.php";
-    include_once "Sql/Einstellungen/SelectQueryEinstellungen.php";
+    include_once ".gitignore.Sql/Login/SelectUserData.php";
+    include_once ".gitignore.Sql/Einstellungen/SelectQueryEinstellungen.php";
     include_once "controller/Login/Login.php";
 
     $LoginSuccess = new Login();

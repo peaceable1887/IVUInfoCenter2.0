@@ -45,7 +45,7 @@ function downloadOverview()
     include_once "css/table.style.php";
     include_once "css/style.php";
     include_once "css/Global/global.style.php";
-    include_once "Sql/DownloadCenter/SelectQueryDownloadCenter.php";
+    include_once ".gitignore.Sql/DownloadCenter/SelectQueryDownloadCenter.php";
     include_once "controller/DownloadCenter/DownloadCenter.php";
 
     $downloadOverview = new DownloadCenter();
@@ -63,7 +63,7 @@ function downloadContent()
     include_once "css/btn.style.php";
     include_once "view/DownloadCenter/DownloadContent.php";
     include_once "Database/ivu-dbCon.php";
-    include_once "Sql/DownloadCenter/SelectQueryDownloadCenter.php";
+    include_once ".gitignore.Sql/DownloadCenter/SelectQueryDownloadCenter.php";
     include_once "controller/DownloadCenter/DownloadCenter.php";
 
     $DLContent = new DownloadCenter();

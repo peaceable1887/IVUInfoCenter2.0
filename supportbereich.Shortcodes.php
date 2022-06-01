@@ -29,7 +29,7 @@ function tableSupportCalls()
     include_once "css/root.style.php";
     include_once "Database/ivu-dbCon.php";
     include_once "css/table.style.php";
-    include_once "Sql/Supportbereich/SelectQuerySupportCalls.php";
+    include_once ".gitignore.Sql/Supportbereich/SelectQuerySupportCalls.php";
     include_once "controller/Supportbereich/Supportbereich.php";
 
     $DCContent = new Supportbereich();
@@ -54,7 +54,7 @@ add_shortcode("sc_createSupportRequest", "createSupportRequest");
 function createSupportRequest()
 {
     include_once "Database/ivu-dbCon.php";
-    include_once "Sql/Supportbereich/SelectQuerySupportCalls.php";;
+    include_once ".gitignore.Sql/Supportbereich/SelectQuerySupportCalls.php";;
     include_once "css/form.style.php";
     include_once "css/style.php";
     include_once "css/btn.style.php";
@@ -105,7 +105,7 @@ add_shortcode("sc_ticketContent", "ticketContent");
 function ticketContent()
 {
     include_once "Database/ivu-dbCon.php";
-    include_once "Sql/Supportbereich/SelectQuerySupportCalls.php";
+    include_once ".gitignore.Sql/Supportbereich/SelectQuerySupportCalls.php";
     include_once "css/root.style.php";
     include_once "css/btn.style.php";
     include_once "css/style.php";
@@ -125,7 +125,7 @@ add_shortcode("sc_ticketChat", "ticketChat");
 function ticketChat()
 {
     include_once "Database/ivu-dbCon.php";
-    include_once "Sql/Supportbereich/SelectQuerySupportCalls.php";;
+    include_once ".gitignore.Sql/Supportbereich/SelectQuerySupportCalls.php";;
     include_once "css/root.style.php";
     include_once "css/btn.style.php";
     include_once "css/style.php";

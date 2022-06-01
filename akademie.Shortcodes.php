@@ -61,7 +61,7 @@ function loadUpcommingEvents()
     include_once "css/root.style.php";
     include_once "css/Akademie/akademie.style.php";
     include_once "css/table.style.php";
-    include_once "Sql/Akademie/SelectQueryAkademie.php";
+    include_once ".gitignore.Sql/Akademie/SelectQueryAkademie.php";
 
     $UEContent = new Akademie();
 
@@ -94,7 +94,7 @@ function showEventContent()
     include_once "css/style.php";
     include_once "css/btn.style.php";
     include_once "css/Akademie/akademie.style.php";
-    include_once "Sql/Akademie/SelectQueryAkademie.php";
+    include_once ".gitignore.Sql/Akademie/SelectQueryAkademie.php";
     include_once "model/semTile.php";
     include_once "view/Akademie/SeminarDetails.php";
     include_once "controller/Akademie/Akademie.php";
@@ -110,7 +110,7 @@ function buchung_seminarBlock()
 {
     include_once "css/root.style.php";
     include_once "css/style.php";
-    include_once "Sql/Akademie/SelectQueryAkademie.php";
+    include_once ".gitignore.Sql/Akademie/SelectQueryAkademie.php";
     include_once "Database/ivu-dbCon.php";
     include_once "model/semTile.php";
     include_once "controller/Akademie/Akademie.php";
@@ -145,7 +145,7 @@ function eventRegisterBox()
     include_once "controller/Akademie/Akademie.php";
 
     include_once "css/style.php";
-    include_once "Sql/Akademie/SelectQueryAkademie.php";
+    include_once ".gitignore.Sql/Akademie/SelectQueryAkademie.php";
     include_once "Database/ivu-dbCon.php";
     include_once "model/semTile.php";
 
@@ -179,7 +179,7 @@ function buchungsBestaetigung()
     include_once "view/Akademie/BuchungText.php";
     include_once "css/Akademie/akademie.style.php";
     include_once "css/style.php";
-    include_once "Sql/Akademie/SelectQueryAkademie.php";
+    include_once ".gitignore.Sql/Akademie/SelectQueryAkademie.php";
     include_once "Database/ivu-dbCon.php";
     include_once "model/semTile.php";
     include_once "controller/Akademie/Akademie.php";
