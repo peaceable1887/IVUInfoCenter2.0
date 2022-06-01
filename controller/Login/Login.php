@@ -13,14 +13,14 @@ class Login extends infoCenterDbCon
             $sqlRes = $this->getMySqlQuery($this->dbCon(), $sql->userVerification($username, $password));
             $arCur = $this->getFetchArray($sqlRes);
 
-            if($username == utf8_encode($arCur["User_Username"]) && $password == utf8_encode($arCur["User_Password"]))
+            if($username == utf8_encode($arCur[getenv("SQL_USERNAME")]) && $password == utf8_encode($arCur[getenv("SQL_PASSWORD")]))
             {
-                $_SESSION['userid'] = $arCur['User_ID'];
+                $_SESSION['userid'] = $arCur[getenv("SQL_ID")];
                 $userid = $_SESSION['userid'];
                 $sqlRes = $this->getMySqlQuery($this->dbCon(), $sql->loadFullname($userid));
                 $arCur = $this->getFetchArray($sqlRes);
-                $_SESSION["User_Firstname"] = utf8_encode($arCur["User_Firstname"]);
-                $_SESSION["User_Surname"] = utf8_encode($arCur["User_Surname"]);
+                $_SESSION[getenv("SQL_FIRSTNAME")] = utf8_encode($arCur[getenv("SQL_FIRSTNAME")]);
+                $_SESSION[getenv("SQL_SURNAME")] = utf8_encode($arCur[getenv("SQL_SURNAME")]);
 
                 die('<meta http-equiv="refresh" content="0; URL=http://127.0.0.1/wordpress/">');
 
