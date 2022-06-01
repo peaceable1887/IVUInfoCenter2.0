@@ -194,12 +194,6 @@
         font-size: 35px;
 
     }
-    .textContent
-    {
-        display:flex;
-        flex-direction: column;
-        margin: 1% 0 0 0;
-    }
     .text
     {
         margin: 1% 0 0 2%;

@@ -10,6 +10,12 @@
         border-radius: 10px;
         float: left;
     }
+    .formContainer select
+    {
+        padding: 0 0 0 0.5%;
+        font-family: var(--fontfamily-global);
+        font-size: 18px;
+    }
     /*Bereich Einstellungen*/
     .formContainerSettings
     {
@@ -19,6 +25,12 @@
         padding: 15px;
         margin: 1% 2.4% 20px 2.4%;
         border-radius: 10px;
+    }
+    .formContainerSettings select
+    {
+        padding: 0 0 0 0.5%;
+        font-family: var(--fontfamily-global);
+        font-size: 18px;
     }
     summary
     {

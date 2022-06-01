@@ -190,6 +190,8 @@
         align-items: center;
         justify-content: center;
         height: 48px;
+        font-size: 16px;
+        border: none;
         background-color: var(--color-default-white);
         color: var(--color-font);
         border-radius: 0;

@@ -111,7 +111,7 @@
     {
         color: var(--color-ivu-red);
     }
-    .searchField
+    /*.searchField
     {
         float: right;
         background-color: #dadada;
@@ -119,7 +119,7 @@
         font-size: 16px;
         border-radius: 7px;
         border: none;
-    }
+    }*/
     .searchField input
     {
         height: 27px;

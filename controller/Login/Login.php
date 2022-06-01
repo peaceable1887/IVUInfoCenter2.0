@@ -1,13 +1,14 @@
 <?php
 
+include_once ("config.env");
+
 class Login extends infoCenterDbCon
 {
     function showLogin($sql)
     {
-
         if(isset($_GET['login'])) {
-            $username = $this->encrypt('oSsy4UserN4me', $_POST['username']);
-            $password = $this->encrypt('oSsy4UserN4me', $_POST['password']);
+            $username = $this->encrypt(getenv("ENCRYPT_KEY"), $_POST['username']);
+            $password = $this->encrypt(getenv("ENCRYPT_KEY"), $_POST['password']);
 
             $sqlRes = $this->getMySqlQuery($this->dbCon(), $sql->userVerification($username, $password));
             $arCur = $this->getFetchArray($sqlRes);
