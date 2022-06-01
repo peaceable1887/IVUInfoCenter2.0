@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="include Environment Variables">
+      <change afterPath="$PROJECT_DIR$/Trash/headerTop.style.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/.idea/env.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/examples/db/env.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/examples/db/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/examples/simple/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/examples/simple/env.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/examples/simple/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/lib/env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/test/env.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/env/test/fixtures/env.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore.Sql/Akademie/SelectQueryAkademie.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/Akademie/SelectQueryAkademie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore.Sql/DownloadCenter/SelectQueryDownloadCenter.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/DownloadCenter/SelectQueryDownloadCenter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore.Sql/Einstellungen/SelectQueryEinstellungen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/Einstellungen/SelectQueryEinstellungen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore.Sql/Login/SelectUserData.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/Login/SelectUserData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore.Sql/Supportbereich/SelectQuerySupportCalls.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/Supportbereich/SelectQuerySupportCalls.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/akademie.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/akademie.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/downloadCenter.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/downloadCenter.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/einstellungen.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/einstellungen.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startseite.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/startseite.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supportbereich.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/supportbereich.Shortcodes.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="WordPress Main Plugin File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1sQzbO1vato8a3t33IyGcvvaf79" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Uni/Java Codes (Uni)" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\includes\login.inc" />
+      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\images\header" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\newInfoCenter\Trash" />
+      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\newInfoCenter\Sql\Login" />
+      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\newInfoCenter\css\Slider" />
+      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\css" />
+      <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\Trash" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="" />
+      <created>1620819671355</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620819671355</updated>
+      <workItem from="1620819674360" duration="16996000" />
+      <workItem from="1620900408013" duration="8422000" />
+      <workItem from="1620987082344" duration="1414000" />
+      <workItem from="1621015890648" duration="2700000" />
+      <workItem from="1621076761168" duration="4981000" />
+      <workItem from="1621088844310" duration="17000" />
+      <workItem from="1621089294725" duration="3105000" />
+      <workItem from="1621160499269" duration="5589000" />
+      <workItem from="1621172049669" duration="2605000" />
+      <workItem from="1621174869617" duration="3176000" />
+      <workItem from="1621250133000" duration="2326000" />
+      <workItem from="1627654485550" duration="2438000" />
+      <workItem from="1627900420201" duration="3494000" />
+      <workItem from="1627983199777" duration="7079000" />
+      <workItem from="1627991716284" duration="6225000" />
+      <workItem from="1628068415179" duration="3826000" />
+      <workItem from="1628076520333" duration="6076000" />
+      <workItem from="1628148346602" duration="6950000" />
+      <workItem from="1628155487320" duration="6842000" />
+      <workItem from="1628241206442" duration="7743000" />
+      <workItem from="1628587349817" duration="18135000" />
+      <workItem from="1628676359163" duration="14518000" />
+      <workItem from="1628752316907" duration="15513000" />
+      <workItem from="1629111300610" duration="9224000" />
+      <workItem from="1629195061630" duration="16070000" />
+      <workItem from="1629226328409" duration="2081000" />
+      <workItem from="1629280208374" duration="10513000" />
+      <workItem from="1629357832504" duration="12898000" />
+      <workItem from="1629455008218" duration="1613000" />
+      <workItem from="1629707782077" duration="17506000" />
+      <workItem from="1629797129609" duration="13304000" />
+      <workItem from="1629883162225" duration="11731000" />
+      <workItem from="1629961783062" duration="13657000" />
+      <workItem from="1630315662411" duration="19698000" />
+      <workItem from="1630400724979" duration="16460000" />
+      <workItem from="1630586042781" duration="8220000" />
+      <workItem from="1630596311182" duration="3508000" />
+      <workItem from="1630659622791" duration="6391000" />
+      <workItem from="1630681373143" duration="4000" />
+      <workItem from="1630682821995" duration="251000" />
+      <workItem from="1630688760867" duration="2944000" />
+      <workItem from="1630924247565" duration="1296000" />
+      <workItem from="1631013741331" duration="1501000" />
+      <workItem from="1631171240579" duration="15967000" />
+      <workItem from="1631690341563" duration="7501000" />
+      <workItem from="1632911193559" duration="1545000" />
+      <workItem from="1632912798167" duration="2576000" />
+      <workItem from="1632915935187" duration="4276000" />
+      <workItem from="1632921345443" duration="458000" />
+      <workItem from="1632987983502" duration="21261000" />
+      <workItem from="1633081078649" duration="1734000" />
+      <workItem from="1633083979134" duration="775000" />
+      <workItem from="1633088119721" duration="1195000" />
+      <workItem from="1633333627321" duration="3031000" />
+      <workItem from="1633515532369" duration="20107000" />
+      <workItem from="1633591213004" duration="10885000" />
+      <workItem from="1634113349199" duration="18478000" />
+      <workItem from="1634195376969" duration="4511000" />
+      <workItem from="1634207889008" duration="1968000" />
+      <workItem from="1634800696574" duration="6449000" />
+      <workItem from="1635405887836" duration="2855000" />
+      <workItem from="1635429616251" duration="8826000" />
+      <workItem from="1635498317669" duration="6433000" />
+      <workItem from="1636013780173" duration="12826000" />
+      <workItem from="1636028288228" duration="2097000" />
+      <workItem from="1636108452089" duration="11992000" />
+      <workItem from="1636455040698" duration="25298000" />
+      <workItem from="1636540024386" duration="17808000" />
+      <workItem from="1636618713982" duration="755000" />
+      <workItem from="1636619908044" duration="149000" />
+      <workItem from="1636620116211" duration="7995000" />
+      <workItem from="1636713876026" duration="1945000" />
+      <workItem from="1636719381545" duration="9490000" />
+      <workItem from="1636975021572" duration="9091000" />
+      <workItem from="1637059591487" duration="15251000" />
+      <workItem from="1637079048355" duration="1456000" />
+      <workItem from="1637143881801" duration="19341000" />
+      <workItem from="1637166493089" duration="908000" />
+      <workItem from="1637167528345" duration="1009000" />
+      <workItem from="1637222984995" duration="10064000" />
+      <workItem from="1637319559757" duration="4163000" />
+      <workItem from="1637577835408" duration="22646000" />
+      <workItem from="1637665669444" duration="18598000" />
+      <workItem from="1637742149043" duration="2292000" />
+      <workItem from="1637748154742" duration="441000" />
+      <workItem from="1637837011764" duration="16400000" />
+      <workItem from="1637923219732" duration="8298000" />
+      <workItem from="1637934850371" duration="7682000" />
+      <workItem from="1638014897603" duration="931000" />
+      <workItem from="1638028175066" duration="632000" />
+      <workItem from="1638028997805" duration="756000" />
+      <workItem from="1638029832573" duration="1147000" />
+      <workItem from="1638031576098" duration="81000" />
+      <workItem from="1638105951960" duration="1479000" />
+      <workItem from="1638186891404" duration="958000" />
+      <workItem from="1638361016432" duration="18513000" />
+      <workItem from="1638434267493" duration="13409000" />
+      <workItem from="1638626961952" duration="1931000" />
+      <workItem from="1639397909709" duration="23092000" />
+      <workItem from="1639476858234" duration="21285000" />
+      <workItem from="1639566199126" duration="11444000" />
+      <workItem from="1639642606732" duration="3533000" />
+      <workItem from="1643799565459" duration="21856000" />
+      <workItem from="1643875347004" duration="3397000" />
+      <workItem from="1643879651677" duration="666000" />
+      <workItem from="1643882578116" duration="10718000" />
+      <workItem from="1644314785462" duration="14801000" />
+      <workItem from="1644402609530" duration="13069000" />
+      <workItem from="1644487238297" duration="18028000" />
+      <workItem from="1644573401606" duration="9601000" />
+      <workItem from="1644835742871" duration="19409000" />
+      <workItem from="1644919965942" duration="18608000" />
+      <workItem from="1645008845803" duration="18126000" />
+      <workItem from="1645086210904" duration="2926000" />
+      <workItem from="1645438083768" duration="13282000" />
+      <workItem from="1645525337420" duration="15003000" />
+      <workItem from="1645609234518" duration="10479000" />
+      <workItem from="1645784230749" duration="3617000" />
+      <workItem from="1646129201564" duration="1577000" />
+      <workItem from="1646134834584" duration="5245000" />
+      <workItem from="1651219964622" duration="1582000" />
+      <workItem from="1651743248630" duration="3562000" />
+      <workItem from="1654080657131" duration="3537000" />
+    </task>
+    <task id="LOCAL-00001" summary="weiterer Push des Codes">
+      <created>1637168082069</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1637168082069</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Meine Supportanfragene (MeineErledigten) jetzt fertig">
+      <created>1637239317998</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1637239317998</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Link-Menü eingebaut">
+      <created>1637584587468</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1637584587468</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Slider überarbeitet.">
+      <created>1637667364499</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637667364499</updated>
+    </task>
+    <task id="LOCAL-00005" summary="weitere Überarbeitungen">
+      <created>1637679541202</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637679541202</updated>
+    </task>
+    <task id="LOCAL-00006" summary="grosses Refactoring durchgeführt">
+      <created>1637855794101</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1637855794101</updated>
+    </task>
+    <task id="LOCAL-00007" summary="kurz aufgeräumt">
+      <created>1637856145652</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1637856145652</updated>
+    </task>
+    <task id="LOCAL-00008" summary="css aufgeräumt">
+      <created>1637942559377</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1637942559377</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Slider überarbeitet">
+      <created>1638362903630</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1638362903630</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Filter Menü überarbeitet">
+      <created>1638440511781</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1638440511781</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Edit: Downloadbereich, Supportanfragen und Akademiebereich">
+      <created>1639578817832</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1639578817832</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Edit: Funktionen entschlackt">
+      <created>1644250342086</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1644250342086</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Akademiebereich editiert: CSS angepasst und Funktionen entschlackt">
+      <created>1644331074573</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1644331074573</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Akademiebereich editiert: CSS angepasst und Funktionen entschlackt">
+      <created>1644331274970</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1644331274970</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Absicherung">
+      <created>1644428714033</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1644428714033</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Edit: HilfeUndInfo-Seite neu gestaltet, CSS-Anpassungen im Akademiebereich(Buchungsschritte) und weitere minimale Anpassungen">
+      <created>1644499913632</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1644499913632</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Edit: CSS-Anpassungen">
+      <created>1644510783298</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1644510783298</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Edit: CSS-Design vom Supportticket fertiggestellt">
+      <created>1644853496456</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1644853496456</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Edit: Overlay-Design überarbeitet und fertiggestellt">
+      <created>1644922580310</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1644922580310</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Supporttickets nehmen jetzt Variablen aus der DB entgegen (Absicherung)">
+      <created>1644946420714</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1644946420714</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Seite für den Bereich &quot;Informationen und Downloads&quot; fertiggestellt">
+      <created>1645016299339</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1645016299339</updated>
+    </task>
+    <task id="LOCAL-00022" summary="CSS-Anpassungen auf der Seite &quot;Download-Details&quot;">
+      <created>1645028059984</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1645028059984</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Absicherung">
+      <created>1645609342965</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1645609342965</updated>
+    </task>
+    <task id="LOCAL-00024" summary="weiteres Refactoring gemacht">
+      <created>1645786985077</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1645786985077</updated>
+    </task>
+    <task id="LOCAL-00025" summary="include Environment Variables">
+      <created>1654081879775</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1654081879775</updated>
+    </task>
+    <task id="LOCAL-00026" summary="include Environment Variables">
+      <created>1654082166872</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1654082166872</updated>
+    </task>
+    <task id="LOCAL-00027" summary="include Environment Variables">
+      <created>1654083736439</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1654083736439</updated>
+    </task>
+    <task id="LOCAL-00028" summary="include Environment Variables">
+      <created>1654083871470</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1654083871470</updated>
+    </task>
+    <task id="LOCAL-00029" summary="include Environment Variables">
+      <created>1654084016675</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1654084016675</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="weiterer Push des Codes" />
+    <MESSAGE value="Meine Supportanfragene (MeineErledigten) jetzt fertig" />
+    <MESSAGE value="Link-Menü eingebaut" />
+    <MESSAGE value="Slider überarbeitet." />
+    <MESSAGE value="weitere Überarbeitungen" />
+    <MESSAGE value="grosses Refactoring durchgeführt" />
+    <MESSAGE value="kurz aufgeräumt" />
+    <MESSAGE value="css aufgeräumt" />
+    <MESSAGE value="Slider überarbeitet" />
+    <MESSAGE value="Filter Menü überarbeitet" />
+    <MESSAGE value="Edit: Downloadbereich, Supportanfragen und Akademiebereich" />
+    <MESSAGE value="Edit: Funktionen entschlackt" />
+    <MESSAGE value="Akademiebereich editiert: CSS angepasst und Funktionen entschlackt" />
+    <MESSAGE value="Edit: HilfeUndInfo-Seite neu gestaltet, CSS-Anpassungen im Akademiebereich(Buchungsschritte) und weitere minimale Anpassungen" />
+    <MESSAGE value="Edit: CSS-Anpassungen" />
+    <MESSAGE value="Edit: CSS-Design vom Supportticket fertiggestellt" />
+    <MESSAGE value="Edit: Overlay-Design überarbeitet und fertiggestellt" />
+    <MESSAGE value="Supporttickets nehmen jetzt Variablen aus der DB entgegen (Absicherung)" />
+    <MESSAGE value="Seite für den Bereich &quot;Informationen und Downloads&quot; fertiggestellt" />
+    <MESSAGE value="CSS-Anpassungen auf der Seite &quot;Download-Details&quot;" />
+    <MESSAGE value="Absicherung" />
+    <MESSAGE value="weiteres Refactoring gemacht" />
+    <MESSAGE value="include Environment Variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="include Environment Variables" />
+  </component>
+  <component name="WordPressConfiguration" enabled="true">
+    <wordpressPath>C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs</wordpressPath>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/Trash/akademieEevntsShortcodesBuchung.php</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
