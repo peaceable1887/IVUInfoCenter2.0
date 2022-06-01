@@ -25,17 +25,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="weiteres Refactoring gemacht">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.env" afterDir="false" />
+    <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="include Environment Variables">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/ivu-dbCon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Database/ivu-dbCon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/Login/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Login/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Akademie/akademie.style.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Akademie/akademie.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Global/global.style.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/Global/global.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/btn.style.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/btn.style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/form.style.php" beforeDir="false" afterPath="$PROJECT_DIR$/css/form.style.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +235,7 @@
       <workItem from="1646134834584" duration="5245000" />
       <workItem from="1651219964622" duration="1582000" />
       <workItem from="1651743248630" duration="3562000" />
-      <workItem from="1654080657131" duration="1159000" />
+      <workItem from="1654080657131" duration="1445000" />
     </task>
     <task id="LOCAL-00001" summary="weiterer Push des Codes">
       <created>1637168082069</created>
@@ -410,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645786985077</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="include Environment Variables">
+      <created>1654081879775</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1654081879775</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,7 +465,8 @@
     <MESSAGE value="CSS-Anpassungen auf der Seite &quot;Download-Details&quot;" />
     <MESSAGE value="Absicherung" />
     <MESSAGE value="weiteres Refactoring gemacht" />
-    <option name="LAST_COMMIT_MESSAGE" value="weiteres Refactoring gemacht" />
+    <MESSAGE value="include Environment Variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="include Environment Variables" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs</wordpressPath>

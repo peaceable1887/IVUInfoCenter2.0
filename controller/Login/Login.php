@@ -1,6 +1,6 @@
 <?php
 
-include_once ("config.env");
+include_once(".env");
 
 class Login extends infoCenterDbCon
 {

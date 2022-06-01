@@ -1,5 +1,5 @@
 <?php
-include_once ("config.env");
+include_once(".env");
 
 //noch auf PDO wechseln !
 class infoCenterDbCon extends mysqli
