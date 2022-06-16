@@ -26,43 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f0ea393-2ec2-47fc-8803-f68cae00e440" name="Default Changelist" comment="include Environment Variables">
-      <change afterPath="$PROJECT_DIR$/Trash/headerTop.style.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/.idea/env.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/.npmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/examples/db/env.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/examples/db/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/examples/simple/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/examples/simple/env.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/examples/simple/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/lib/env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/test/env.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/env/test/fixtures/env.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore.Sql/Akademie/SelectQueryAkademie.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/Akademie/SelectQueryAkademie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore.Sql/DownloadCenter/SelectQueryDownloadCenter.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/DownloadCenter/SelectQueryDownloadCenter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore.Sql/Einstellungen/SelectQueryEinstellungen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/Einstellungen/SelectQueryEinstellungen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore.Sql/Login/SelectUserData.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/Login/SelectUserData.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore.Sql/Supportbereich/SelectQuerySupportCalls.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sql/Supportbereich/SelectQuerySupportCalls.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/akademie.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/akademie.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloadCenter.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/downloadCenter.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/einstellungen.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/einstellungen.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startseite.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/startseite.Shortcodes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supportbereich.Shortcodes.php" beforeDir="false" afterPath="$PROJECT_DIR$/supportbereich.Shortcodes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/newInfoCenter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/newInfoCenter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,19 +88,6 @@
       <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\css" />
       <recent name="C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs\wp-content\plugins\db-abfrage\Trash" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -267,7 +219,9 @@
       <workItem from="1646134834584" duration="5245000" />
       <workItem from="1651219964622" duration="1582000" />
       <workItem from="1651743248630" duration="3562000" />
-      <workItem from="1654080657131" duration="3537000" />
+      <workItem from="1654080657131" duration="4326000" />
+      <workItem from="1654257107256" duration="13000" />
+      <workItem from="1655379030043" duration="150000" />
     </task>
     <task id="LOCAL-00001" summary="weiterer Push des Codes">
       <created>1637168082069</created>
@@ -472,7 +426,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654084016675</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="include Environment Variables">
+      <created>1654084252639</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1654084252639</updated>
+    </task>
+    <task id="LOCAL-00031" summary="include Environment Variables">
+      <created>1654084417608</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1654084417608</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,16 +498,5 @@
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>C:\Bitnami\wordpress-5.7.1-2\apps\wordpress\htdocs</wordpressPath>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/Trash/akademieEevntsShortcodesBuchung.php</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
