@@ -1,4 +1,4 @@
 /.env
-**/Model
-**/Controller
+**/model
+**/controller
 **/Sql
